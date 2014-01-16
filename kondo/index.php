@@ -6,7 +6,7 @@
 		<title>中間レイヤー作業用サイト</title>
 		<meta name="keywords" content="">
 		<meta name="description" content="">
-		<link rel="stylesheet" href="/improve-condition/css/index.css" media="all">
+		<link rel="stylesheet" href="/improve-condition/kondo/css/index.css" media="all">
 		<!-- link rel="alternate" media="only screen and (max-width: 640px)" href="" / -->
 		<!-- link rel="alternate" media="handheld" href="" / -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
