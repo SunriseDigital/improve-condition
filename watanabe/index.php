@@ -14,27 +14,27 @@
 	<body>
 
 		<!-- ヘッダー -->
-		<div class="">
-			<h1 class="">caption</h1>
+		<div class="header">
+			<h1 class="header-caption">caption</h1>
 		</div>
 
 		<!-- ナビゲーション -->
-		<div class="">
-			<ul class="">
-				<li class="">nav</li>
-				<li class="">nav</li>
-				<li class="">nav</li>
-				<li class="">nav</li>
-				<li class="">nav</li>
+		<div class="nav">
+			<ul class="nav-list">
+				<li class="nav-list-item">nav</li>
+				<li class="nav-list-item">nav</li>
+				<li class="nav-list-item">nav</li>
+				<li class="nav-list-item">nav</li>
+				<li class="nav-list-item">nav</li>
 			</ul>
 		</div>
 
 		<!-- メインカラム -->
-		<div class="">
+		<div class="main-container">
 
 			<!-- 画像スライダー -->
-			<div class="">
-				<ul class="">
+			<div class="slider">
+<!-- 				<ul class="">
 					<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
 					<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
 					<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
@@ -47,15 +47,15 @@
 					<li class="">marker</li>
 					<li class="">marker</li>
 					<li class="">marker</li>
-				</ul>
+				</ul> -->
 			</div>
 
 			<!-- メインコンテンツ (ラベルとサムネイルが有るリスト) -->
 			<div class="">
-				<ul class="">
-					<li class="">
-						<p class="">label</p>
-						<p class="">paragraph</p>
+				<ul class="list list-width-label">
+					<li class="list-item">
+						<p class="list-item-data-label">label</p>
+						<p class="list-item-data-paragraph">paragraph</p>
 						<img src="" alt="">
 					</li>
 					<li class="">
