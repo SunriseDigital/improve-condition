@@ -14,12 +14,12 @@
 	<body>
 
 		<!-- ヘッダー -->
-		<div class="header">
+		<div class="l-header">
 			<h1 class="header-caption">caption</h1>
 		</div>
 
 		<!-- ナビゲーション -->
-		<div class="nav">
+		<div class="l-nav">
 			<ul class="nav-list">
 				<li class="nav-list-item">nav</li>
 				<li class="nav-list-item">nav</li>
@@ -30,7 +30,7 @@
 		</div>
 
 		<!-- メインカラム -->
-		<div class="main-container">
+		<div class="l-content">
 
 			<!-- 画像スライダー -->
 			<div class="slider">
@@ -193,7 +193,7 @@
 
 		</div>
 
-		<!-- レフトカラム -->
+		<!-- ライトカラム -->
 		<div class="">
 
 			<!-- サブコンテンツ -->
