@@ -1,11 +1,15 @@
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
+cache = false
+asset_cache_buster :none
+
 http_path = "/"
 css_dir = "css"
 sass_dir = "scss"
 images_dir = "img"
 javascripts_dir = "js"
+sass_options = { :debug_info => true }
 output_style = :expanded
 line_comments = false
 

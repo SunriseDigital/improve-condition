@@ -14,18 +14,20 @@
 	<body>
 
 		<!-- ヘッダー -->
-		<div class="l-header l-cell">
-			<h1 class="c-logo"><img src="http://dummyimage.com/170x50/000/fff&text=LOGO" alt=""></h1>
+		<div class="header">
+			<h1 class="l-cell">
+				<img src="http://dummyimage.com/170x50/fff/2e2e2e.png&text=Peachy" alt="Peachy">
+			</h1>
 		</div>
 
 		<!-- ナビゲーション -->
-		<div class="l-nav">
-			<ul class="nav">
-				<li class="nav-item">nav</li>
-				<li class="nav-item">nav</li>
-				<li class="nav-item">nav</li>
-				<li class="nav-item">nav</li>
-				<li class="nav-item">nav</li>
+		<div class="primaryNav">
+			<ul class="nav l-cell">
+				<li class="nav-item is-nav-current">TOP</li>
+				<li class="nav-item">〇〇〇</li>
+				<li class="nav-item">〇〇〇〇〇〇〇〇</li>
+				<li class="nav-item">〇〇〇〇</li>
+				<li class="nav-item">〇〇〇〇〇〇</li>
 			</ul>
 		</div>
 

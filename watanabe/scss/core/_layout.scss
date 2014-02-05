@@ -79,14 +79,31 @@
   margin-bottom: rem($base-whitespace * 2);
 }
 
+%l-autoHeight {
+  height: 100%;
+}
+
 // -------------------------------------
 //   layout
 // -------------------------------------
 
-l-header {
+.header {
 
 }
 
-l-nav {
+.primaryNav {
+	height: 50px;
+	background: #ffb3b3;
+	background: -moz-linear-gradient(top,  #ffb3b3 0%, #fda6a6 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb3b3), color-stop(100%,#fda6a6));
+	background: -webkit-linear-gradient(top,  #ffb3b3 0%,#fda6a6 100%);
+	background: -o-linear-gradient(top,  #ffb3b3 0%,#fda6a6 100%);
+	background: -ms-linear-gradient(top,  #ffb3b3 0%,#fda6a6 100%);
+	background: linear-gradient(to bottom,  #ffb3b3 0%,#fda6a6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3b3', endColorstr='#fda6a6',GradientType=0 );
+}
+
+.mainContainer {
 
 }
+
