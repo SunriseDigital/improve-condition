@@ -14,26 +14,26 @@
 	<body>
 
 		<!-- ヘッダー -->
-		<div class="l-header">
-			<h1 class="header-caption">caption</h1>
+		<div class="l-header l-cell">
+			<h1 class="c-logo"><img src="http://dummyimage.com/170x50/000/fff&text=LOGO" alt=""></h1>
 		</div>
 
 		<!-- ナビゲーション -->
 		<div class="l-nav">
-			<ul class="nav-list">
-				<li class="nav-list-item">nav</li>
-				<li class="nav-list-item">nav</li>
-				<li class="nav-list-item">nav</li>
-				<li class="nav-list-item">nav</li>
-				<li class="nav-list-item">nav</li>
+			<ul class="nav">
+				<li class="nav-item">nav</li>
+				<li class="nav-item">nav</li>
+				<li class="nav-item">nav</li>
+				<li class="nav-item">nav</li>
+				<li class="nav-item">nav</li>
 			</ul>
 		</div>
 
 		<!-- メインカラム -->
-		<div class="l-content">
+		<div class="l-mainContainer l-cell">
 
 			<!-- 画像スライダー -->
-			<div class="slider">
+			<div class="l-anyNameContainer">
 <!-- 				<ul class="">
 					<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
 					<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
@@ -51,7 +51,7 @@
 			</div>
 
 			<!-- メインコンテンツ (ラベルとサムネイルが有るリスト) -->
-			<div class="">
+			<div class="l-anyNameContainer">
 				<ul class="list list-width-label">
 					<li class="list-item">
 						<p class="list-item-data-label">label</p>
