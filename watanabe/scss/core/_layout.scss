@@ -6,6 +6,72 @@
 // *************************************
 
 // -------------------------------------
+//   header
+// -------------------------------------
+
+.header {
+
+}
+
+// -------------------------------------
+//   primaryNav
+// -------------------------------------
+
+.primaryNav {
+  height: 50px;
+  background: #ffb3b3;
+  background: -moz-linear-gradient(top,  #ffb3b3 0%, #fda6a6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb3b3), color-stop(100%,#fda6a6));
+  background: -webkit-linear-gradient(top,  #ffb3b3 0%,#fda6a6 100%);
+  background: -o-linear-gradient(top,  #ffb3b3 0%,#fda6a6 100%);
+  background: -ms-linear-gradient(top,  #ffb3b3 0%,#fda6a6 100%);
+  background: linear-gradient(to bottom,  #ffb3b3 0%,#fda6a6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3b3', endColorstr='#fda6a6',GradientType=0 );
+}
+
+// ----- nav ----- //
+.nav {
+  @extend %l-autoHeight;
+  overflow: hidden;
+}
+
+.nav-item {
+  @extend %l-pullLeft;
+  @extend %l-autoHeight;
+  padding: 0 10px;
+  line-height: 50px;
+}
+
+.is-nav-current {
+  background: #ff6666;
+  background: -moz-linear-gradient(top,  #ff6666 0%, #f85353 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff6666), color-stop(100%,#f85353));
+  background: -webkit-linear-gradient(top,  #ff6666 0%,#f85353 100%);
+  background: -o-linear-gradient(top,  #ff6666 0%,#f85353 100%);
+  background: -ms-linear-gradient(top,  #ff6666 0%,#f85353 100%);
+  background: linear-gradient(to bottom,  #ff6666 0%,#f85353 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6666', endColorstr='#f85353',GradientType=0 );
+}
+
+// -------------------------------------
+//   mainContainer
+// -------------------------------------
+.mainContainer {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------------------
 //   Bucket
 // -------------------------------------
 
@@ -83,27 +149,7 @@
   height: 100%;
 }
 
-// -------------------------------------
-//   layout
-// -------------------------------------
 
-.header {
 
-}
 
-.primaryNav {
-	height: 50px;
-	background: #ffb3b3;
-	background: -moz-linear-gradient(top,  #ffb3b3 0%, #fda6a6 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb3b3), color-stop(100%,#fda6a6));
-	background: -webkit-linear-gradient(top,  #ffb3b3 0%,#fda6a6 100%);
-	background: -o-linear-gradient(top,  #ffb3b3 0%,#fda6a6 100%);
-	background: -ms-linear-gradient(top,  #ffb3b3 0%,#fda6a6 100%);
-	background: linear-gradient(to bottom,  #ffb3b3 0%,#fda6a6 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3b3', endColorstr='#fda6a6',GradientType=0 );
-}
-
-.mainContainer {
-
-}
 
