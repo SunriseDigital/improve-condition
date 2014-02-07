@@ -6,6 +6,97 @@
 // *************************************
 
 // -------------------------------------
+//   Bucket
+// -------------------------------------
+
+.l-bucket {
+
+}
+
+// -------------------------------------
+//   Card
+// -------------------------------------
+
+.l-card {
+
+}
+
+// -------------------------------------
+//   Cell
+// -------------------------------------
+
+%l-cell, .l-cell {
+  margin: 0 auto;
+  max-width: rem($l-maxWidth);
+  padding: 0 rem(60px);
+}
+
+// -------------------------------------
+//   Grid
+// -------------------------------------
+
+.l-grid {
+
+}
+
+.l-grid-box {
+
+}
+
+// -------------------------------------
+//   Row
+// -------------------------------------
+
+.l-row {
+
+}
+
+
+// -------------------------------------
+//   per-site-layout-modules
+// -------------------------------------
+
+
+
+
+// -------------------------------------
+//   Utilities
+// -------------------------------------
+
+%l-block, .l-block {
+  display: block;
+}
+
+%l-condense, .l-condense {
+  margin-bottom: rem($base-whitespace / 2);
+}
+
+%l-pullLeft, .l-pullLeft {
+  float: left;
+}
+
+%l-pullRight, .l-pullRight {
+  float: right;
+}
+
+%l-space, .l-space {
+  margin-bottom: rem($base-whitespace);
+}
+
+%l-xspace, .l-xspace {
+  margin-bottom: rem($base-whitespace * 2);
+}
+
+%l-autoHeight, .-autoHeight {
+  height: 100%;
+}
+
+%l-hasFloatingChild, .l-hasFloatingChild {
+  overflow: hidden;
+}
+
+
+// -------------------------------------
 //   header
 // -------------------------------------
 
@@ -56,100 +147,54 @@
 // -------------------------------------
 //   mainContainer
 // -------------------------------------
-.mainContainer {
-
+.main-container {
+  @extend %l-hasFloatingChild;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 // -------------------------------------
-//   Bucket
+//   main-column
 // -------------------------------------
 
-.l-bucket {
+.main-column {
+  @extend %l-pullLeft;
+  width: $l-mainColumnWidth;
+}
+
+// -------------------------------------
+//   gallery-container
+// -------------------------------------
+
+.gallery-container {
 
 }
 
 // -------------------------------------
-//   Card
+//   topics-Container
 // -------------------------------------
 
-.l-card {
+.topics-container {
 
 }
+
+.topics {
+  @extend %l-hasFloatingChild;
+}
+
+.topics-list {
+  @extend %l-pullLeft;
+  margin: 10px;
+  height: 87px;
+  width: 305px;
+  border-bottom: 1px dotted #E5E5E5;
+}
+
+
 
 // -------------------------------------
-//   Cell
+//   side-column
 // -------------------------------------
 
-%l-cell, .l-cell {
-  margin: 0 auto;
-  max-width: rem($l-maxWidth);
-  padding: 0 rem(60px);
+.side-column {
+  @extend %l-pullRight;
+  width: $l-sideColumnWidth;
 }
-
-// -------------------------------------
-//   Grid
-// -------------------------------------
-
-.l-grid {
-
-}
-
-.l-grid-box {
-
-}
-
-// -------------------------------------
-//   Row
-// -------------------------------------
-
-.l-row {
-
-}
-
-// -------------------------------------
-//   Utilities
-// -------------------------------------
-
-%l-block, .l-block {
-  display: block;
-}
-
-%l-condense, .l-condense {
-  margin-bottom: rem($base-whitespace / 2);
-}
-
-%l-pullLeft, .l-pullLeft {
-  float: left;
-}
-
-%l-pullRight, .l-pullRight {
-  float: right;
-}
-
-%l-space, .l-space {
-  margin-bottom: rem($base-whitespace);
-}
-
-%l-xspace, .l-xspace {
-  margin-bottom: rem($base-whitespace * 2);
-}
-
-%l-autoHeight {
-  height: 100%;
-}
-
-
-
-
-
