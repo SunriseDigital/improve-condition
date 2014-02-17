@@ -18,11 +18,10 @@ IDは使用不可とします。
  * IDの使用を機能面（javascript）に特化する事で「装飾」と「機能」を分離できる
 
 ```text
-(☓)
-#main {}
+例：
+(☓) #main {}
 
-(◯)
-.main {}
+(◯) .main {}
 ```
 
 ##構成要素
@@ -36,6 +35,7 @@ __【コンポーネントとサブコンポーネント】__
 コンポーネントとサブコンポーネントの指定は以下の様に記述します。
 
 ```text
+書式：
 コンポーネント：.component {}
 サブコンポーネント：.component-subcomponent {}
 ```
@@ -51,6 +51,7 @@ __【コンポーネントとサブコンポーネント】__
 「#main-container」有りきで構成されています。  
 この書き方をしていると、どんどんネストしてメンテナンス性が悪くなります。
 ```text
+例：
 div#main-container {
   ...
 }
@@ -73,6 +74,7 @@ div#main-container ul.list li.item {
 そのため、「.mainContainer-heading」や「.mainContainer-list」は  
 「.mainContainer」に依存しませんので、メンテナンス性が良くなります。
 ```text
+例：
 .mainContainer {
   ...
 }
@@ -100,12 +102,14 @@ __【モジュールとサブモジュール】__
 モジュールとサブモジュールの指定は以下の様に記述します。
 
 ```text
+書式：
 モジュール：.module {}
 サブモジュール：.module-submodule {}
 ```
 
-例)  
+
 ```text
+例：
 .modalWindow {
   ...
 }
@@ -115,8 +119,8 @@ __【モジュールとサブモジュール】__
 }
 ```
 
-例)  
 ```text
+例：
 .btn {
   ...
 }
@@ -157,8 +161,10 @@ __【モジュールとサブモジュール】__
 状態を表す時はis-を使用してください。
 
 ```text
+書式：
 is-名詞(形容詞)
 
+例：
 .is-active
 .is-hidden
 .is-invisible
