@@ -46,10 +46,10 @@ __【コンポーネントとサブコンポーネント】__
  * 単語と単語を繋ぐ場合はハイフン(-)を使用する。
  * 単語が複数で一つの意味を成している場合はキャメライズする。
 
-↓いままではこんな感じで書いていたと思います。  
-　粒度が荒い状態です。  
-　「#main-container」有りきで構成されています。  
-　この書き方をしていると、どんどんネストしてメンテナンス性が悪くなります。  
+いままでは以下の様な形式で書いていたと思います。  
+これだと粒度が荒い状態です。  
+「#main-container」有りきで構成されています。  
+この書き方をしていると、どんどんネストしてメンテナンス性が悪くなります。
 ```text
 div#main-container {
   ...
@@ -68,10 +68,10 @@ div#main-container ul.list li.item {
 }
 ```
 
-↓これからはこんな感じで書いていきましょう。  
-　粒度が細かい状態です。各構成要素が独立しています。  
-　そのため、「.mainContainer-heading」や「.mainContainer-list」は  
-　「.mainContainer」に依存しませんので、メンテナンス性が良くなります。
+これからは次の記した形式で書いていきましょう。  
+これは粒度が細かい状態です。各構成要素が独立しています。  
+そのため、「.mainContainer-heading」や「.mainContainer-list」は  
+「.mainContainer」に依存しませんので、メンテナンス性が良くなります。
 ```text
 .mainContainer {
   ...
@@ -141,11 +141,13 @@ __【モジュールとサブモジュール】__
 「--」で繋いだ内容が階層になっていない事に注目してください。
 
 ```text
+書式：
 .component--modifier {}　.component-subcomponent--modifier {}
 .module--modifier {}　.module-submodule--modifier {}
 ```
-例)  
+
 ```text
+例：
 .mainColumn-list-item--odd {}
 .mainColumn-list-item--even {}
 ```
