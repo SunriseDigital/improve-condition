@@ -18,7 +18,7 @@ IDは使用不可とします。
  * IDの使用を機能面（javascript）に特化する事で「装飾」と「機能」を分離できる
 
 ```text
-例：
+__例__
 (☓) #main {}
 
 (◯) .main {}
@@ -35,7 +35,7 @@ __【コンポーネントとサブコンポーネント】__
 コンポーネントとサブコンポーネントの指定は以下の様に記述します。
 
 ```text
-書式：
+__書式__
 コンポーネント：.component {}
 サブコンポーネント：.component-subcomponent {}
 ```
@@ -51,7 +51,7 @@ __【コンポーネントとサブコンポーネント】__
 「#main-container」有りきで構成されています。  
 この書き方をしていると、どんどんネストしてメンテナンス性が悪くなります。
 ```text
-例：
+__例__
 div#main-container {
   ...
 }
@@ -74,7 +74,7 @@ div#main-container ul.list li.item {
 そのため、「.mainContainer-heading」や「.mainContainer-list」は  
 「.mainContainer」に依存しませんので、メンテナンス性が良くなります。
 ```text
-例：
+__例__
 .mainContainer {
   ...
 }
@@ -102,14 +102,14 @@ __【モジュールとサブモジュール】__
 モジュールとサブモジュールの指定は以下の様に記述します。
 
 ```text
-書式：
+__書式__
 モジュール：.module {}
 サブモジュール：.module-submodule {}
 ```
 
 
 ```text
-例：
+__例__
 .modalWindow {
   ...
 }
@@ -120,7 +120,7 @@ __【モジュールとサブモジュール】__
 ```
 
 ```text
-例：
+__例__
 .btn {
   ...
 }
@@ -145,13 +145,13 @@ __【モジュールとサブモジュール】__
 「--」で繋いだ内容が階層になっていない事に注目してください。
 
 ```text
-書式：
+__書式__
 .component--modifier {}　.component-subcomponent--modifier {}
 .module--modifier {}　.module-submodule--modifier {}
 ```
 
 ```text
-例：
+__例__
 .mainColumn-list-item--odd {}
 .mainColumn-list-item--even {}
 ```
@@ -161,10 +161,10 @@ __【モジュールとサブモジュール】__
 状態を表す時はis-を使用してください。
 
 ```text
-書式：
+__書式__
 is-名詞(形容詞)
 
-例：
+__例__
 .is-active
 .is-hidden
 .is-invisible
