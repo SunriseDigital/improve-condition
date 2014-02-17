@@ -3,6 +3,7 @@
 
 メンテナンス性を良くする為に、
 以下の命名規則を設けます。
+ここでまとめてある内容は[OOCSS](http://oocss.org/)、[smacss](http://smacss.com/)の考え方を基にしてます。
 
 ##IDの使用について
 
@@ -106,33 +107,69 @@ __【モジュールとサブモジュール】__
 サブモジュール：.module-submodule {}
 ```
 
-
 ```text
 【例3_1】
+
 .modalWindow {
   ...
 }
 
-.modalWindow-items {
+.modalWindow-content {
   ...
 }
 ```
 
+再利用可能な部品として分かりやすいモノのひとつにボタンがありますが、  
+OOCSSだと例3_1の様な形式で書きます。  
+共通の内容を継承して、個々のスキン(装飾)を適用するといった形です。
 ```text
 【例3_2】
+
+<a href="#" class="btn btn--primary">primary</a>
+<a href="#" class="btn btn--success">success</a>
+
 .btn {
-  ...
+  border:1px solid #000;
+  padding: 5px;
+  color: #fff;
+  border-radius: 10px;
 }
 
-.btn btn--primary {
-  ...
+.btn--primary {
+  background: #f00;
 }
 
-.btn btn--success {
-  ...
+.btn--success {
+  background: #0f0;
+}
+```
+
+例3_2の内容をSassで書くと、もっとコンパクトに書くことが出来ます。
+ここでは、extendとplaceholder selectorを使った方法を見てみましょう。
+継承する抽象的なクラスを出力させないように出来ます。
+
+```text
+【例3_3】
+
+<a href="#" class="btn--primary">primary</a>
+<a href="#" class="btn--success">success</a>
+
+%btn {
+  border:1px solid #000;
+  padding: 5px;
+  color: #fff;
+  border-radius: 10px;
 }
 
-※「--」については後述します。
+.btn--primary {
+  @extend %btn
+  background: #f00;
+}
+
+.btn--success {
+  @extend %btn
+  background: #0f0;
+}
 ```
 
 ##修飾
