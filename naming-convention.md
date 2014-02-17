@@ -2,8 +2,7 @@
 =================
 
 メンテナンス性を良くする為に、以下の命名規則を設けます。  
-ここの内容は[OOCSS](http://oocss.org/)、  
-[smacss](http://smacss.com/)の考え方を基にまとめてます。
+ここの内容は[OOCSS](http://oocss.org/)、[smacss](http://smacss.com/)の考え方を基にまとめてます。
 
 ##IDの使用について
 
