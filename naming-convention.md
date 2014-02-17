@@ -6,9 +6,9 @@
 
 ##IDの使用について
 
-IDは使用不可とします。
-なぜなら、アンカーリンクやjavascriptの為に場所を空けておく為です。
-ユニークな存在としての利用は出来ますが、スタイルの為に使用してはいけません。
+IDは使用不可とします。  
+なぜなら、アンカーリンクやjavascriptの為に場所を空けておく為です。  
+ユニークな存在としての利用は出来ますが、スタイルの為に使用してはいけません。  
 
 ###CSSのセレクタにIDを使用しない理由
 
@@ -17,14 +17,14 @@ IDは使用不可とします。
   * !important > インラインCSS > （※ID） > class > 要素 > 全称セレクタ(*)
  * IDの使用を機能面（javascript）に特化する事で「装飾」と「機能」を分離できる
 
-例)
-
+例)  
+```text
 (☓)
-\#main {}
+#main {}
 
 (◯)
 .main {}
-
+```
 
 ##構成要素
 
@@ -35,10 +35,10 @@ __【コンポーネントとサブコンポーネント】__
 親要素をコンポーネントとした場合、子要素に当たる部分をサブコンポーネント(下位構成要素)と呼ぶことにします。
 
 コンポーネントとサブコンポーネントの指定は以下の様に記述します。
-
+```text
 コンポーネントの書式：.component {}
 サブコンポーネントの書式：.component-subcomponent {}
-
+```
 ※次の点に気をつけてください。
 
  * 要素を指定しない。
@@ -52,7 +52,7 @@ __【コンポーネントとサブコンポーネント】__
 　粒度が荒い状態です。
 　「#main-container」有りきで構成されています。
 　この書き方をしていると、どんどんネストしてメンテナンス性が悪くなります。
-
+```text
 div#main-container {
   ...
 }
@@ -68,14 +68,14 @@ div#main-container ul.list {
 div#main-container ul.list li.item {
   ...
 }
-
+```
 
 ↓これからはこんな感じで書いていきましょう。
 　粒度が細かい状態です。各構成要素が独立しています。
 　そのため、「.mainContainer-heading」や「.mainContainer-list」は
 　「.mainContainer」に依存しませんので、メンテナンス性が良くなります。
 
-
+```text
 .mainContainer {
   ...
 }
@@ -91,7 +91,7 @@ div#main-container ul.list li.item {
 .mainContainer-list-item {
   ...
 }
-
+```
 
 
 __【モジュールとサブモジュール】__
@@ -102,11 +102,13 @@ __【モジュールとサブモジュール】__
 
 モジュールとサブモジュールの指定は以下の様に記述します。
 
+```text
 モジュールの書式：.module {}
 サブモジュールの書式：.module-submodule {}
+```
 
-例)
-
+例)  
+```text
 .modalWindow {
   ...
 }
@@ -114,10 +116,10 @@ __【モジュールとサブモジュール】__
 .modalWindow-items {
   ...
 }
+```
 
-
-例)
-
+例)  
+```text
 .btn {
   ...
 }
@@ -131,7 +133,7 @@ __【モジュールとサブモジュール】__
 }
 
 ※「--」については後述します。
-
+```
 
 ##修飾
 
@@ -141,23 +143,26 @@ __【モジュールとサブモジュール】__
 
 「--」で繋いだ内容が階層になっていない事に注目してください。
 
+```text
 書式：.component--modifier {}　.component-subcomponent--modifier {}
 　　　.module--modifier {}　.module-submodule--modifier {}
-
-例)
-
+```
+例)  
+```text
 .mainColumn-list-item--odd {}
 .mainColumn-list-item--even {}
-
+```
 
 ##状態
 
 状態を表す時はis-を使用してください。
 
+```text
 書式：is-名詞(形容詞)
-
-例)
-
+```
+例)  
+```
  * .is-active
  * .is-hidden
  * .is-invisible
+```
