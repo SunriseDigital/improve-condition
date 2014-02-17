@@ -17,7 +17,6 @@ IDは使用不可とします。
   * !important > インラインCSS > （※ID） > class > 要素 > 全称セレクタ(*)
  * IDの使用を機能面（javascript）に特化する事で「装飾」と「機能」を分離できる
 
-例)  
 ```text
 (☓)
 #main {}
@@ -36,7 +35,6 @@ __【コンポーネントとサブコンポーネント】__
 
 コンポーネントとサブコンポーネントの指定は以下の様に記述します。
 
-書式)  
 ```text
 コンポーネント：.component {}
 サブコンポーネント：.component-subcomponent {}
@@ -101,7 +99,6 @@ __【モジュールとサブモジュール】__
 
 モジュールとサブモジュールの指定は以下の様に記述します。
 
-書式)  
 ```text
 モジュール：.module {}
 サブモジュール：.module-submodule {}
@@ -143,7 +140,6 @@ __【モジュールとサブモジュール】__
 
 「--」で繋いだ内容が階層になっていない事に注目してください。
 
-書式)  
 ```text
 .component--modifier {}　.component-subcomponent--modifier {}
 .module--modifier {}　.module-submodule--modifier {}
@@ -158,12 +154,9 @@ __【モジュールとサブモジュール】__
 
 状態を表す時はis-を使用してください。
 
-書式)  
 ```text
 is-名詞(形容詞)
-```
-例)  
-```
+
 .is-active
 .is-hidden
 .is-invisible
