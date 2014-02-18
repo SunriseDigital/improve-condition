@@ -104,7 +104,6 @@ mainContainerの中にはたくさんのコンポーネントが入る可能性�
 ```text
 【例2_3】
 
-```HTML
   <div class="mainContainer">
     <div class="mainColumn">
       <div class="gallery">
@@ -118,7 +117,7 @@ mainContainerの中にはたくさんのコンポーネントが入る可能性�
       <div class="movie">...</div>
     </div>
   </div>
-```
+
 
 悪いパターン
 
