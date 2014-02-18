@@ -97,66 +97,6 @@ div#main-container ul.list li.item {
 }
 ```
 
-例2_2の様な形式で書いていく場合、  
-mainContainerの中にはたくさんのコンポーネントが入る可能性があります。  
-その際、どの様にして書いていけば良いのか。  
-良いパターン、悪いパターンを見てみましょう。
-```text
-【例2_3】
-
-  <div class="mainContainer">
-    <div class="mainColumn">
-      <div class="gallery">
-        <div class="gallery-mainImage"></div>
-        <ul class="gallery-sumnails-constrained">
-          <li class="gallery-sumnail"></li>
-          <li class="gallery-sumnail"></li>
-          <li class="gallery-sumnail"></li>
-        </ul>
-      </div>
-      <div class="movie">...</div>
-    </div>
-  </div>
-
-
-悪いパターン
-
-.mainContainer {
-  ...
-}
-
-.mainContainer .mainColumn {
-  ...
-}
-
-.mainContainer .mainColumn .gallery {
-  ...
-}
-
-.mainContainer .mainColumn .gallery .gallery-mainImage {
-  ...
-}
-
-
-良いパターン
-
-.mainContainer {
-  ...
-}
-
-.mainColumn {
-  ...
-}
-
-.gallery {
-  ...
-}
-
-.gallery-mainImage {
-  ...
-}
-```
-
 __【モジュールとサブモジュール】__
 
 再利用可能な部品をモジュールと呼ぶことにします。  
