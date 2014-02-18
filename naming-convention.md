@@ -7,7 +7,13 @@
 ##IDの使用について
 
 スタイルシートにて、IDは使用不可とします。  
-ユニークな存在としての利用は出来ますが、スタイルの為に使用してはいけません。  
+IDはjavascriptやアンカーの為に場所を確保する必要があります。  
+IDは、ユニークな存在としての利用は出来ますが、スタイルの為に使用してはいけません。  
+併せて、!importantも使用不可とします。  
+下記(CSSのセレクタにIDを使用しない理由)でも触れていますが、  
+IDと!importantを使用しない事で、インラインCSSを除いてclassの優先度が1番となります。  
+これにより、例えば汎用的な部品の要素自体にスタイルが適用されている場合で、  
+上書きが必要な場合でもclassでの上書きのみになる為、管理がしやすくなります。
 
 ###CSSのセレクタにIDを使用しない理由
 
@@ -18,6 +24,7 @@
 
 ```text
 【例1_1】
+
 (☓) #main {}
 
 (◯) .main {}
@@ -35,6 +42,7 @@ __【コンポーネントとサブコンポーネント】__
 
 ```text
 【書式】
+
 コンポーネント：.component {}
 サブコンポーネント：.component-subcomponent {}
 ```
@@ -51,6 +59,7 @@ __【コンポーネントとサブコンポーネント】__
 この書き方をしていると、どんどんネストしてメンテナンス性が悪くなります。
 ```text
 【例2_1】
+
 div#main-container {
   ...
 }
@@ -74,6 +83,7 @@ div#main-container ul.list li.item {
 「.mainContainer」に依存しませんので、メンテナンス性が良くなります。
 ```text
 【例2_2】
+
 .mainContainer {
   ...
 }
@@ -91,7 +101,6 @@ div#main-container ul.list li.item {
 }
 ```
 
-
 __【モジュールとサブモジュール】__
 
 再利用可能な部品をモジュールと呼ぶことにします。  
@@ -102,6 +111,7 @@ __【モジュールとサブモジュール】__
 
 ```text
 【書式】
+
 モジュール：.module {}
 サブモジュール：.module-submodule {}
 ```
@@ -182,12 +192,14 @@ OOCSSだと例3_2の様な形式で書きます。
 
 ```text
 【書式】
+
 .component--modifier {}　.component-subcomponent--modifier {}
 .module--modifier {}　.module-submodule--modifier {}
 ```
 
 ```text
 【例4_1】
+
 .mainColumn-list-item--odd {}
 .mainColumn-list-item--even {}
 ```
@@ -200,12 +212,73 @@ OOCSSだと例3_2の様な形式で書きます。
 
 ```text
 【書式】
+
 is-名詞(形容詞)
 ```
 ```text
 【例5_1】
+
 .is-current
 .is-active
 .is-hidden
 .is-invisible
 ```
+
+##主要コンポーネントの命名について
+
+ヘッダー・フッター・メインカラム等、  
+設置が決まっている構成要素においては、  
+予め命名しておく事で、コーディング時間の短縮が可能です。  
+主要コンポーネントのクラス名を指定します。
+以下となります。
+
+```text
+
+【重要】
+ここに記された主要コンポーネントのクラス名は
+下記場所以外で、"その名"の使用を禁じます。
+※"***-constrained"のクラス名は除く
+
+//■ラッパー
+//基本使用しないと思われますが、
+//レイアウトの都合により使用する場合は、"wrapper"を使用してください。
+<div class="wrapper">
+
+  //■ヘッダー
+  <div class="header">
+
+    //それ自体では意味を持たないがレイアウトの都合で必要となる枠は、
+    //「***-constrained(意味：強いられた,制約される,束縛される)」とする。
+    <div class="header-constrained">...</div>
+
+  </div>
+
+  //■グローバルナビゲーション
+  <div class="primaryNav">...</div>
+
+  //■メインコンテナー
+  <div class="mainContainer">
+
+    //■レフトカラム
+    <div class="leftColumn">...</div>
+
+    //■メインカラム
+    <div class="mainColumn">...</div>
+
+    //■ライトカラム
+    <div class="rightColumn">...</div>
+
+  </div>
+
+  //■フッター
+  <div class="footer">
+
+    //それ自体では意味を持たないがレイアウトの都合で必要となる枠は、
+    //「***-constrained(意味：強いられた,制約される,束縛される)」とする。
+    <div class="footer-constrained">...</div>
+
+  </div>
+
+</div>
+```
+
