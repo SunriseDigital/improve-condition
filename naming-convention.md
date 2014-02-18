@@ -7,7 +7,13 @@
 ##IDの使用について
 
 スタイルシートにて、IDは使用不可とします。  
-ユニークな存在としての利用は出来ますが、スタイルの為に使用してはいけません。  
+IDはjavascriptやアンカーの為に場所を確保する必要があります。
+IDは、ユニークな存在としての利用は出来ますが、スタイルの為に使用してはいけません。  
+併せて、!importantも使用不可とします。  
+下記(CSSのセレクタにIDを使用しない理由)でも触れていますが、  
+IDと!importantを使用しない事で、インラインCSSを除いてclassの優先度が1番となります。  
+これにより、例えば汎用的な部品の要素自体にスタイルが適用されている場合で、  
+上書きが必要な場合でもclassでの上書きのみになる為、管理がしやすくなります。
 
 ###CSSのセレクタにIDを使用しない理由
 
@@ -91,6 +97,66 @@ div#main-container ul.list li.item {
 }
 ```
 
+例2_2の様な形式で書いていく場合、  
+mainContainerの中にはたくさんのコンポーネントが入る可能性があります。  
+その際、どの様にして書いていけば良いのか。  
+良いパターン、悪いパターンを見てみましょう。
+```text
+【例2_3】
+
+```HTML
+  <div class="mainContainer">
+    <div class="mainColumn">
+      <div class="gallery">
+        <div class="gallery-mainImage"></div>
+        <ul class="gallery-sumnails-constrained">
+          <li class="gallery-sumnail"></li>
+          <li class="gallery-sumnail"></li>
+          <li class="gallery-sumnail"></li>
+        </ul>
+      </div>
+      <div class="movie">...</div>
+    </div>
+  </div>
+```
+
+悪いパターン
+
+.mainContainer {
+  ...
+}
+
+.mainContainer .mainColumn {
+  ...
+}
+
+.mainContainer .mainColumn .gallery {
+  ...
+}
+
+.mainContainer .mainColumn .gallery .gallery-mainImage {
+  ...
+}
+
+
+良いパターン
+
+.mainContainer {
+  ...
+}
+
+.mainColumn {
+  ...
+}
+
+.gallery {
+  ...
+}
+
+.gallery-mainImage {
+  ...
+}
+```
 
 __【モジュールとサブモジュール】__
 
@@ -209,3 +275,53 @@ is-名詞(形容詞)
 .is-hidden
 .is-invisible
 ```
+
+##主要コンポーネントの命名について
+
+ヘッダー・フッター・メインカラム等、
+設置が決まっている構成要素においては、
+予め命名しておく事で、コーディング時間の短縮が可能です。
+主要コンポーネントのクラス名は以下となります。
+
+```text
+//ラッパー
+<div class="wrapper">
+
+  //ヘッダー
+  <div class="header">
+
+    //それ自体では意味を持たないがレイアウトで必要となる枠は、
+    //「***-constrained(意味：強いられた,制約される,束縛される)」とする。
+    <div class="header-constrained">...</div>
+
+  </div>
+
+  //グローバルナビゲーション
+  <div class="primaryNav">...</div>
+
+  //メインコンテナー
+  <div class="mainContainer">
+
+    //レフトカラム
+    <div class="leftColumn">...</div>
+
+    //メインカラム
+    <div class="mainColumn">...</div>
+
+    //ライトカラム
+    <div class="rightColumn">...</div>
+
+  </div>
+
+  //フッター
+  <div class="footer">
+
+    //それ自体では意味を持たないがレイアウトで必要となる枠は、
+    //「***-constrained(意味：強いられた,制約される,束縛される)」とする。
+    <div class="footer-constrained">...</div>
+
+  </div>
+
+</div>
+```
+
