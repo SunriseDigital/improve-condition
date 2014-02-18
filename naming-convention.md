@@ -7,7 +7,7 @@
 ##IDの使用について
 
 スタイルシートにて、IDは使用不可とします。  
-IDはjavascriptやアンカーの為に場所を確保する必要があります。
+IDはjavascriptやアンカーの為に場所を確保する必要があります。  
 IDは、ユニークな存在としての利用は出来ますが、スタイルの為に使用してはいけません。  
 併せて、!importantも使用不可とします。  
 下記(CSSのセレクタにIDを使用しない理由)でも触れていますが、  
@@ -24,6 +24,7 @@ IDと!importantを使用しない事で、インラインCSSを除いてclassの
 
 ```text
 【例1_1】
+
 (☓) #main {}
 
 (◯) .main {}
@@ -41,6 +42,7 @@ __【コンポーネントとサブコンポーネント】__
 
 ```text
 【書式】
+
 コンポーネント：.component {}
 サブコンポーネント：.component-subcomponent {}
 ```
@@ -57,6 +59,7 @@ __【コンポーネントとサブコンポーネント】__
 この書き方をしていると、どんどんネストしてメンテナンス性が悪くなります。
 ```text
 【例2_1】
+
 div#main-container {
   ...
 }
@@ -80,6 +83,7 @@ div#main-container ul.list li.item {
 「.mainContainer」に依存しませんので、メンテナンス性が良くなります。
 ```text
 【例2_2】
+
 .mainContainer {
   ...
 }
@@ -107,6 +111,7 @@ __【モジュールとサブモジュール】__
 
 ```text
 【書式】
+
 モジュール：.module {}
 サブモジュール：.module-submodule {}
 ```
@@ -187,12 +192,14 @@ OOCSSだと例3_2の様な形式で書きます。
 
 ```text
 【書式】
+
 .component--modifier {}　.component-subcomponent--modifier {}
 .module--modifier {}　.module-submodule--modifier {}
 ```
 
 ```text
 【例4_1】
+
 .mainColumn-list-item--odd {}
 .mainColumn-list-item--even {}
 ```
@@ -205,10 +212,12 @@ OOCSSだと例3_2の様な形式で書きます。
 
 ```text
 【書式】
+
 is-名詞(形容詞)
 ```
 ```text
 【例5_1】
+
 .is-current
 .is-active
 .is-hidden
@@ -217,9 +226,9 @@ is-名詞(形容詞)
 
 ##主要コンポーネントの命名について
 
-ヘッダー・フッター・メインカラム等、
-設置が決まっている構成要素においては、
-予め命名しておく事で、コーディング時間の短縮が可能です。
+ヘッダー・フッター・メインカラム等、  
+設置が決まっている構成要素においては、  
+予め命名しておく事で、コーディング時間の短縮が可能です。  
 主要コンポーネントのクラス名は以下となります。
 
 ```text
