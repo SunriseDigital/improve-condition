@@ -21,13 +21,14 @@ IDと!importantを使用しない事で、インラインCSSを除いてclassの
  * IDを不可にする事でスタイル適用の優先度を明確化できる（メンテナンス性アップ）
   * !important > インラインCSS > （※ID） > class > 要素 > 全称セレクタ(*)
  * IDの使用を機能面（javascript）に特化する事で「装飾」と「機能」を分離できる
+  
+__[例1_1]__  
+```css
+//悪い例
+#main {}
 
-```text
-【例1_1】
-
-(☓) #main {}
-
-(◯) .main {}
+//良い例
+.main {}
 ```
 
 ##構成要素
@@ -36,15 +37,17 @@ __【コンポーネントとサブコンポーネント】__
 
 大きなレイアウトに関係する様な部分をコンポーネント(構成要素)と呼ぶことにします。  
 例えば、ヘッダー・フッター・サイドカラム・メインカラム・各主要コンテンツ等です。  
-親要素をコンポーネントとした場合、子要素に当たる部分をサブコンポーネント(下位構成要素)と呼ぶことにします。
+親要素をコンポーネントとした場合、子要素に当たる部分をサブコンポーネント(下位構成要素)と呼ぶことにします。  
+  
+コンポーネントとサブコンポーネントの指定は以下の様に記述します。  
+  
+__[書式]__  
+```css
+//コンポーネント
+.component {}
 
-コンポーネントとサブコンポーネントの指定は以下の様に記述します。
-
-```text
-【書式】
-
-コンポーネント：.component {}
-サブコンポーネント：.component-subcomponent {}
+//サブコンポーネント
+.component-subcomponent {}
 ```
 ※次の点に気をつけてください。
 
@@ -55,48 +58,48 @@ __【コンポーネントとサブコンポーネント】__
 
 いままでは例2_1の様な形式で書いていたと思います。  
 これだと粒度が荒い状態です。  
-「#main-container」有りきで構成されています。  
-この書き方をしていると、どんどんネストしてメンテナンス性が悪くなります。
-```text
-【例2_1】
-
-div#main-container {
+「#cover-girl」有りきで構成されています。  
+この書き方をしていると、どんどんネストしてメンテナンス性が悪くなります。  
+  
+__[例2_1]__  
+```css
+div#cover-girl {
   ...
 }
 
-div#main-container p.heading {
+div#cover-girl p.heading {
   ...
 }
 
-div#main-container ul.list {
+div#cover-girl ul.list {
   ...
 }
 
-div#main-container ul.list li.item {
+div#cover-girl ul.list li.item {
   ...
 }
 ```
 
 これからは次の記した形式で書いていきましょう。  
 これは粒度が細かい状態です。各構成要素が独立しています。  
-そのため、「.mainContainer-heading」や「.mainContainer-list」は  
-「.mainContainer」に依存しませんので、メンテナンス性が良くなります。
-```text
-【例2_2】
-
-.mainContainer {
+そのため、「.coverGirl-heading」や「.coverGirl-list」は  
+「.coverGirl」に依存しませんので、メンテナンス性が良くなります。  
+  
+__[例2_2]__  
+```css
+.coverGirl {
   ...
 }
 
-.mainContainer-heading {
+.coverGirl-heading {
   ...
 }
 
-.mainContainer-list {
+.coverGirl-list {
   ...
 }
 
-.mainContainer-list-item {
+.coverGirl-list-item {
   ...
 }
 ```
@@ -106,19 +109,20 @@ __【モジュールとサブモジュール】__
 再利用可能な部品をモジュールと呼ぶことにします。  
 例えば、ボタン・モーダル等です。  
 親要素をモジュールとした場合、子要素に当たる部分をサブモジュールと呼ぶことにします。
+  
+モジュールとサブモジュールの指定は以下の様に記述します。  
+  
+__[書式]__  
+```css
+//モジュール
+.module {}
 
-モジュールとサブモジュールの指定は以下の様に記述します。
-
-```text
-【書式】
-
-モジュール：.module {}
-サブモジュール：.module-submodule {}
+//サブモジュール
+.module-submodule {}
 ```
-
-```text
-【例3_1】
-
+  
+__[例3_1]__
+```css
 .modalWindow {
   ...
 }
@@ -130,13 +134,14 @@ __【モジュールとサブモジュール】__
 
 再利用可能な部品として分かりやすいモノのひとつにボタンがありますが、  
 OOCSSだと例3_2の様な形式で書きます。  
-共通の内容を継承して、個々のスキン(装飾)を適用するといった形です。
-```text
-【例3_2】
-
+共通の内容を継承して、個々のスキン(装飾)を適用するといった形です。  
+  
+__[例3_2]__  
+```html
 <a href="#" class="btn btn--primary">primary</a>
 <a href="#" class="btn btn--success">success</a>
-
+```
+```css
 .btn {
   border:1px solid #000;
   padding: 5px;
@@ -151,18 +156,19 @@ OOCSSだと例3_2の様な形式で書きます。
 .btn--success {
   background: #0f0;
 }
-※「--」の部分については後述します。
+//※「--」の部分については後述します。
 ```
 
 例3_2の内容をSassで書くと、もっとコンパクトに書くことが出来ます。  
 次(例3_3)は、extendとplaceholder selectorを使った方法を見てみましょう。  
-継承する抽象的なクラスを出力させないように出来ます。
-```text
-【例3_3】
-
+継承する抽象的なクラスを出力させないように出来ます。  
+  
+__[例3_3]__  
+```html
 <a href="#" class="btn--primary">primary</a>
 <a href="#" class="btn--success">success</a>
-
+```
+```css
 %btn {
   border:1px solid #000;
   padding: 5px;
@@ -190,16 +196,14 @@ OOCSSだと例3_2の様な形式で書きます。
 上記、例3_2・例3_3の`btn--primary``btn--success`もこれに該当します。  
 ※「--」で繋いだ内容が階層になっていない事に注目してください。
 
-```text
-【書式】
-
+__[書式]__  
+```css
 .component--modifier {}　.component-subcomponent--modifier {}
 .module--modifier {}　.module-submodule--modifier {}
 ```
 
-```text
-【例4_1】
-
+__[例4_1]__  
+```css
 .mainColumn-list-item--odd {}
 .mainColumn-list-item--even {}
 ```
@@ -216,18 +220,16 @@ javascript側の操作で指定する場合は「is-current」を使用します
 CSSだけでスタイルを適用する場合は、修飾で説明したように  
 「--current」でクラス名を指定してください。  
   
-```text
-【書式】
-
-is-名詞(形容詞)
+__[書式]__  
+```css
+is-名詞(形容詞) {}
 ```
-```text
-【例5_1】
-
-.is-current
-.is-active
-.is-hidden
-.is-invisible
+__[例5_1]__  
+```css
+.is-current {}
+.is-active {}
+.is-hidden {}
+.is-invisible {}
 ```
 
 ##主要コンポーネントの命名について
@@ -235,22 +237,23 @@ is-名詞(形容詞)
 ヘッダー・フッター・メインカラム等、  
 設置が決まっている構成要素においては、  
 予め命名しておく事で、コーディング時間の短縮が可能です。  
-主要コンポーネントのクラス名を指定します。
-以下となります。
+主要コンポーネントのクラス名を指定します。  
+以下となります。  
+  
 
 ```html
 
-【重要】
+[重要]
 //ここに記された主要コンポーネントのクラス名は
 //下記場所以外で、"その名"の使用を禁じます。
 //※"***-wrap"のクラス名は除く
 
-//■ラッパー
+//ラッパー
 //基本使用しないと思われますが、
 //レイアウトの都合により使用する場合は、"wrapper"を使用してください。
 <div class="wrapper">
 
-  //■ヘッダー
+  //ヘッダー
   <div class="header">
 
     //それ自体では意味を持たないがレイアウトの都合で必要となる枠は、「***-wrap」とする。
@@ -258,10 +261,10 @@ is-名詞(形容詞)
 
   </div>
 
-  //■グローバルナビゲーション
+  //グローバルナビゲーション
   <div class="primaryNav">...</div>
 
-  //■メインコンテナー
+  //メインコンテナー
   <div class="mainContainer">
 
     //コンテンツの重要度・優先度による命名を行う。
@@ -277,7 +280,7 @@ is-名詞(形容詞)
 
   </div>
 
-  //■フッター
+  //フッター
   <div class="footer">
 
     //それ自体では意味を持たないがレイアウトの都合で必要となる枠は、「***-wrap」とする。
@@ -288,3 +291,16 @@ is-名詞(形容詞)
 </div>
 ```
 
+__[注意]__  
+主要コンポーネントは、サブコンポーネントとして使用しないでください。  
+```html
+//悪い例：
+<div class="mainContainer">
+  <div class="mainContainer-mainColumn">
+    <div class="mainContainer-mainColumn-coverGirl">
+
+//良い例：
+<div class="mainContainer">
+  <div class="mainColumn">
+    <div class="coverGirl">
+```
