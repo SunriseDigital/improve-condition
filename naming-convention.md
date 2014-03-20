@@ -40,7 +40,7 @@ __【コンポーネントとサブコンポーネント】__
 
 コンポーネントとサブコンポーネントの指定は以下の様に記述します。
 
-```text
+```css
 【書式】
 
 コンポーネント：.component {}
@@ -55,48 +55,48 @@ __【コンポーネントとサブコンポーネント】__
 
 いままでは例2_1の様な形式で書いていたと思います。  
 これだと粒度が荒い状態です。  
-「#main-container」有りきで構成されています。  
+「#cover-girl」有りきで構成されています。  
 この書き方をしていると、どんどんネストしてメンテナンス性が悪くなります。
-```text
+```css
 【例2_1】
 
-div#main-container {
+div#cover-girl {
   ...
 }
 
-div#main-container p.heading {
+div#cover-girl p.heading {
   ...
 }
 
-div#main-container ul.list {
+div#cover-girl ul.list {
   ...
 }
 
-div#main-container ul.list li.item {
+div#cover-girl ul.list li.item {
   ...
 }
 ```
 
 これからは次の記した形式で書いていきましょう。  
 これは粒度が細かい状態です。各構成要素が独立しています。  
-そのため、「.mainContainer-heading」や「.mainContainer-list」は  
-「.mainContainer」に依存しませんので、メンテナンス性が良くなります。
-```text
+そのため、「.coverGirl-heading」や「.coverGirl-list」は  
+「.coverGirl」に依存しませんので、メンテナンス性が良くなります。
+```css
 【例2_2】
 
-.mainContainer {
+.coverGirl {
   ...
 }
 
-.mainContainer-heading {
+.coverGirl-heading {
   ...
 }
 
-.mainContainer-list {
+.coverGirl-list {
   ...
 }
 
-.mainContainer-list-item {
+.coverGirl-list-item {
   ...
 }
 ```
@@ -109,14 +109,14 @@ __【モジュールとサブモジュール】__
 
 モジュールとサブモジュールの指定は以下の様に記述します。
 
-```text
+```css
 【書式】
 
 モジュール：.module {}
 サブモジュール：.module-submodule {}
 ```
 
-```text
+```css
 【例3_1】
 
 .modalWindow {
@@ -131,7 +131,7 @@ __【モジュールとサブモジュール】__
 再利用可能な部品として分かりやすいモノのひとつにボタンがありますが、  
 OOCSSだと例3_2の様な形式で書きます。  
 共通の内容を継承して、個々のスキン(装飾)を適用するといった形です。
-```text
+```html
 【例3_2】
 
 <a href="#" class="btn btn--primary">primary</a>
@@ -157,7 +157,7 @@ OOCSSだと例3_2の様な形式で書きます。
 例3_2の内容をSassで書くと、もっとコンパクトに書くことが出来ます。  
 次(例3_3)は、extendとplaceholder selectorを使った方法を見てみましょう。  
 継承する抽象的なクラスを出力させないように出来ます。
-```text
+```html
 【例3_3】
 
 <a href="#" class="btn--primary">primary</a>
@@ -190,14 +190,14 @@ OOCSSだと例3_2の様な形式で書きます。
 上記、例3_2・例3_3の`btn--primary``btn--success`もこれに該当します。  
 ※「--」で繋いだ内容が階層になっていない事に注目してください。
 
-```text
+```css
 【書式】
 
 .component--modifier {}　.component-subcomponent--modifier {}
 .module--modifier {}　.module-submodule--modifier {}
 ```
 
-```text
+```css
 【例4_1】
 
 .mainColumn-list-item--odd {}
@@ -216,18 +216,18 @@ javascript側の操作で指定する場合は「is-current」を使用します
 CSSだけでスタイルを適用する場合は、修飾で説明したように  
 「--current」でクラス名を指定してください。  
   
-```text
+```css
 【書式】
 
-is-名詞(形容詞)
+is-名詞(形容詞) {}
 ```
-```text
+```css
 【例5_1】
 
-.is-current
-.is-active
-.is-hidden
-.is-invisible
+.is-current {}
+.is-active {}
+.is-hidden {}
+.is-invisible {}
 ```
 
 ##主要コンポーネントの命名について
@@ -235,8 +235,9 @@ is-名詞(形容詞)
 ヘッダー・フッター・メインカラム等、  
 設置が決まっている構成要素においては、  
 予め命名しておく事で、コーディング時間の短縮が可能です。  
-主要コンポーネントのクラス名を指定します。
-以下となります。
+主要コンポーネントのクラス名を指定します。  
+以下となります。  
+  
 
 ```html
 
@@ -288,3 +289,16 @@ is-名詞(形容詞)
 </div>
 ```
 
+【注意】  
+主要コンポーネントは、サブコンポーネントとして使用しないでください。  
+```html
+//悪い例：
+<div class="mainContainer">
+  <div class="mainContainer-mainColumn">
+    <div class="mainContainer-mainColumn-coverGirl">
+
+//良い例：
+<div class="mainContainer">
+  <div class="mainColumn">
+    <div class="coverGirl">
+```
