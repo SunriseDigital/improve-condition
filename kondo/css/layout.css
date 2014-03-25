@@ -1,0 +1,110 @@
+.container {
+  height: 100%;
+}
+
+.header {
+  height: 62px;
+}
+
+.header-inner {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 1010px;
+}
+
+.nav .wrapper {
+  margin: 0 auto;
+  width: 1010px;
+}
+.nav li {
+  display: block;
+  float: left;
+}
+.nav li a {
+  display: block;
+  padding: 0 15px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 1010px;
+}
+
+.content-inner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-box-align: start;
+  box-align: start;
+  -webkit-box-direction: inherit;
+  -moz-box-direction: inherit;
+  -ms-box-direction: inherit;
+  box-direction: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 12px;
+  width: 1010px;
+}
+
+.main-column {
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -ms-box-flex: 2;
+  box-flex: 2;
+  width: 670px;
+}
+
+.sub-column {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  width: 300px;
+}
+.sub-column .premium {
+  margin-bottom: 20px;
+}
+.sub-column .rotation {
+  margin-bottom: 20px;
+}
+.sub-column .present {
+  margin-bottom: 20px;
+}
+.sub-column .fortune {
+  margin-bottom: 20px;
+}
+.sub-column .twitter {
+  margin-bottom: 20px;
+}
+.sub-column .facebook {
+  margin-bottom: 20px;
+}
+.sub-column .device {
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding: 10px 0 30px;
+}
+.footer li {
+  padding: 0 5px;
+}
+
+.footer-first {
+  margin: 0 auto 20px;
+  width: 1010px;
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
