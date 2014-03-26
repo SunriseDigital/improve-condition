@@ -7,6 +7,7 @@
     #coffee_files: "../coffee"
     css_files:     "../css"
     sass_files:    "../sass"
+    scss_files:    "../scss"
     #assets_files: "../assets"
 
     ### tasks ###
@@ -75,10 +76,8 @@
 
       css:
         files: [
-          '<%= sass_files %>/*.scss'
-          '<%= sass_files %>/**/*.scss'
-          '<%= sass_files %>/*.sass'
-          '<%= sass_files %>/**/*.sass'
+          '<%= scss_files %>/*.scss'
+          '<%= scss_files %>/**/*.scss'
         ]
 
         tasks: [

@@ -1,0 +1,40 @@
+// *************************************
+//
+//   footer
+//   -> This is an footer
+//
+// *************************************
+
+.footer {
+  padding: 10px 0 30px;
+  background-color: rgb(215, 212, 205);
+  color: rgb(156, 136, 109);
+  text-align: center;
+  font-size: rem(10px);
+
+  li {
+    display: inline;
+    padding: 0 5px;
+
+    a {
+      color: rgb(156, 136, 109);
+    }
+  }
+}
+
+.footer-first {
+  margin: 0 auto 20px;
+  width: $l-contentWidth;
+
+  ul {
+    text-align: left;
+  }
+
+  li {
+
+    a {
+      color: rgb(119, 106, 97);
+      font-weight: bold;
+    }
+  }
+}

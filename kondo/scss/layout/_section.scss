@@ -1,0 +1,81 @@
+// *************************************
+//
+//   section
+//   -> This is an section
+//
+// *************************************
+
+.container {
+  height: 100%;
+}
+
+.content {
+  margin: 0 auto;
+  width: $l-contentWidth;
+  background-color: rgb(255, 255, 255);
+}
+
+.content-inner {
+  @include display-box;
+  @include box-orient(horizontal);
+  @include box-align(start);
+  @include box-direction(inherit);
+  @include box-sizing(border-box);
+  padding: 12px;
+  width: $l-contentWidth;
+}
+
+.main-column {
+  @include box-flex(2);
+  width: 670px;
+
+  .slider {
+  }
+
+  .topics {
+  }
+
+  .snap {
+  }
+
+  .feed {
+  }
+
+  .ranking {
+  }
+
+}
+
+.sub-column {
+  @include box-flex(1);
+  width: 300px;
+
+  .premium {
+    margin-bottom: 20px;
+  }
+
+  .rotation {
+    margin-bottom: 20px;
+  }
+
+  .present {
+    margin-bottom: 20px;
+  }
+
+  .fortune {
+    margin-bottom: 20px;
+  }
+
+  .twitter {
+    margin-bottom: 20px;
+  }
+
+  .facebook {
+    margin-bottom: 20px;
+  }
+
+  .device {
+    margin-bottom: 20px;
+  }
+
+}

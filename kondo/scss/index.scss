@@ -12,32 +12,44 @@
 @import "compass";
 
 // -------------------------------------
-//   Core
+//   base
 // -------------------------------------
 
-// ----- Reset ----- //
+// ----- normalize ----- //
 
-@import "core/reset";
+@import "base/normalize";
 
 // ----- Settings ----- //
 
-@import "core/settings";
+@import "base/settings";
 
 // ----- Helpers ----- //
 
-@import "core/helpers";
+@import "base/helpers";
 
 // ----- Base ----- //
 
-@import "core/base";
+@import "base/base";
 
-// ----- Content ----- //
+// -------------------------------------
+//   layout
+// -------------------------------------
 
-@import "core/content";
+@import "layout/header";
 
-// ----- Layout ----- //
+@import "layout/footer";
 
-@import "core/layout";
+@import "layout/section";
+
+@import "layout/nav";
+
+@import "layout/utillities";
+
+// -------------------------------------
+//   state
+// -------------------------------------
+
+@import "state/base";
 
 // -------------------------------------
 //   Modules
@@ -45,7 +57,4 @@
 
 @import "modules/example";
 
-// -------------------------------------
-//   Inbox
-// -------------------------------------
 

@@ -1,0 +1,19 @@
+// *************************************
+//
+//   header
+//   -> This is an header
+//
+// *************************************
+
+.header {
+  height: 62px;
+  border-top: 2px solid rgb(255, 121, 121);
+  border-bottom: 1px solid rgb(225, 225, 225);
+  background-color: rgb(255, 255, 255);
+}
+
+.header-inner {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: $l-contentWidth;
+}

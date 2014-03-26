@@ -17,6 +17,11 @@ body {
   line-height: $base-lineHeight;
 }
 
+body * {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
 // -------------------------------------
 //   Block Content
 // -------------------------------------
@@ -31,9 +36,26 @@ p {
 
 a {
   color: $base-link-color;
-  text-decoration: none;
+
+  &:link,
+  &:visited {
+    text-decoration: none;  
+  }
+
   &:hover,
   &:focus {
     text-decoration: underline;
   }
+}
+
+aside {
+}
+
+ul, li, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none outside none;
 }
