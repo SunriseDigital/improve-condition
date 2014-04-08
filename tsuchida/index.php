@@ -12,221 +12,262 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	</head>
 	<body>
-
-		<!-- ヘッダー -->
-		<div class="">
-			<h1 class="">caption</h1>
-		</div>
-
-		<!-- ナビゲーション -->
-		<div class="">
-			<ul class="">
-				<li class="">nav</li>
-				<li class="">nav</li>
-				<li class="">nav</li>
-				<li class="">nav</li>
-				<li class="">nav</li>
-			</ul>
-		</div>
-
-		<!-- メインカラム -->
-		<div class="">
-
-			<!-- 画像スライダー -->
-			<div class="">
-				<ul class="">
-					<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
-					<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
-					<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
-					<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
-					<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
-				</ul>
-				<ul class="">
-					<li class="">marker</li>
-					<li class="">marker</li>
-					<li class="">marker</li>
-					<li class="">marker</li>
-					<li class="">marker</li>
-				</ul>
+		<!-- ラッパー -->
+		<div class="wrapper">
+			<!-- ヘッダー -->
+			<div class="header">
+				<h1 class="header-logo">demo site</h1>
+				<!-- ナビゲーション -->
+				<div class="header-nav">
+					<ul class="header-nav-list">
+						<li class="header-nav-list-item"><a href="header-nav-list-item-wrapper">nav</a></li>
+						<li class="header-nav-list-item"><a href="header-nav-list-item-wrapper">nav</a></li>
+						<li class="header-nav-list-item"><a href="header-nav-list-item-wrapper">nav</a></li>
+						<li class="header-nav-list-item"><a href="header-nav-list-item-wrapper">nav</a></li>
+						<li class="header-nav-list-item"><a href="header-nav-list-item-wrapper">nav</a></li>
+					</ul>
+				</div>
 			</div>
-
-			<!-- メインコンテンツ (ラベルとサムネイルが有るリスト) -->
-			<div class="">
-				<ul class="">
-					<li class="">
-						<p class="">label</p>
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">label</p>
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">label</p>
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">label</p>
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">label</p>
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">label</p>
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">label</p>
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">label</p>
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">label</p>
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">label</p>
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-				</ul>
+			<div class="mainContainer">
+				<!-- メインカラム -->
+				<div class="mainColumn">
+					<!-- 画像スライダー -->
+					<div id="jq-ImageGallery" class="">
+						<ul class="">
+							<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
+							<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
+							<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
+							<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
+							<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
+						</ul>
+						<ul class="">
+							<li class="">marker</li>
+							<li class="">marker</li>
+							<li class="">marker</li>
+							<li class="">marker</li>
+							<li class="">marker</li>
+						</ul>
+					</div>
+					<!-- メインコンテンツ (ラベルとサムネイルが有るリスト) -->
+					<ul class="contentsList01">
+						<li class="contentsList01-item">
+							<a href="DUMMY">
+								<img  class="contentsList01-item-img" src="" alt="">
+								<span class="contentsList01-item-label">label</span>
+								<span class="contentsList01-item-text">paragraph</span>
+							</a>
+						</li>
+						<li class="contentsList01-item">
+							<a href="DUMMY">
+								<img  class="contentsList01-item-img" src="" alt="">
+								<span class="contentsList01-item-label">label</span>
+								<span class="contentsList01-item-text">paragraph</span>
+							</a>
+						</li>
+						<li class="contentsList01-item">
+							<a href="DUMMY">
+								<img  class="contentsList01-item-img" src="" alt="">
+								<span class="contentsList01-item-label">label</span>
+								<span class="contentsList01-item-text">paragraph</span>
+							</a>
+						</li>
+						<li class="contentsList01-item">
+							<a href="DUMMY">
+								<img  class="contentsList01-item-img" src="" alt="">
+								<span class="contentsList01-item-label">label</span>
+								<span class="contentsList01-item-text">paragraph</span>
+							</a>
+						</li>
+						<li class="contentsList01-item">
+							<a href="DUMMY">
+								<img  class="contentsList01-item-img" src="" alt="">
+								<span class="contentsList01-item-label">label</span>
+								<span class="contentsList01-item-text">paragraph</span>
+							</a>
+						</li>
+						<li class="contentsList01-item">
+							<a href="DUMMY">
+								<img  class="contentsList01-item-img" src="" alt="">
+								<span class="contentsList01-item-label">label</span>
+								<span class="contentsList01-item-text">paragraph</span>
+							</a>
+						</li>
+						<li class="contentsList01-item">
+							<a href="DUMMY">
+								<img  class="contentsList01-item-img" src="" alt="">
+								<span class="contentsList01-item-label">label</span>
+								<span class="contentsList01-item-text">paragraph</span>
+							</a>
+						</li>
+						<li class="contentsList01-item">
+							<a href="DUMMY">
+								<img  class="contentsList01-item-img" src="" alt="">
+								<span class="contentsList01-item-label">label</span>
+								<span class="contentsList01-item-text">paragraph</span>
+							</a>
+						</li>
+						<li class="contentsList01-item">
+							<a href="DUMMY">
+								<img  class="contentsList01-item-img" src="" alt="">
+								<span class="contentsList01-item-label">label</span>
+								<span class="contentsList01-item-text">paragraph</span>
+							</a>
+						</li>
+						<li class="contentsList01-item">
+							<a href="DUMMY">
+								<img  class="contentsList01-item-img" src="" alt="">
+								<span class="contentsList01-item-label">label</span>
+								<span class="contentsList01-item-text">paragraph</span>
+							</a>
+						</li>
+					</ul>
+					<!-- メインコンテンツ　(画像だけのリスト) -->
+					<div class="section box01">
+						<h2 class="box01-title">Fashion Snap</h2>
+						<p><a href="DUMMY">一覧</a></p>
+						<ul class="box01-list01">
+							<li class="box01-list01-item">
+								<a href="DUMMY"><img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage"></a>
+							</li>
+							<li class="box01-list01-item">
+								<a href="DUMMY"><img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage"></a>
+							</li>
+							<li class="box01-list01-item">
+								<a href="DUMMY"><img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage"></a>
+							</li>
+							<li class="box01-list01-item">
+								<a href="DUMMY"><img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage"></a>
+							</li>
+							<li class="box01-list01-item">
+								<a href="DUMMY"><img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage"></a>
+							</li>
+						</ul>
+					</div>
+					<!-- メインコンテンツ (サムネイルが有るリスト) -->
+					<div class="section">
+						<h2>NAVER女子まとめ</h2>
+						<ul class="contentsList01">
+							<li class="contentsList01-item">
+								<a href="DUMMY">
+									<img  class="contentsList01-item-img" src="" alt="">
+									<span class="contentsList01-item-text">paragraph</span>
+								</a>
+							</li>
+							<li class="contentsList01-item">
+								<a href="DUMMY">
+									<img  class="contentsList01-item-img" src="" alt="">
+									<span class="contentsList01-item-text">paragraph</span>
+								</a>
+							</li>
+							<li class="contentsList01-item">
+								<a href="DUMMY">
+									<img  class="contentsList01-item-img" src="" alt="">
+									<span class="contentsList01-item-text">paragraph</span>
+								</a>
+							</li>
+							<li class="contentsList01-item">
+								<a href="DUMMY">
+									<img  class="contentsList01-item-img" src="" alt="">
+									<span class="contentsList01-item-text">paragraph</span>
+								</a>
+							</li>
+							<li class="contentsList01-item">
+								<a href="DUMMY">
+									<img  class="contentsList01-item-img" src="" alt="">
+									<span class="contentsList01-item-text">paragraph</span>
+								</a>
+							</li>
+							<li class="contentsList01-item">
+								<a href="DUMMY">
+									<img  class="contentsList01-item-img" src="" alt="">
+									<span class="contentsList01-item-text">paragraph</span>
+								</a>
+							</li>
+							<li class="contentsList01-item">
+								<a href="DUMMY">
+									<img  class="contentsList01-item-img" src="" alt="">
+									<span class="contentsList01-item-text">paragraph</span>
+								</a>
+							</li>
+							<li class="contentsList01-item">
+								<a href="DUMMY">
+									<img  class="contentsList01-item-img" src="" alt="">
+									<span class="contentsList01-item-text">paragraph</span>
+								</a>
+							</li>
+							<li class="contentsList01-item">
+								<a href="DUMMY">
+									<img  class="contentsList01-item-img" src="" alt="">
+									<span class="contentsList01-item-text">paragraph</span>
+								</a>
+							</li>
+							<li class="contentsList01-item">
+								<a href="DUMMY">
+									<img  class="contentsList01-item-img" src="" alt="">
+									<span class="contentsList01-item-text">paragraph</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- メインコンテンツ　(段落と画像だけのリスト) -->
+					<div class="section">
+						<h2>アクセスランキング</h2>
+						<ol class="">
+							<li class=""><a href="DUMMY">paragraph</a></li>
+							<li class=""><a href="DUMMY">paragraph</a></li>
+							<li class=""><a href="DUMMY">paragraph</a></li>
+							<li class=""><a href="DUMMY">paragraph</a></li>
+							<li class=""><a href="DUMMY">paragraph</a></li>
+							<li class=""><a href="DUMMY">paragraph</a></li>
+							<li class=""><a href="DUMMY">paragraph</a></li>
+							<li class=""><a href="DUMMY">paragraph</a></li>
+							<li class=""><a href="DUMMY">paragraph</a></li>
+							<li class=""><a href="DUMMY">paragraph</a></li>
+						</ol>
+					</div>
+					<!-- メインコンテンツ (テキストだけのリスト) -->
+					<div class="">
+						<ul class="">
+							<li class="">text</li>
+							<li class="">text</li>
+							<li class="">text</li>
+							<li class="">text</li>
+							<li class="">text</li>
+							<li class="">text</li>
+							<li class="">text</li>
+							<li class="">text</li>
+							<li class="">text</li>
+							<li class="">text</li>
+						</ul>
+					</div>
+				</div>
+				<!-- サブカラム -->
+				<div class="subColumn">
+					<!-- サブコンテンツ -->
+					<div class=""></div>
+					<!-- サブコンテンツ -->
+					<div class=""></div>
+					<!-- サブコンテンツ -->
+					<div class=""></div>
+					<!-- サブコンテンツ -->
+					<div class=""></div>
+					<!-- サブコンテンツ -->
+					<div class=""></div>
+					<!-- サブコンテンツ -->
+					<div class=""></div>
+				</div>
 			</div>
-
-			<!-- メインコンテンツ　(画像だけのリスト) -->
-			<div class="">
-				<h2 class=""></h2>
-				<ul class="">
-					<li class="">
-						<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
-					</li>
-					<li class="">
-						<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
-					</li>
-					<li class="">
-						<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
-					</li>
-					<li class="">
-						<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
-					</li>
-					<li class="">
-						<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
-					</li>
+			<!-- フッター -->
+			<div class="footer">
+				<ul class="footer-nav">
+					<li class="footer-nav-item"><a href="footer-nav-item-wrapper">something</a></li>
+					<li class="footer-nav-item"><a href="footer-nav-item-wrapper">something</a></li>
+					<li class="footer-nav-item"><a href="footer-nav-item-wrapper">something</a></li>
+					<li class="footer-nav-item"><a href="footer-nav-item-wrapper">something</a></li>
+					<li class="footer-nav-item"><a href="footer-nav-item-wrapper">something</a></li>
 				</ul>
-				<p>to list</p>
+				<p class="copyRight"><small>&copy; something</small></p>
 			</div>
-
-			<!-- メインコンテンツ　(段落と画像だけのリスト) -->
-			<div class="">
-				<ul class="">
-					<li class="">
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-					<li class="">
-						<p class="">paragraph</p>
-						<img src="" alt="">
-					</li>
-				</ul>
-			</div>
-
-			<!-- メインコンテンツ (テキストだけのリスト) -->
-			<div class="">
-				<ul class="">
-					<li class="">text</li>
-					<li class="">text</li>
-					<li class="">text</li>
-					<li class="">text</li>
-					<li class="">text</li>
-					<li class="">text</li>
-					<li class="">text</li>
-					<li class="">text</li>
-					<li class="">text</li>
-					<li class="">text</li>
-				</ul>
-			</div>
-
 		</div>
-
-		<!-- レフトカラム -->
-		<div class="">
-
-			<!-- サブコンテンツ -->
-			<div class=""></div>
-
-			<!-- サブコンテンツ -->
-			<div class=""></div>
-
-			<!-- サブコンテンツ -->
-			<div class=""></div>
-
-			<!-- サブコンテンツ -->
-			<div class=""></div>
-
-			<!-- サブコンテンツ -->
-			<div class=""></div>
-
-			<!-- サブコンテンツ -->
-			<div class=""></div>
-
-		</div>
-
-		<!-- フッター -->
-		<div class="">
-			<ul class="">
-				<li class="">something</li>
-				<li class="">something</li>
-				<li class="">something</li>
-				<li class="">something</li>
-				<li class="">something</li>
-			</ul>
-			<p><small>&copy; something</small></p>
-		</div>
-
 	</body>
 </html>
