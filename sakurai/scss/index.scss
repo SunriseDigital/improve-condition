@@ -23,6 +23,9 @@
 
 @import "base/settings";
 
+$base-background: #F3F2EC;
+
+
 // ----- Helpers ----- //
 
 @import "base/helpers";
@@ -35,18 +38,30 @@
 //   layout
 // -------------------------------------
 
+// ------ setting ------//
+
+$l-mainColumnWidth: 670px;
+
 @import "layout/footer";
 
 @import "layout/header";
 
 @import "layout/nav";
 
-@import "layout/utillities";
+@import "layout/utilities";
 
 // -------------------------------------
 //   Modules
 // -------------------------------------
 
-@import "modules/example";
+// ------- setting -------//
+$parallelList2-thumb: 60px;
+$parallelList3-thumb: 60px;
+
+@import "modules/layout";
+
+@import "modules/content";
+
+@import "modules/list";
 
 

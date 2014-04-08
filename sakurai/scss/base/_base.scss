@@ -6,14 +6,14 @@
 // *************************************
 
 html {
-  font-size: $base-fontSize;
+  background-color: $base-background;
 }
 
 body {
-  background: $base-background;
+  height: 100%;
   color: $base-color;
   font-family: $base-fontFamily;
-  font-size: 100%;
+  font-size: $base-fontSize;
   line-height: $base-lineHeight;
 }
 
@@ -22,7 +22,6 @@ body {
 // -------------------------------------
 
 p {
-  font-size: rem($base-fontSize);
 }
 
 // -------------------------------------
@@ -36,4 +35,8 @@ a {
   &:focus {
     text-decoration: underline;
   }
+}
+
+img {
+  vertical-align: bottom;
 }

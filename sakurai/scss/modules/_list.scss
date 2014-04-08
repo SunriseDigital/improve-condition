@@ -1,0 +1,83 @@
+// *************************************
+//
+//   Module
+//   -> This is an example module
+//
+// *************************************
+
+// -------- 標準リスト --------- //
+
+.list {
+	padding: 5px 0;
+	border-bottom: $base-border;
+}
+
+// -------- 並列リスト --------- //
+
+@mixin parallelList($width, $margin) {
+	width: $width;
+	margin-right: $margin;
+	padding: 10px 0;
+	border-bottom: $base-border;
+	@include inline-block(top);
+}
+
+$parallelList2-width: ($l-mainColumnWidth - 10px) / 2;
+$parallelList3-width: ($l-mainColumnWidth - 20px) / 3;
+
+.parallelList2 {
+	@include parallelList($parallelList2-width, 10px);
+}
+
+.parallelList3 {
+	@include parallelList($parallelList3-width, 10px);
+}
+
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.parallelList2--flap {
+	@include parallelList($parallelList2-width, 0);
+}
+
+.parallelList3--flap {
+	@include parallelList($parallelList3-width, 0);
+}
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+// ----- Submodule ----- //
+
+.parallelList2-text {
+	width: $parallelList2-width - $parallelList2-thumb - 10px;
+	padding-right: 10px;
+	@include inline-block(top);
+}
+
+.parallelList2-thumb {
+	@include inline-block(top);	
+}
+
+.parallelList3-text {
+	width: $parallelList3-width - $parallelList3-thumb - 10px;
+	padding-right: 10px;
+	@include inline-block(top);
+}
+
+.parallelList3-thumb {
+	@include inline-block(top);	
+}

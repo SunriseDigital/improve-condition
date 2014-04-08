@@ -1,0 +1,30 @@
+// *************************************
+//
+//   Content
+//   -> base layout
+//
+// *************************************
+
+// -------------------------------------
+//   Utilities
+// -------------------------------------
+
+%c-center, .c-center {
+  text-align: center
+}
+
+%c-shout, .c-shout {
+  text-transform: uppercase
+}
+
+%c-sideSpace, .c-sideSpace {
+	margin: 0 10px;
+} 
+
+%c-harfSpace, .c-harfSpace {
+	margin-bottom: 10px;
+} 
+
+%c-space, .c-space {
+	margin-bottom: 20px;
+} 

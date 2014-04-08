@@ -1,0 +1,43 @@
+// *************************************
+//
+//   Content
+//   -> Typography
+//
+// *************************************
+
+// -------------------------------------
+//   Headings
+// -------------------------------------
+
+// -------------------------------------
+//   Typography
+// -------------------------------------
+
+%c-xSmall, .c-xSmall {
+	@include fontsize(11px);
+}
+
+%c-small, .c-small {
+	@include fontsize(12px);
+}
+
+%c-normal, .c-normal {
+	@include fontsize(13px);
+}
+
+%c-large, .c-large {
+	@include fontsize(14px);
+}
+
+%c-xLarge, .c-xLarge {
+	@include fontsize(15px);
+}
+
+%c-bolder, .c-bolder {
+	font-weight: bold;
+}
+
+.listLinkTitle {
+	@extend %c-xLarge;
+	@extend %c-bolder;
+}
