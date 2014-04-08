@@ -15,27 +15,30 @@
 
 		<!-- ヘッダー -->
 		<div class="header">
-			<h1 class="l-cell">
-				<img src="http://dummyimage.com/170x50/fff/2e2e2e.png&text=Peachy" alt="Peachy">
+			<h1 class="headingH1">
+				<img src="http://dummyimage.com/100x50/fff/2e2e2e.png&text=Peachy" alt="Peachy">
 			</h1>
 		</div>
 
 		<!-- ナビゲーション -->
 		<div class="primaryNav">
-			<ul class="nav l-cell">
-				<li class="nav-item is-nav-current">TOP</li>
-				<li class="nav-item">〇〇〇</li>
-				<li class="nav-item">〇〇〇〇〇〇〇〇</li>
-				<li class="nav-item">〇〇〇〇</li>
-				<li class="nav-item">〇〇〇〇〇〇</li>
+			<ul class="nav">
+				<li class="nav-item--first"><a href="">TOP</a></li>
+				<li class="nav-item"><a href="">スペシャル</a></li>
+				<li class="nav-item"><a href="">恋愛</a></li>
+				<li class="nav-item"><a href="">ファッション・ビューティ</a></li>
+				<li class="nav-item"><a href="">カルチャー</a></li>
+				<li class="nav-item"><a href="">グルメ</a></li>
+				<li class="nav-item"><a href="">アプリ</a></li>
+				<li class="nav-item--last"><a href="">プレゼント</a></li>
 			</ul>
 		</div>
 
 		<!-- メインカラム -->
-		<div class="main-container l-cell">
-			<div class="main-column">
+		<div class="mainContainer">
+			<div class="mainColumn">
 				<!-- 画像スライダー -->
-				<div class="gallery-container">
+				<div class="gallery">
 					<img src="http://dummyimage.com/650x330/ffd5c7/fff" alt="">
 	<!-- 				<ul class="">
 						<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
@@ -54,56 +57,56 @@
 				</div>
 
 				<!-- メインコンテンツ (ラベルとサムネイルが有るリスト) -->
-				<div class="topics-container">
-					<ul class="topics">
-						<li class="topics-list">
-							<p class="topics-data-label Label--love">label</p>
-							<p class="topics-data-caption">paragraph</p>
+				<div class="topics">
+					<ul class="topics-wrap">
+						<li class="topics-item">
+							<p class="topics-item-Label Label--love">label</p>
+							<p class="topics-item-Caption">paragraph</p>
 							<img src="" alt="">
 						</li>
-						<li class="topics-list">
-							<p class="topics-data-label Label--love">label</p>
-							<p class="topics-data-caption">paragraph</p>
+						<li class="topics-item">
+							<p class="topics-item-Label Label--love">label</p>
+							<p class="topics-item-Caption">paragraph</p>
 							<img src="" alt="">
 						</li>
-						<li class="topics-list">
-							<p class="topics-data-label Label--love">label</p>
-							<p class="topics-data-caption">paragraph</p>
+						<li class="topics-item">
+							<p class="topics-item-Label Label--love">label</p>
+							<p class="topics-item-Caption">paragraph</p>
 							<img src="" alt="">
 						</li>
-						<li class="topics-list">
-							<p class="topics-data-label Label--love">label</p>
-							<p class="topics-data-caption">paragraph</p>
+						<li class="topics-item">
+							<p class="topics-item-Label Label--love">label</p>
+							<p class="topics-item-Caption">paragraph</p>
 							<img src="" alt="">
 						</li>
-						<li class="topics-list">
-							<p class="topics-data-label Label--Beauty">label</p>
-							<p class="topics-data-caption">paragraph</p>
+						<li class="topics-item">
+							<p class="topics-item-Label Label--Beauty">label</p>
+							<p class="topics-item-Caption">paragraph</p>
 							<img src="" alt="">
 						</li>
-						<li class="topics-list">
-							<p class="topics-data-label Label--Beauty">label</p>
-							<p class="topics-data-caption">paragraph</p>
+						<li class="topics-item">
+							<p class="topics-item-Label Label--Beauty">label</p>
+							<p class="topics-item-Caption">paragraph</p>
 							<img src="" alt="">
 						</li>
-						<li class="topics-list">
-							<p class="topics-data-label Label--Beauty">label</p>
-							<p class="topics-data-caption">paragraph</p>
+						<li class="topics-item">
+							<p class="topics-item-Label Label--Beauty">label</p>
+							<p class="topics-item-Caption">paragraph</p>
 							<img src="" alt="">
 						</li>
-						<li class="topics-list">
-							<p class="topics-data-label Label--Beauty">label</p>
-							<p class="topics-data-caption">paragraph</p>
+						<li class="topics-item">
+							<p class="topics-item-Label Label--Beauty">label</p>
+							<p class="topics-item-Caption">paragraph</p>
 							<img src="" alt="">
 						</li>
-						<li class="topics-list">
-							<p class="topics-data-label Label--Beauty">label</p>
-							<p class="topics-data-caption">paragraph</p>
+						<li class="topics-item">
+							<p class="topics-item-Label Label--Beauty">label</p>
+							<p class="topics-item-Caption">paragraph</p>
 							<img src="" alt="">
 						</li>
-						<li class="topics-list">
-							<p class="topics-data-label Label--Beauty">label</p>
-							<p class="topics-data-caption">paragraph</p>
+						<li class="topics-item">
+							<p class="topics-item--label Label--Beauty">label</p>
+							<p class="topics-item--caption">paragraph</p>
 							<img src="" alt="">
 						</li>
 					</ul>
@@ -197,12 +200,12 @@
 
 
 			<!-- ライトカラム -->
-			<div class="side-column">
+			<div class="subColumn">
 				<!-- サブコンテンツ -->
-				<div class=""></div>
+				<div class=""><img src="http://dummyimage.com/300x250/ebebeb/fff.png" alt=""></div>
 
 				<!-- サブコンテンツ -->
-				<div class=""></div>
+				<div class=""><img src="http://dummyimage.com/300x150/ebebeb/fff.png" alt=""></div>
 
 				<!-- サブコンテンツ -->
 				<div class=""></div>
@@ -219,8 +222,8 @@
 		</div>
 
 		<!-- フッター -->
-		<div class="">
-			<ul class="">
+		<div class="footer">
+			<ul class="footer-nav">
 				<li class="">something</li>
 				<li class="">something</li>
 				<li class="">something</li>

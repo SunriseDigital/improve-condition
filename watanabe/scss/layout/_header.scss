@@ -5,4 +5,14 @@
 //
 // *************************************
 
+.header {
+	background-color: $base-background;
+	border-bottom: 1px solid #E1E1E1;
+	border-top: 2px solid #FF7979;
+}
+
+.headingH1 {
+	@include bindContainer();
+}
+
 

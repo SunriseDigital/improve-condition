@@ -79,6 +79,7 @@ template {
  */
 a {
   background: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -87,6 +88,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
+  text-decoration: none;
 }
 
 /* Text-level semantics
@@ -119,7 +121,7 @@ dfn {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /**
@@ -392,26 +394,127 @@ th {
   padding: 0;
 }
 
+/* Ul List
+   ========================================================================== */
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/*gradient*/
 html {
-  font-size: 16px;
+  font-size: 13px;
 }
 
 body {
-  background: white;
+  background: url(/improve-condition/watanabe/img/bg.gif) repeat 0 0;
   color: #222222;
-  font-family: sans-serif;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-size: 100%;
   line-height: 1.5;
 }
 
 p {
-  font-size: rem(16px);
+  font-size: rem(13px);
 }
 
 a {
-  color: #0053c9;
+  color: #0099cc;
   text-decoration: none;
 }
 a:hover, a:focus {
-  text-decoration: underline;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+bind a mainContainer
+*/
+.header {
+  background-color: white;
+  border-bottom: 1px solid #E1E1E1;
+  border-top: 2px solid #FF7979;
+}
+
+.headingH1 {
+  width: 1010px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.primaryNav {
+  /* fallback/image non-cover color */
+  background-color: #ffb3b3;
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(#ffb3b3, #fda6a6);
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffb3b3), to(#fda6a6));
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient(#ffb3b3, #fda6a6);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(#ffb3b3, #fda6a6);
+}
+
+.nav {
+  width: 1010px;
+  padding: 0;
+  margin: 0 auto;
+  height: 32px;
+  letter-spacing: -6px;
+}
+
+.nav-item {
+  display: inline-block;
+  height: 100%;
+  line-height: 32px;
+}
+
+.nav-item > a {
+  color: #fff;
+  display: block;
+  padding: 0 15px 0 15px;
+  border-left: #FB8D8D solid 1px;
+  border-right: #FECFCF solid 1px;
+  letter-spacing: normal;
+}
+
+.nav-item:first-child > a {
+  border-left: #FECFCF solid 1px;
+  border-right: #FECFCF solid 1px;
+}
+
+.nav-item:last-child > a {
+  border-left: #FB8D8D solid 1px;
+  border-right: #FB8D8D solid 1px;
+}
+
+/*
+mainContainer
+*/
+.mainContainer {
+  width: 980px;
+  padding: 15px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: white;
+}
+
+/*
+mainColumn
+*/
+.mainColumn {
+  float: left;
+  width: 670px;
+}
+
+/*
+subColumn
+*/
+.subColumn {
+  float: right;
+  width: 300px;
 }
