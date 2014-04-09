@@ -40,7 +40,7 @@ $base-background: #F3F2EC;
 
 // ------ setting ------//
 
-$l-mainColumnWidth: 670px;
+$l-mainColumnWidth: 660px;
 
 @import "layout/footer";
 
@@ -64,4 +64,31 @@ $parallelList3-thumb: 60px;
 
 @import "modules/list";
 
+@import "modules/label";
 
+
+// ---------------------------------
+//   Individual
+//----------------------------------
+
+.snapWrap {
+	padding: 10px;
+	border: $base-border;
+	@include border-radius(4px);
+	@extend %l-space;
+}
+
+.snapWrap-item {
+	padding: 5px;
+	border: $base-border;
+	background-color: #fff;
+	@extend .parallelList5;
+}
+
+.bannerBox {
+	height: 100px;
+	border: 1px solid #FF7979;
+	text-align: center;
+	background-color: #FCC9C9;
+	@extend %l-space;
+}

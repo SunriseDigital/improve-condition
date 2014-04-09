@@ -15,18 +15,18 @@
 		<!-- ヘッダー -->
 		<div class="header">
 			<div class="header-wrap">
-				<h1 class="">caption</h1>
+				<h1 class="header-title">caption</h1>
 			</div>
 		</div>
 
 		<!-- ナビゲーション -->
 		<div class="primaryNav">
-			<ul class="primaryNav-wrap">
-				<li class="">nav</li>
-				<li class="">nav</li>
-				<li class="">nav</li>
-				<li class="">nav</li>
-				<li class="">nav</li>
+			<ul class="primaryNav-list">
+				<li class="primaryNav-list-item--select"><a href="">top</a></li><!--
+				--><li class="primaryNav-list-item"><a href="">スペシャル</a></li><!--
+				--><li class="primaryNav-list-item"><a href="">恋愛</a></li><!--
+				--><li class="primaryNav-list-item"><a href="">ライフスタイル</a></li><!--
+				--><li class="primaryNav-list-item--lastItem"><a href="">ファッション・ビューティ</a></li>
 			</ul>
 		</div>
 
@@ -50,13 +50,13 @@
 						<li class="">marker</li>
 					</ul>
 				</div> -->
-				<div class="j-slider">
+				<div class="j-slider l-space">
 					<div><img src="img/bigimage.gif"></div>
 				</div>
 
 				<!-- メインコンテンツ (ラベルとサムネイルが有るリスト) -->
-				<div class="">
-					<ul class="">
+				<div class="l-space">
+					<ul>
 						<li class="parallelList2">
 							<div class="parallelList2-text">
 								<p class="label--health">label</p>
@@ -131,8 +131,8 @@
 				</div>
 
 				<!-- 3枠並びリスト -->
-				<div class="">
-					<ul class="">
+				<div class="l-space">
+					<ul>
 						<li class="parallelList3">
 							<p class="parallelList3-text"><a href="">paragraph</a></p><!--
 							--><a href="" class="parallelList3-thumb"><img src="img/sample.jpg" alt=""></a>
@@ -161,31 +161,32 @@
 				</div>
 
 				<!-- メインコンテンツ　(画像だけのリスト) -->
-				<div class="">
-					<h2 class=""></h2>
-					<ul class="">
-						<li class="">
+				<div class="snapWrap">
+					<h2 class="subTitle">FASHION SNAP</h2>
+					<ul class="l-harfSpace">
+						<li class="snapWrap-item">
 							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
-						</li>
-						<li class="">
+						</li><!--
+						--><li class="snapWrap-item">
 							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
-						</li>
-						<li class="">
+						</li><!--
+						--><li class="snapWrap-item">
 							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
-						</li>
-						<li class="">
+						</li><!--
+						--><li class="snapWrap-item">
 							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
-						</li>
-						<li class="">
+						</li><!--
+						--><li class="snapWrap-item">
 							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
 						</li>
 					</ul>
-					<p>to list</p>
+					<p class="l-right">to list</p>
 				</div>
 
 				<!-- メインコンテンツ　(段落と画像だけのリスト) -->
-				<div class="">
-					<ul class="">
+				<div class="l-space">
+					<h2 class="subTitle">SUB TITLE</h2>
+					<ul>
 						<li class="parallelList2">
 							<p class="parallelList2-text"><a class="listLinkTitle" href="">paragraph</a></p><!--
 							--><a href="" class="parallelList2-thumb"><img src="img/sample.jpg" alt=""></a>
@@ -230,8 +231,9 @@
 				</div>
 
 				<!-- メインコンテンツ (テキストだけのリスト) -->
-				<div class="">
-					<ul class="">
+				<div class="l-space">
+					<h2 class="subTitle">SUB TITLE</h2>
+					<ul>
 						<li class="list"><a href="">text</a></li>
 						<li class="list"><a href="">text</a></li>
 						<li class="list"><a href="">text</a></li>
@@ -251,36 +253,38 @@
 			<div class="subColumn">
 
 				<!-- サブコンテンツ -->
-				<div class="">banner</div>
+				<div class="bannerBox">banner</div>
 
 				<!-- サブコンテンツ -->
-				<div class="">banner</div>
+				<div class="bannerBox">banner</div>
 
 				<!-- サブコンテンツ -->
-				<div class="">banner</div>
+				<div class="bannerBox">banner</div>
 
 				<!-- サブコンテンツ -->
-				<div class="">banner</div>
+				<div class="bannerBox">banner</div>
 
 				<!-- サブコンテンツ -->
-				<div class="">banner</div>
+				<div class="bannerBox">banner</div>
 
 				<!-- サブコンテンツ -->
-				<div class="">banner</div>
+				<div class="bannerBox">banner</div>
 
 			</div>
 		</div>
 
 		<!-- フッター -->
 		<div class="footer">
-			<ul class="">
-				<li class="">something</li>
-				<li class="">something</li>
-				<li class="">something</li>
-				<li class="">something</li>
-				<li class="">something</li>
-			</ul>
-			<p><small>&copy; something</small></p>
+			<div class="footer-wrap">
+				<ul class="l-space">
+					<li class="inlineList">something</li>
+					<li class="inlineList">something</li>
+					<li class="inlineList">something</li>
+					<li class="inlineList">something</li>
+					<li class="inlineList">something</li>
+				</ul>
+				<p class="l-center"><small>&copy; something</small></p>
+			</div>
 		</div>
 	</body>
 </html>

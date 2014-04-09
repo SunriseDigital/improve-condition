@@ -5,8 +5,43 @@
 //
 // *************************************
 
+$nav-border-bright: 1px solid #FECFCF;
+$nav-border-dark: 1px solid #FB8D8D;
 
-.primaryNav-wrap {
+.primaryNav {
+	background-color: #FEAFAF;
+	border-top: $base-border;
+}
+
+.primaryNav-list {
 	width: $l-maxWidth;
 	margin: 0 auto;
+	border-left: $nav-border-dark;
+}
+
+.primaryNav-list-item {
+	@include inline-block(top);
+	& a {
+		display: block;
+		padding: 0 15px;
+		border-right: $nav-border-dark;
+		border-left: $nav-border-bright;
+		line-height: 32px;
+		color: #fff;
+		@extend %l-center;
+		&:hover {
+			background-color: #FC9090;
+			text-decoration: none;
+		}
+	}
+}
+
+.primaryNav-list-item--select {
+	background-color: #F85656;
+	@extend .primaryNav-list-item;
+}
+
+.primaryNav-list-item--lastItem {
+	border-right: $nav-border-bright;
+	@extend .primaryNav-list-item;
 }

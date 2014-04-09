@@ -33,6 +33,7 @@ a {
   text-decoration: none;
   &:hover,
   &:focus {
+    color: darken($base-link-color, 15%);
     text-decoration: underline;
   }
 }

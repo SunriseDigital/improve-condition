@@ -1,9 +1,13 @@
 // *************************************
 //
 //   Module
-//   -> This is an example module
+//   -> This is an list module
 //
 // *************************************
+
+// -------------------------------------
+//   Modules
+// -------------------------------------
 
 // -------- 標準リスト --------- //
 
@@ -22,17 +26,40 @@
 	@include inline-block(top);
 }
 
-$parallelList2-width: ($l-mainColumnWidth - 10px) / 2;
-$parallelList3-width: ($l-mainColumnWidth - 20px) / 3;
+$parallelList2-width: ($l-mainColumnWidth - 15px) / 2;
+$parallelList3-width: ($l-mainColumnWidth - 30px) / 3;
 
 .parallelList2 {
-	@include parallelList($parallelList2-width, 10px);
+	@include parallelList($parallelList2-width, 15px);
 }
 
 .parallelList3 {
-	@include parallelList($parallelList3-width, 10px);
+	@include parallelList($parallelList3-width, 15px);
 }
 
+// ---------- 並列画像リスト ---------- //
+
+@mixin parallelPhotoList($margin) {
+	margin-left: $margin;
+	@include inline-block(top);
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.parallelList5 {
+	@include parallelPhotoList(10px);
+}
+
+// ---------- 並列リスト ---------- //
+
+.inlineList {
+	display: inline;
+	margin-left: 10px;
+	&:first-child {
+		margin-left: 0;
+	}
+}
 
 // -------------------------------------
 //   Modifiers

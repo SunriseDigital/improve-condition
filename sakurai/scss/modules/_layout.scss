@@ -9,22 +9,30 @@
 //   Utilities
 // -------------------------------------
 
-%c-center, .c-center {
+%l-center, .l-center {
   text-align: center
 }
 
-%c-shout, .c-shout {
+%l-right, .l-right {
+	text-align: right;
+}
+
+%l-left, .l-left {
+	text-align: left;
+}
+
+%l-shout, .l-shout {
   text-transform: uppercase
 }
 
-%c-sideSpace, .c-sideSpace {
+%l-sideSpace, .l-sideSpace {
 	margin: 0 10px;
 } 
 
-%c-harfSpace, .c-harfSpace {
+%l-harfSpace, .l-harfSpace {
 	margin-bottom: 10px;
 } 
 
-%c-space, .c-space {
+%l-space, .l-space {
 	margin-bottom: 20px;
 } 
