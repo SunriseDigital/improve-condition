@@ -1,0 +1,38 @@
+// *************************************
+//
+//   Content
+//   -> base layout
+//
+// *************************************
+
+// -------------------------------------
+//   Utilities
+// -------------------------------------
+
+%l-center, .l-center {
+  text-align: center
+}
+
+%l-right, .l-right {
+	text-align: right;
+}
+
+%l-left, .l-left {
+	text-align: left;
+}
+
+%l-shout, .l-shout {
+  text-transform: uppercase
+}
+
+%l-sideSpace, .l-sideSpace {
+	margin: 0 10px;
+} 
+
+%l-harfSpace, .l-harfSpace {
+	margin-bottom: 10px;
+} 
+
+%l-space, .l-space {
+	margin-bottom: 20px;
+} 
