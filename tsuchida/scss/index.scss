@@ -9,11 +9,15 @@
 //   Compass
 // -------------------------------------
 
-@import "compass";
+//@import "compass";
 
 // -------------------------------------
 //   base
 // -------------------------------------
+
+// ----- reset ----- //
+
+@import "base/reset";
 
 // ----- normalize ----- //
 
@@ -39,7 +43,7 @@
 
 @import "layout/header";
 
-@import "layout/nav";
+@import "layout/mainContainer";
 
 @import "layout/utillities";
 
@@ -48,5 +52,7 @@
 // -------------------------------------
 
 @import "modules/example";
+
+
 
 

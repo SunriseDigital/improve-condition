@@ -5,4 +5,45 @@
 //
 // *************************************
 
-
+.header {
+	border-top: 2px solid #FF7979;
+}
+.header-wrapper {
+	@include clearfix;
+	@include contentWidth;
+}
+.header-logo {
+	float: left;
+	margin: 0;
+	font-style: italic;
+}
+.header-nav {
+	border-top: 1px solid #E1E1E1;
+	background-color: #FFB3B3;
+}
+.header-nav-list {
+	border-right: 1px solid #fecfcf;
+	border-left: 1px solid #fb8d8d;
+	@include clearfix;
+	@include contentWidth;
+}
+.header-nav-list-item {
+	float: left;
+	border-left: 1px solid #fecfcf;
+	border-right: 1px solid #fb8d8d;
+}
+.header-nav-list-item-wrapper,
+.header-nav-list-item-wrapper--current {
+	display: block;
+	padding: 0 15px;
+	line-height: 32px;
+	color: #ffffff;
+}
+.header-nav-list-item-wrapper--current {
+	background-color: #ff6767;
+}
+.header-nav-list-item-wrapper:hover,
+.header-nav-list-item-wrapper--current:hover {
+	background-color: #fb8c8c;
+	text-decoration: none;
+}

@@ -5,4 +5,36 @@
 //
 // *************************************
 
-
+.footer {
+	padding: 25px 0 30px;
+	background-color: #d7d4cd;
+}
+.footer-siteMap {
+	@include clearfix;
+	@include contentWidth;
+	margin-bottom: 20px;
+}
+.footer-siteMap-item {
+	float: left;
+	padding: 0 5px;
+}
+.footer-siteMap-item-wrapper {
+	color: #776a61;
+	font-weight: bold;
+}
+.footer-otherLink {
+	@include contentWidth;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.footer-otherLink-item {
+	display: inline-block;
+	padding: 0 5px;
+}
+.footer-otherLink-item-wrapper {
+	color: #9c886d;
+}
+.copyRight {
+	text-align: center;
+	color: #9c886d;
+}

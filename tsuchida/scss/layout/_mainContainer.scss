@@ -1,0 +1,23 @@
+// *************************************
+//
+//   mainContainer
+//   -> This is an mainContainer
+//
+// *************************************
+
+.mainContainer {
+	@include contentWidth;
+}
+.mainContainer-wrapper {
+	padding: 12px;
+	background-color: #ffffff;
+	@include clearfix;
+}
+.mainColumn {
+	float: left;
+	width: 670px;
+}
+.subColumn {
+	float: right;
+	width: 300px;
+}

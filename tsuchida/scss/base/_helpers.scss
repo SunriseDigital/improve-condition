@@ -18,7 +18,22 @@
 // -------------------------------------
 //   Mixins
 // -------------------------------------
-
+@mixin clearfix {
+  zoom: 1;
+  &:after {
+		display: block;
+		clear: both;
+		height: 0;
+		visibility: hidden;
+		content: ".";
+		font-size: 0;
+		line-height: 0;
+  }
+}
+@mixin contentWidth {
+	width: 1010px;
+	margin: 0 auto;
+}
 
 // -------------------------------------
 //   Animations

@@ -1,4 +1,56 @@
-/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+@charset "Windows-31J";
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+◆各ブラウザのスタイルシートの初期化
+　/common/css/reset.css
+ - - - - - - - - - - - - - - - - - - -
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* reset main tags
+=================================*/
+body, div,
+dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea,
+p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+abbr, acronym {
+  border: 0;
+}
+
+/* normalize.css v3.0.0 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -414,4 +466,157 @@ a {
 }
 a:hover, a:focus {
   text-decoration: underline;
+}
+
+.footer {
+  padding: 25px 0 30px;
+  background-color: #d7d4cd;
+}
+
+.footer-siteMap {
+  zoom: 1;
+  width: 1010px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.footer-siteMap:after {
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: ".";
+  font-size: 0;
+  line-height: 0;
+}
+
+.footer-siteMap-item {
+  float: left;
+  padding: 0 5px;
+}
+
+.footer-siteMap-item-wrapper {
+  color: #776a61;
+  font-weight: bold;
+}
+
+.footer-otherLink {
+  width: 1010px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.footer-otherLink-item {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.footer-otherLink-item-wrapper {
+  color: #9c886d;
+}
+
+.copyRight {
+  text-align: center;
+  color: #9c886d;
+}
+
+.header {
+  border-top: 2px solid #FF7979;
+}
+
+.header-wrapper {
+  zoom: 1;
+  width: 1010px;
+  margin: 0 auto;
+}
+.header-wrapper:after {
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: ".";
+  font-size: 0;
+  line-height: 0;
+}
+
+.header-logo {
+  float: left;
+  margin: 0;
+  font-style: italic;
+}
+
+.header-nav {
+  border-top: 1px solid #E1E1E1;
+  background-color: #FFB3B3;
+}
+
+.header-nav-list {
+  border-right: 1px solid #fecfcf;
+  border-left: 1px solid #fb8d8d;
+  zoom: 1;
+  width: 1010px;
+  margin: 0 auto;
+}
+.header-nav-list:after {
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: ".";
+  font-size: 0;
+  line-height: 0;
+}
+
+.header-nav-list-item {
+  float: left;
+  border-left: 1px solid #fecfcf;
+  border-right: 1px solid #fb8d8d;
+}
+
+.header-nav-list-item-wrapper,
+.header-nav-list-item-wrapper--current {
+  display: block;
+  padding: 0 15px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.header-nav-list-item-wrapper--current {
+  background-color: #ff6767;
+}
+
+.header-nav-list-item-wrapper:hover,
+.header-nav-list-item-wrapper--current:hover {
+  background-color: #fb8c8c;
+  text-decoration: none;
+}
+
+.mainContainer {
+  width: 1010px;
+  margin: 0 auto;
+}
+
+.mainContainer-wrapper {
+  padding: 12px;
+  background-color: #ffffff;
+  zoom: 1;
+}
+.mainContainer-wrapper:after {
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: ".";
+  font-size: 0;
+  line-height: 0;
+}
+
+.mainColumn {
+  float: left;
+  width: 670px;
+}
+
+.subColumn {
+  float: right;
+  width: 300px;
 }
