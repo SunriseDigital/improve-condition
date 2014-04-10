@@ -4,33 +4,140 @@
 //   -> This is an example module
 //
 // *************************************
-
-.module {
-
+.section {
+	padding-left: 12px;
+}
+// -------------------------------------
+//   heading
+// -------------------------------------
+.headingTypeH2 {
+	margin-bottom:10px;
+	padding-left: 10px;
+	border-bottom: 3px solid #baaf9a;
+	font-weight: bold;
 }
 
 // -------------------------------------
-//   Modifiers
+//   list
 // -------------------------------------
-
-.module--modifier {
-
+.contentsList01 {
+	margin: 0 -18px 0 0;
+	padding-left: 12px;
+	@include clearfix;
+}
+.section {
+	.contentsList01 {
+		padding-left: 0;
+	}
+}
+.contentsList01-item {
+	float: left;
+	width: 326px;
+	margin: 0 18px 0 0;
+	border-top: 1px dotted #e5e5e5;
+}
+.contentsList01-item-wrapper {
+	display: block;
+	padding: 10px 0;
+	text-decoration: none;
+	@include clearfix;
+}
+.contentsList01-item-wrapper:hover {
+	text-decoration: none;
+}
+.contentsList01-item-img {
+	float: right;
+	border: 3px solid #e5e5e5;
+}
+.contentsList01-item-label {
+	display: block;
+	width: 70px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #93cf5d;
+}
+.contentsList01-item-text {
+	display: block;
+	line-height: 1;
+	font-weight: bold;
+	color: #333333;
 }
 
-// -------------------------------------
-//   States
-// -------------------------------------
-
-.is-module-state {
-
+.contentsList02-item {
+	border-bottom: 1px dotted #e5e5e5;
 }
-
+.contentsList02-item:before {
+	@include listMaker;
+}
+.contentsList02-item:nth-child(1):before {
+	content: "1";
+	background-color: #ff6666;
+}
+.contentsList02-item:nth-child(2):before {
+	content: "2";
+	background-color: #ff6666;
+}
+.contentsList02-item:nth-child(3):before {
+	content: "3";
+	background-color: #ff6666;
+}
+.contentsList02-item:nth-child(4):before {
+	content: "4";
+}
+.contentsList02-item:nth-child(5):before {
+	content: "5";
+}
+.contentsList02-item:nth-child(6):before {
+	content: "6";
+}
+.contentsList02-item:nth-child(7):before {
+	content: "7";
+}
+.contentsList02-item:nth-child(8):before {
+	content: "8";
+}
+.contentsList02-item:nth-child(9):before {
+	content: "9";
+}
+.contentsList02-item:nth-child(10):before {
+	content: "10";
+}
 // -------------------------------------
-//   Context
+//   colorBox
 // -------------------------------------
-
-.has-module {
-
+.colorBox01 {
+	padding: 1px;
+	border: 1px solid #e1e1e1;
+}
+.colorBox01-wrapper {
+	position: relative;
+	padding: 10px 0 18px 18px;
+	background-color: #f5f5ef;
+}
+.colorBox01-title {
+	display: inline-block;
+	margin: 0 0 9px -18px;
+	padding: 0 18px 6px 18px;
+	font-weight: bold;
+	border-bottom: 1px dashed #bcbc92;
+}
+.colorBox01-indexPageLink {
+	position: absolute;
+	top: 19px;
+	right: 23px;
+}
+.colorBox01-list {
+	@include clearfix;
+}
+.colorBox01-list-item {
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 5px;
+	border: 1px solid #e1e1e1;
+	font-size: 0;
+	background-color: #ffffff;
 }
 
 // -------------------------------------
