@@ -22,15 +22,15 @@
 
 		<!-- ナビゲーション -->
 		<div class="primaryNav">
-			<ul class="nav">
-				<li class="nav-item--first"><a href="">TOP</a></li>
-				<li class="nav-item"><a href="">スペシャル</a></li>
-				<li class="nav-item"><a href="">恋愛</a></li>
-				<li class="nav-item"><a href="">ファッション・ビューティ</a></li>
-				<li class="nav-item"><a href="">カルチャー</a></li>
-				<li class="nav-item"><a href="">グルメ</a></li>
-				<li class="nav-item"><a href="">アプリ</a></li>
-				<li class="nav-item--last"><a href="">プレゼント</a></li>
+			<ul>
+				<li class="navItem--first"><a href="">TOP</a></li>
+				<li><a href="">スペシャル</a></li>
+				<li><a href="">恋愛</a></li>
+				<li><a href="">ファッション・ビューティ</a></li>
+				<li><a href="">カルチャー</a></li>
+				<li><a href="">グルメ</a></li>
+				<li><a href="">アプリ</a></li>
+				<li class="navItem--last"><a href="">プレゼント</a></li>
 			</ul>
 		</div>
 
@@ -59,55 +59,75 @@
 				<!-- メインコンテンツ (ラベルとサムネイルが有るリスト) -->
 				<div class="topics">
 					<ul class="topics-wrap">
-						<li class="topics-item">
-							<p class="topics-item-Label Label--love">label</p>
-							<p class="topics-item-Caption">paragraph</p>
-							<img src="" alt="">
+						<li class="topics-item--odd">
+							<p class="topics-item-label label--beauty">Beauty</p>
+							<p class="topics-item-Caption">「夏色アイシャドー」涼しげEyes</p>
+							<a class="topics-item-hasImageLink" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							</a>
 						</li>
-						<li class="topics-item">
-							<p class="topics-item-Label Label--love">label</p>
-							<p class="topics-item-Caption">paragraph</p>
-							<img src="" alt="">
+						<li class="topics-item--even">
+							<p class="topics-item-label label--love">Love</p>
+							<p class="topics-item-Caption">アプローチしにくい女子の特徴</p>
+							<a class="topics-item-hasImageLink" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							</a>
 						</li>
-						<li class="topics-item">
-							<p class="topics-item-Label Label--love">label</p>
-							<p class="topics-item-Caption">paragraph</p>
-							<img src="" alt="">
+						<li class="topics-item--odd">
+							<p class="topics-item-label label--lifeStyle">LifeStyle</p>
+							<p class="topics-item-Caption">20代から危ない「脂質異常症」</p>
+							<a class="topics-item-hasImageLink" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							</a>
 						</li>
-						<li class="topics-item">
-							<p class="topics-item-Label Label--love">label</p>
-							<p class="topics-item-Caption">paragraph</p>
-							<img src="" alt="">
+						<li class="topics-item--even">
+							<p class="topics-item-label label--love">Love</p>
+							<p class="topics-item-Caption">理想が高い? 現実的な相手選び</p>
+							<a class="topics-item-hasImageLink" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							</a>
 						</li>
-						<li class="topics-item">
-							<p class="topics-item-Label Label--Beauty">label</p>
-							<p class="topics-item-Caption">paragraph</p>
-							<img src="" alt="">
+						<li class="topics-item--odd">
+							<p class="topics-item-label label--beauty">Beauty</p>
+							<p class="topics-item-Caption">正しい「日焼け止め」の使い方</p>
+							<a class="topics-item-hasImageLink" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							</a>
 						</li>
-						<li class="topics-item">
-							<p class="topics-item-Label Label--Beauty">label</p>
-							<p class="topics-item-Caption">paragraph</p>
-							<img src="" alt="">
+						<li class="topics-item--even">
+							<p class="topics-item-label label--lifeStyle">LifeStyle</p>
+							<p class="topics-item-Caption">「ピル」は飲んだ方がいいのか</p>
+							<a class="topics-item-hasImageLink" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							</a>
 						</li>
-						<li class="topics-item">
-							<p class="topics-item-Label Label--Beauty">label</p>
-							<p class="topics-item-Caption">paragraph</p>
-							<img src="" alt="">
+						<li class="topics-item--odd">
+							<p class="topics-item-label label--lifeStyle">LifeStyle</p>
+							<p class="topics-item-Caption">不倫してよかったと話す女性たち</p>
+							<a class="topics-item-hasImageLink" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							</a>
 						</li>
-						<li class="topics-item">
-							<p class="topics-item-Label Label--Beauty">label</p>
-							<p class="topics-item-Caption">paragraph</p>
-							<img src="" alt="">
+						<li class="topics-item--even">
+							<p class="topics-item-label label--culture">Culture</p>
+							<p class="topics-item-Caption">話していてつまらない女性の特徴</p>
+							<a class="topics-item-hasImageLink" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							</a>
 						</li>
-						<li class="topics-item">
-							<p class="topics-item-Label Label--Beauty">label</p>
-							<p class="topics-item-Caption">paragraph</p>
-							<img src="" alt="">
+						<li class="topics-item--odd">
+							<p class="topics-item-label label--love">Love</p>
+							<p class="topics-item-Caption">飲み会に誘われない女性の特徴</p>
+							<a class="topics-item-hasImageLink" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							</a>
 						</li>
-						<li class="topics-item">
-							<p class="topics-item--label Label--Beauty">label</p>
-							<p class="topics-item--caption">paragraph</p>
-							<img src="" alt="">
+						<li class="topics-item--even">
+							<p class="topics-item-label label--love">Love</p>
+							<p class="topics-item--caption">いきすぎた外見磨きで招く悲劇</p>
+							<a class="topics-item-hasImageLink" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							</a>
 						</li>
 					</ul>
 				</div>

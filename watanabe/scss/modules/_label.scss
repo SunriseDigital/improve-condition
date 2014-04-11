@@ -1,0 +1,56 @@
+// *************************************
+//
+//   Lebel Module
+//   -> This is an Lebel module
+//
+// *************************************
+
+// -------------------------------------
+//   label
+// -------------------------------------
+
+/********************
+variable
+********************/
+
+/*set background color*/
+$BgBeauty: #93CF5D;
+$BgLove: #FF4343;
+$BgLifeStyle: #53C8E1;
+$BgCulture: #FFC62B;
+
+/********************
+structure
+********************/
+
+%labels {
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.6;
+	color: #FFF;
+	font-weight: bold;
+}
+
+/*category*/
+
+.label--beauty {
+	@extend %labels;
+	background-color: $BgBeauty;
+}
+
+.label--love {
+	@extend %labels;
+	background-color: $BgLove;
+}
+
+.label--lifeStyle {
+	@extend %labels;
+	background-color: $BgLifeStyle;
+}
+
+.label--culture {
+	@extend %labels;
+	background-color: $BgCulture;
+}
+

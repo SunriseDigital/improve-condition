@@ -446,6 +446,14 @@ bind a mainContainer
   margin: 0 auto;
 }
 
+/********************
+variable
+********************/
+/* parent container class name */
+/* sequence modifiers class name */
+/********************
+structure
+********************/
 .primaryNav {
   /* fallback/image non-cover color */
   background-color: #ffb3b3;
@@ -458,22 +466,30 @@ bind a mainContainer
   /* Opera 11.10+ */
   background-image: -o-linear-gradient(#ffb3b3, #fda6a6);
 }
-
-.nav {
+.primaryNav > ul {
   width: 1010px;
   padding: 0;
   margin: 0 auto;
   height: 32px;
   letter-spacing: -6px;
 }
-
-.nav-item {
+.primaryNav > ul li {
+  display: -moz-inline-stack;
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
   height: 100%;
   line-height: 32px;
 }
-
-.nav-item > a {
+.primaryNav > ul li.navItem--first {
+  border-left: #FB8D8D solid 1px;
+}
+.primaryNav > ul li.navItem--last {
+  border-right: #FECFCF solid 1px;
+}
+.primaryNav > ul li > a {
   color: #fff;
   display: block;
   padding: 0 15px 0 15px;
@@ -481,13 +497,11 @@ bind a mainContainer
   border-right: #FECFCF solid 1px;
   letter-spacing: normal;
 }
-
-.nav-item:first-child > a {
+.primaryNav > ul li.navItem--first > a {
   border-left: #FECFCF solid 1px;
   border-right: #FECFCF solid 1px;
 }
-
-.nav-item:last-child > a {
+.primaryNav > ul li.navItem--last > a {
   border-left: #FB8D8D solid 1px;
   border-right: #FB8D8D solid 1px;
 }
@@ -517,4 +531,81 @@ subColumn
 .subColumn {
   float: right;
   width: 300px;
+}
+
+/*******************
+gallery
+*******************/
+.gallery {
+  width: 668px;
+  border: 1px solid #E2E2E2;
+}
+
+/*******************
+topics
+*******************/
+.topics-item--odd,
+.topics-item--even {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 323px;
+  padding: 10px 0;
+  border-bottom: #E5E5E5 dotted 1px;
+}
+
+.topics-item--even {
+  margin-left: 20px;
+}
+
+.topics-item-label {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.topics-item-hasImageLink {
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #E5E5E5;
+}
+
+/********************
+variable
+********************/
+/*set background color*/
+/********************
+structure
+********************/
+.label--beauty, .label--love, .label--lifeStyle, .label--culture {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #FFF;
+  font-weight: bold;
+}
+
+/*category*/
+.label--beauty {
+  background-color: #93cf5d;
+}
+
+.label--love {
+  background-color: #ff4343;
+}
+
+.label--lifeStyle {
+  background-color: #53c8e1;
+}
+
+.label--culture {
+  background-color: #ffc62b;
 }

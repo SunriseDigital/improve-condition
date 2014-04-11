@@ -1,0 +1,66 @@
+// *************************************
+//
+//   top
+//   -> This is an top
+//
+// *************************************
+
+/*******************
+gallery
+*******************/
+
+.gallery {
+	width: 668px;
+	border: 1px solid #E2E2E2;
+
+}
+
+
+/*******************
+topics
+*******************/
+
+.topics {
+
+}
+
+.topics-wrap {
+
+}
+
+%topics-item {
+	position: relative;
+	@include inline-block;
+	width: 323px;
+	padding: 10px 0;
+	border-bottom: #E5E5E5 dotted 1px;
+}
+
+.topics-item--odd,
+.topics-item--even  {
+	@extend %topics-item;
+}
+
+.topics-item--even,{
+	margin-left: 20px;
+}
+
+
+.topics-item-label {
+	width: 70px;
+	margin-bottom: 10px;
+}
+
+.topics-item-Caption {
+
+}
+
+.topics-item-hasImageLink {
+	display: block;
+	position: absolute;
+	top: 18px;
+	right: 12px;
+	width: 60px;
+	height: 60px;
+	border: 3px solid #E5E5E5;
+}
