@@ -4,15 +4,13 @@
 //   -> This is an example module
 //
 // *************************************
-.section {
-	padding-left: 12px;
-}
+
 // -------------------------------------
 //   heading
 // -------------------------------------
 .headingTypeH2 {
 	margin-bottom:10px;
-	padding-left: 10px;
+	padding: 0 0 5px 10px;
 	border-bottom: 3px solid #baaf9a;
 	font-weight: bold;
 }
@@ -21,14 +19,8 @@
 //   list
 // -------------------------------------
 .contentsList01 {
-	margin: 0 -18px 0 0;
-	padding-left: 12px;
+	margin: 0 -18px 30px 0;
 	@include clearfix;
-}
-.section {
-	.contentsList01 {
-		padding-left: 0;
-	}
 }
 .contentsList01-item {
 	float: left;
@@ -36,13 +28,17 @@
 	margin: 0 18px 0 0;
 	border-top: 1px dotted #e5e5e5;
 }
-.contentsList01-item-wrapper {
+.contentsList01-item:nth-child(1),
+.contentsList01-item:nth-child(2) {
+	border-top: none;
+}
+.contentsList01-item-wrap {
 	display: block;
 	padding: 10px 0;
 	text-decoration: none;
 	@include clearfix;
 }
-.contentsList01-item-wrapper:hover {
+.contentsList01-item-wrap:hover {
 	text-decoration: none;
 }
 .contentsList01-item-img {
@@ -108,10 +104,11 @@
 //   colorBox
 // -------------------------------------
 .colorBox01 {
+	margin-bottom: 30px;
 	padding: 1px;
 	border: 1px solid #e1e1e1;
 }
-.colorBox01-wrapper {
+.colorBox01-wrap {
 	position: relative;
 	padding: 10px 0 18px 18px;
 	background-color: #f5f5ef;
@@ -141,12 +138,144 @@
 }
 
 // -------------------------------------
-//   Submodules
+//   link
 // -------------------------------------
 
-// ----- Submodule ----- //
-
-.module-submodule {
-
+.indexPageLink {
+	margin: -20px 0 30px;
+	text-align: right;
 }
+
+// -------------------------------------
+//   subColumn
+// -------------------------------------
+.bannerList01 {
+	font-size: 0;
+}
+.bannerList01-item {
+	margin-bottom: 20px;
+}
+.noticeBox01 {
+	margin-bottom: 20px;
+	padding: 0 10px;
+	border: 1px solid #fbd7d7;
+	background-color: #feeeee;
+	@include clearfix;
+}
+.noticeBox01-title {
+	padding: 10px;
+	color: #ff6666;
+}
+.noticeBox01-image {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+.noticeBox01-text {
+	overflow: hidden;
+}
+.noticeBox01-text-wrap {
+	font-size: 83%;
+	font-weight: bold;
+	color: #333333;
+}
+.noticeBox01-indexPageLink {
+	float: right;
+	border: 1px solid #fbd7d7;
+	border-bottom: none;
+}
+.noticeBox01-indexPageLink-wrap {
+	display: block;
+	padding: 5px 10px;
+	border: 1px solid #ffffff;
+	border-bottom: none;
+	color: #e96f6f;
+}
+.fortuneBox {
+	margin-bottom: 20px;
+	padding: 0 10px 10px;
+	border: 1px solid #fbdf9b;
+	background-color: #fcf9dd;
+	@include clearfix;
+}
+.fortuneBox-title {
+	padding: 10px;
+	color: #6d6161;
+}
+.fortuneBox-select {
+	float: left;
+	margin-right: 5px;
+}
+.fortuneBox-btn {
+	float: left;
+	width: 82px;
+	padding: 1px;
+	border: 1px solid #ffcc99;
+	background-color: #ffffff;
+}
+.fortuneBox-btn-wrap {
+	display: block;
+	background-color: #ffa144;
+	text-align: center;
+	font-size: 83%;
+	color: #ffffff;
+}
+.snsList01-twitter {/*‰¼*/
+	margin-bottom: 20px;
+	border: 1px solid #e5e5e5;
+}
+.snsList01-facebook {/*‰¼*/
+	margin-bottom: 20px;
+	border: 1px solid #e5e5e5;
+}
+.noticeBox02 {
+	padding: 0 10px 10px;
+	border: 1px solid #d9d6cf;
+	background-color: #f8f7f4;
+}
+.noticeBox02-title {
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	border: 1px dashed #9e9486;
+	border-top: none;
+	color: #ff7574;
+	background-color: #ffffff;
+}
+.noticeBox02-list01 {
+	margin-bottom: 10px;
+	border: 1px solid #d8d3cf;
+	border-bottom: none;
+}
+.noticeBox02-list01-item {
+	border-bottom: 1px solid #d8d3cf;
+}
+.noticeBox02-list01-item-wrap {
+	display: block;
+	padding: 10px;
+	font-size: 83%;
+	font-weight: bold;
+	text-align: center;
+	color: #755432;
+}
+.noticeBox02-other {
+	padding-top: 10px;
+	border-top: 1px dotted #d9d6cf;
+	@include clearfix;
+}
+.noticeBox02-other-qr {
+	float: left;
+	margin-right: 20px;
+}
+.noticeBox02-other-text {
+	margin-top: 5px;
+	font-weight: bold;
+}
+.noticeBox02-other-link {
+	margin-top: 5px;
+}
+.noticeBox02-other-link-wrap {
+	font-size: 65%;
+	font-weight: bold;
+	color: #333333;
+}
+
 
