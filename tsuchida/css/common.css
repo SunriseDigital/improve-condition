@@ -826,6 +826,13 @@ a:hover, a:focus {
   text-align: right;
 }
 
+.headingTypeH2 {
+  margin-bottom: 10px;
+  padding: 0 0 5px 10px;
+  border-bottom: 3px solid #baaf9a;
+  font-weight: bold;
+}
+
 .bannerList01 {
   font-size: 0;
 }
