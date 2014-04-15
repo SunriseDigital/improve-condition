@@ -2,14 +2,12 @@
 
 ###テーマ
 
-CSS命名規則を学習する
+サンライズで定義したCSS命名規則を体現する
 
 ###ルール
 
 * 例題サイトをレイアウトモデルとする
-* CSSセレクタの命名規則を考慮する
-* SMACSSベースでのCSSスタイルコーディング
-* MVCSSフレームワークを利用
+* サンライズで定義したCSSセレクタの命名規則を使用する
 * スクリプト系は除く
 * コンテンツの詳細は除く
 * 汎用的なスタイルを意識する
@@ -21,6 +19,9 @@ http://girls.livedoor.com/
 http://develop.media-craft.jp/improve-condition/kondo/index.php
 
 ###参照
+
+命名規則について／サンライズデジタル  
+https://github.com/SunriseDigital/improve-condition/blob/master/naming-convention.md
 
 「SMACSS」というCSS設計パターン  
 https://github.com/SunriseDigital/improve-condition/tree/proj/buildSample/sample/smacss
