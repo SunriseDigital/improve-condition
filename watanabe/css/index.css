@@ -121,6 +121,9 @@ dfn {
  */
 h1 {
   font-size: 2em;
+}
+
+h1, h2, h3, h4 {
   margin: 0;
 }
 
@@ -434,6 +437,30 @@ a:hover, a:focus {
 /*
 bind a mainContainer
 */
+.footer {
+  color: #9C886D;
+  font-size: 10px;
+  text-align: center;
+  padding: 10px 0 30px;
+  background: #D7D4CD;
+}
+.footer .footer-sitemap .footer-sitemap-item {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+.footer .footer-nav .footer-nav-item {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
 .header {
   background-color: white;
   border-bottom: 1px solid #E1E1E1;
@@ -539,6 +566,12 @@ gallery
 .gallery {
   width: 668px;
   border: 1px solid #E2E2E2;
+  border-bottom: 3px solid #EAEAEA;
+}
+
+.gallery-mainImage {
+  display: block;
+  margin: 10px auto;
 }
 
 /*******************
@@ -577,10 +610,110 @@ topics
   border: 3px solid #E5E5E5;
 }
 
+/*******************
+fashionSnap
+*******************/
+.fashionSnap {
+  position: relative;
+  margin-top: 10px;
+  border: 1px solid #E2E2E2;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+}
+
+.fashionSnap-heading {
+  padding: 5px;
+}
+
+.fashionSnap-toList {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+.fashionSnap-wrap {
+  padding: 10px;
+}
+
+.fashionSnap-item {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  padding: 5px;
+  border: 1px solid #E2E2E2;
+  margin-right: 8px;
+}
+
+/*******************
+roundUpNaver
+*******************/
+.roundUpNaver {
+  margin-top: 20px;
+}
+
+.roundUpNaver-heading {
+  border-bottom: #BAAF9A solid 3px;
+}
+
+.roundUpNaver-item--odd,
+.roundUpNaver-item--even {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 323px;
+  padding: 10px 0;
+  border-bottom: #E5E5E5 dotted 1px;
+}
+
+.roundUpNaver-item--even {
+  margin-left: 20px;
+}
+
+.roundUpNaver-item-caption {
+  width: 225px;
+}
+
+.roundUpNaver-item-hasImageLink {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #E5E5E5;
+}
+
+.roundUpNaver-toList {
+  text-align: right;
+}
+
+/*******************
+accessRanking
+*******************/
+.accessRanking-heading {
+  border-bottom: #BAAF9A solid 3px;
+}
+
+.accessRanking-wrap {
+  padding-top: 10px;
+}
+
+.accessRanking-item {
+  padding: 5px;
+  border-bottom: #CCC dotted 1px;
+}
+
 /********************
 variable
 ********************/
-/*set background color*/
 /********************
 structure
 ********************/

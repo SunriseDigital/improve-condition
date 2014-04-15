@@ -39,7 +39,7 @@
 			<div class="mainColumn">
 				<!-- 画像スライダー -->
 				<div class="gallery">
-					<img src="http://dummyimage.com/650x330/ffd5c7/fff" alt="">
+					<img class="gallery-mainImage" src="http://dummyimage.com/650x330/ffd5c7/fff" alt="">
 	<!-- 				<ul class="">
 						<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
 						<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
@@ -133,87 +133,74 @@
 				</div>
 
 				<!-- メインコンテンツ　(画像だけのリスト) -->
-				<div class="">
-					<h2 class=""></h2>
-					<ul class="">
-						<li class="">
-							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
+				<div class="fashionSnap">
+					<h2 class="fashionSnap-heading">FASHION SNAP</h2>
+					<p class="fashionSnap-toList">一覧へ</p>
+					<ul class="fashionSnap-wrap">
+						<li class="fashionSnap-item">
+							<img src="http://dummyimage.com/105x160/999999/fff" alt="dummyimage">
 						</li>
-						<li class="">
-							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
+						<li class="fashionSnap-item">
+							<img src="http://dummyimage.com/105x160/999999/fff" alt="dummyimage">
 						</li>
-						<li class="">
-							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
+						<li class="fashionSnap-item">
+							<img src="http://dummyimage.com/105x160/999999/fff" alt="dummyimage">
 						</li>
-						<li class="">
-							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
+						<li class="fashionSnap-item">
+							<img src="http://dummyimage.com/105x160/999999/fff" alt="dummyimage">
 						</li>
-						<li class="">
-							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
+						<li class="fashionSnap-item">
+							<img src="http://dummyimage.com/105x160/999999/fff" alt="dummyimage">
 						</li>
 					</ul>
-					<p>to list</p>
 				</div>
 
 				<!-- メインコンテンツ　(段落と画像だけのリスト) -->
-				<div class="">
-					<ul class="">
-						<li class="">
-							<p class="">paragraph</p>
-							<img src="" alt="">
+				<div class="roundUpNaver">
+					<h2 class="roundUpNaver-heading">NAVER女子まとめ</h2>
+					<ul class="roundUpNaver-wrap">
+						<li class="roundUpNaver-item--odd">
+							<p class="roundUpNaver-item-caption">【必見】男性をドキッとさせる女性とは？「仕草・言動の気を...</p>
+							<a class="roundUpNaver-item-hasImageLink" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							</a>
 						</li>
-						<li class="">
-							<p class="">paragraph</p>
-							<img src="" alt="">
+						<li class="roundUpNaver-item--even">
+							<p class="roundUpNaver-item-caption">【辛い朝も】♪朝イチ番に聴きたいアゲ曲♪１０曲選【景色が...</p>
+							<a class="roundUpNaver-item-hasImageLink" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							</a>
 						</li>
-						<li class="">
-							<p class="">paragraph</p>
-							<img src="" alt="">
+						<li class="roundUpNaver-item--odd">
+							<p class="roundUpNaver-item-caption">【必見】男性をドキッとさせる女性とは？「仕草・言動の気を...</p>
+							<a class="roundUpNaver-item-hasImageLink" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							</a>
 						</li>
-						<li class="">
-							<p class="">paragraph</p>
-							<img src="" alt="">
-						</li>
-						<li class="">
-							<p class="">paragraph</p>
-							<img src="" alt="">
-						</li>
-						<li class="">
-							<p class="">paragraph</p>
-							<img src="" alt="">
-						</li>
-						<li class="">
-							<p class="">paragraph</p>
-							<img src="" alt="">
-						</li>
-						<li class="">
-							<p class="">paragraph</p>
-							<img src="" alt="">
-						</li>
-						<li class="">
-							<p class="">paragraph</p>
-							<img src="" alt="">
-						</li>
-						<li class="">
-							<p class="">paragraph</p>
-							<img src="" alt="">
+						<li class="roundUpNaver-item--even">
+							<p class="roundUpNaver-item-caption">【辛い朝も】♪朝イチ番に聴きたいアゲ曲♪１０曲選【景色が...</p>
+							<a class="roundUpNaver-item-hasImageLink" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							</a>
 						</li>
 					</ul>
+					<p class="roundUpNaver-toList"><a href="">もっと見る</a></p>
 				</div>
 
 				<!-- メインコンテンツ (テキストだけのリスト) -->
-				<div class="">
-					<ul class="">
-						<li class="">text</li>
-						<li class="">text</li>
-						<li class="">text</li>
-						<li class="">text</li>
-						<li class="">text</li>
-						<li class="">text</li>
-						<li class="">text</li>
-						<li class="">text</li>
-						<li class="">text</li>
-						<li class="">text</li>
+				<div class="accessRanking">
+					<h2 class="accessRanking-heading">アクセスランキング</h2>
+					<ul class="accessRanking-wrap">
+						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
+						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
+						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
+						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
+						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
+						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
+						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
+						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
+						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
+						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
 					</ul>
 				</div>
 			</div>
@@ -241,14 +228,27 @@
 			</div>
 		</div>
 
+
 		<!-- フッター -->
 		<div class="footer">
+			<ul class="footer-sitemap">
+				<li class="footer-sitemap-item">TOP</li>
+				<li class="footer-sitemap-item">スペシャル</li>
+				<li class="footer-sitemap-item">恋愛</li>
+				<li class="footer-sitemap-item">ライフスタイル</li>
+				<li class="footer-sitemap-item">ファッション・ビューティ</li>
+				<li class="footer-sitemap-item">カルチャー</li>
+				<li class="footer-sitemap-item">グルメ</li>
+				<li class="footer-sitemap-item">アプリ</li>
+				<li class="footer-sitemap-item">プレゼント</li>
+			</ul>
 			<ul class="footer-nav">
-				<li class="">something</li>
-				<li class="">something</li>
-				<li class="">something</li>
-				<li class="">something</li>
-				<li class="">something</li>
+				<li class="footer-nav-item">トップ</li>
+				<li class="footer-nav-item">採用情報</li>
+				<li class="footer-nav-item">広告掲載</li>
+				<li class="footer-nav-item">利用規約</li>
+				<li class="footer-nav-item">フプライバシーポリシー</li>
+				<li class="footer-nav-item">プレゼント提供のお問い合わせ</li>
 			</ul>
 			<p><small>&copy; something</small></p>
 		</div>

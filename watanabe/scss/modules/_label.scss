@@ -13,11 +13,8 @@
 variable
 ********************/
 
-/*set background color*/
-$BgBeauty: #93CF5D;
-$BgLove: #FF4343;
-$BgLifeStyle: #53C8E1;
-$BgCulture: #FFC62B;
+//set background color category label 
+$classNamesConfig:((beauty,#93CF5D) ,(love,#FF4343) ,(lifeStyle,#53C8E1) ,(culture,#FFC62B));
 
 /********************
 structure
@@ -33,24 +30,13 @@ structure
 }
 
 /*category*/
-
-.label--beauty {
-	@extend %labels;
-	background-color: $BgBeauty;
+@each $classNames in $classNamesConfig {
+	$hashNames: nth($classNames, 1);
+	$colorNames: nth($classNames, 2);
+	.label--#{$hashNames} {
+		@extend %labels;
+		background-color: $colorNames;
+	}
 }
 
-.label--love {
-	@extend %labels;
-	background-color: $BgLove;
-}
-
-.label--lifeStyle {
-	@extend %labels;
-	background-color: $BgLifeStyle;
-}
-
-.label--culture {
-	@extend %labels;
-	background-color: $BgCulture;
-}
 
