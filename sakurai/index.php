@@ -233,18 +233,18 @@
 				<!-- メインコンテンツ (テキストだけのリスト) -->
 				<div class="l-space">
 					<h2 class="subTitle">SUB TITLE</h2>
-					<ul>
-						<li class="list"><a href="">text</a></li>
-						<li class="list"><a href="">text</a></li>
-						<li class="list"><a href="">text</a></li>
-						<li class="list"><a href="">text</a></li>
-						<li class="list"><a href="">text</a></li>
-						<li class="list"><a href="">text</a></li>
-						<li class="list"><a href="">text</a></li>
-						<li class="list"><a href="">text</a></li>
-						<li class="list"><a href="">text</a></li>
-						<li class="list"><a href="">text</a></li>
-					</ul>
+					<ol>
+						<li class="list"><a href="" class="numbering--1">text</a></li>
+						<li class="list"><a href="" class="numbering--2">text</a></li>
+						<li class="list"><a href="" class="numbering--3">text</a></li>
+						<li class="list"><a href="" class="numbering--4">text</a></li>
+						<li class="list"><a href="" class="numbering--5">text</a></li>
+						<li class="list"><a href="" class="numbering--6">text</a></li>
+						<li class="list"><a href="" class="numbering--6">text</a></li>
+						<li class="list"><a href="" class="numbering--8">text</a></li>
+						<li class="list"><a href="" class="numbering--9">text</a></li>
+						<li class="list"><a href="" class="numbering--10">text</a></li>
+					</ol>
 				</div>
 
 			</div>
