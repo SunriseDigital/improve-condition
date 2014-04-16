@@ -5,13 +5,9 @@
 //
 // *************************************
 
-.nav {
-  background-color: #feaeae;
 
-  .wrapper {
-    margin: 0 auto;
-    width: $l-contentWidth;
-  }
+.primaryNav {
+  background-color: #feaeae;
 
   ul {
     border-left: 1px solid rgb(254, 141, 141);    
@@ -40,4 +36,9 @@
       }
     }
   }
+}
+
+.primaryNav-wrap {
+  margin: 0 auto;
+  width: $l-contentWidth;
 }

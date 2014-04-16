@@ -5,6 +5,7 @@
 //
 // *************************************
 
+
 html {
   font-size: $base-fontSize;
 }
@@ -13,7 +14,7 @@ body {
   background: $base-background;
   color: $base-color;
   font-family: $base-fontFamily;
-  font-size: 100%;
+  font-size: 1.4rem;
   line-height: $base-lineHeight;
 }
 
@@ -48,14 +49,16 @@ a {
   }
 }
 
-aside {
-}
-
-ul, li, h1, h2, h3, h4, h5 {
+ul, ol, li,
+h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
 }
 
 ol, ul {
   list-style: none outside none;
+}
+
+img {
+  vertical-align: bottom;
 }

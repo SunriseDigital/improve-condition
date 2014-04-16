@@ -39,11 +39,11 @@
 
 @import "layout/footer";
 
-@import "layout/section";
+@import "layout/component";
 
 @import "layout/nav";
 
-@import "layout/utillities";
+@import "layout/utilities";
 
 // -------------------------------------
 //   state
@@ -52,9 +52,15 @@
 @import "state/base";
 
 // -------------------------------------
+//   components
+// -------------------------------------
+
+@import "components/labels";
+
+// -------------------------------------
 //   Modules
 // -------------------------------------
 
-@import "modules/example";
+@import "modules/slider";
 
 

@@ -5,6 +5,7 @@
 //
 // *************************************
 
+
 .header {
   height: 62px;
   border-top: 2px solid rgb(255, 121, 121);
@@ -12,8 +13,24 @@
   background-color: rgb(255, 255, 255);
 }
 
-.header-inner {
+.header-wrap {
   margin: 0 auto;
   padding: 0 30px;
   width: $l-contentWidth;
+}
+
+.header-logo {
+
+  a {
+    display: block;
+    margin-top: 10px;
+    width: 128px;
+    height: 35px;
+    color: $base-color;
+    font-family: 'Lobster', cursive;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
