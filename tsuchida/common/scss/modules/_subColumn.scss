@@ -1,0 +1,150 @@
+// *************************************
+//
+//   Module
+//   -> This is an example module
+//
+// *************************************
+
+// -------------------------------------
+//   heading
+// -------------------------------------
+.headingTypeH2 {
+	margin-bottom:10px;
+	padding: 0 0 5px 10px;
+	border-bottom: 3px solid #baaf9a;
+	font-weight: bold;
+}
+
+// -------------------------------------
+//   subColumn
+// -------------------------------------
+.bannerList01 {
+	font-size: 0;
+}
+.bannerList01-item {
+	margin-bottom: 20px;
+}
+.noticeBox01 {
+	margin-bottom: 20px;
+	padding: 0 10px;
+	border: 1px solid #fbd7d7;
+	background-color: #feeeee;
+	@include clearfix;
+}
+.noticeBox01-title {
+	padding: 10px;
+	color: #ff6666;
+}
+.noticeBox01-image {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+.noticeBox01-text {
+	overflow: hidden;
+}
+.noticeBox01-text-wrap {
+	font-size: 83%;
+	font-weight: bold;
+	color: #333333;
+}
+.noticeBox01-indexPageLink {
+	float: right;
+	border: 1px solid #fbd7d7;
+	border-bottom: none;
+}
+.noticeBox01-indexPageLink-wrap {
+	display: block;
+	padding: 5px 10px;
+	border: 1px solid #ffffff;
+	border-bottom: none;
+	color: #e96f6f;
+}
+.fortuneBox {
+	margin-bottom: 20px;
+	padding: 0 10px 10px;
+	border: 1px solid #fbdf9b;
+	background-color: #fcf9dd;
+	@include clearfix;
+}
+.fortuneBox-title {
+	padding: 10px;
+	color: #6d6161;
+}
+.fortuneBox-select {
+	float: left;
+	margin-right: 5px;
+}
+.fortuneBox-btn {
+	float: left;
+	width: 82px;
+	padding: 1px;
+	border: 1px solid #ffcc99;
+	background-color: #ffffff;
+}
+.fortuneBox-btn-wrap {
+	display: block;
+	background-color: #ffa144;
+	text-align: center;
+	font-size: 83%;
+	color: #ffffff;
+}
+.snsList01-twitter {/*‰¼*/
+	margin-bottom: 20px;
+	border: 1px solid #e5e5e5;
+}
+.snsList01-facebook {/*‰¼*/
+	margin-bottom: 20px;
+	border: 1px solid #e5e5e5;
+}
+.noticeBox02 {
+	padding: 0 10px 10px;
+	border: 1px solid #d9d6cf;
+	background-color: #f8f7f4;
+}
+.noticeBox02-title {
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	border: 1px dashed #9e9486;
+	border-top: none;
+	color: #ff7574;
+	background-color: #ffffff;
+}
+.noticeBox02-list01 {
+	margin-bottom: 10px;
+	border: 1px solid #d8d3cf;
+	border-bottom: none;
+}
+.noticeBox02-list01-item {
+	border-bottom: 1px solid #d8d3cf;
+}
+.noticeBox02-list01-item-wrap {
+	display: block;
+	padding: 10px;
+	font-size: 83%;
+	font-weight: bold;
+	text-align: center;
+	color: #755432;
+}
+.noticeBox02-other {
+	padding-top: 10px;
+	border-top: 1px dotted #d9d6cf;
+	@include clearfix;
+}
+.noticeBox02-other-qr {
+	float: left;
+	margin-right: 20px;
+}
+.noticeBox02-other-text {
+	margin-top: 5px;
+	font-weight: bold;
+}
+.noticeBox02-other-link {
+	margin-top: 5px;
+}
+.noticeBox02-other-link-wrap {
+	font-size: 65%;
+	font-weight: bold;
+	color: #333333;
+}
+
+

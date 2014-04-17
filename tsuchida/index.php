@@ -7,9 +7,9 @@
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<!--　共通　-->
-		<link rel="stylesheet" href="css/common.css" media="all">
+		<link rel="stylesheet" href="common/css/common.css" media="all">
 		<!--　ページ個別　-->
-		<link rel="stylesheet" href="css/index.css" media="all">
+		<!--link rel="stylesheet" href="css/index.css" media="all"-->
 		<!--link rel="stylesheet" href="/improve-condition/master/css/index.css" media="all"-->
 		<!-- link rel="alternate" media="only screen and (max-width: 640px)" href="" / -->
 		<!-- link rel="alternate" media="handheld" href="" / -->
@@ -41,11 +41,11 @@
 						<!-- 画像スライダー -->
 						<div id="jq-ImageGallery" class="">
 							<ul class="mainImgList">
-								<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
-								<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
-								<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
-								<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
-								<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
+								<li class=""><img src="images/index_main_ph01.png" alt=""></li>
+								<li class=""><img src="images/index_main_ph02.png" alt=""></li>
+								<li class=""><img src="images/index_main_ph03.png" alt=""></li>
+								<li class=""><img src="images/index_main_ph04.png" alt=""></li>
+								<li class=""><img src="images/index_main_ph05.png" alt=""></li>
 							</ul>
 							<ul class="">
 								<li class="">■</li>
@@ -60,70 +60,70 @@
 						<ul class="contentsList01">
 							<li class="contentsList01-item">
 								<a href="DUMMY" class="contentsList01-item-wrap">
-									<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+									<img src="images/index_ph01.png" alt="" width="60" height="60" class="contentsList01-item-img">
 									<span class="contentsList01-item-label">label</span>
 									<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 								</a>
 							</li>
 							<li class="contentsList01-item">
 								<a href="DUMMY" class="contentsList01-item-wrap">
-									<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+									<img src="images/index_ph02.png" alt="" width="60" height="60" class="contentsList01-item-img">
 									<span class="contentsList01-item-label">label</span>
 									<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 								</a>
 							</li>
 							<li class="contentsList01-item">
 								<a href="DUMMY" class="contentsList01-item-wrap">
-									<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+									<img src="images/index_ph03.png" alt="" width="60" height="60" class="contentsList01-item-img">
 									<span class="contentsList01-item-label">label</span>
 									<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 								</a>
 							</li>
 							<li class="contentsList01-item">
 								<a href="DUMMY" class="contentsList01-item-wrap">
-									<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+									<img src="images/index_ph04.png" alt="" width="60" height="60" class="contentsList01-item-img">
 									<span class="contentsList01-item-label">label</span>
 									<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 								</a>
 							</li>
 							<li class="contentsList01-item">
 								<a href="DUMMY" class="contentsList01-item-wrap">
-									<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+									<img src="images/index_ph05.png" alt="" width="60" height="60" class="contentsList01-item-img">
 									<span class="contentsList01-item-label">label</span>
 									<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 								</a>
 							</li>
 							<li class="contentsList01-item">
 								<a href="DUMMY" class="contentsList01-item-wrap">
-									<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+									<img src="images/index_ph06.png" alt="" width="60" height="60" class="contentsList01-item-img">
 									<span class="contentsList01-item-label">label</span>
 									<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 								</a>
 							</li>
 							<li class="contentsList01-item">
 								<a href="DUMMY" class="contentsList01-item-wrap">
-									<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+									<img src="images/index_ph07.png" alt="" width="60" height="60" class="contentsList01-item-img">
 									<span class="contentsList01-item-label">label</span>
 									<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 								</a>
 							</li>
 							<li class="contentsList01-item">
 								<a href="DUMMY" class="contentsList01-item-wrap">
-									<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+									<img src="images/index_ph08.png" alt="" width="60" height="60" class="contentsList01-item-img">
 									<span class="contentsList01-item-label">label</span>
 									<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 								</a>
 							</li>
 							<li class="contentsList01-item">
 								<a href="DUMMY" class="contentsList01-item-wrap">
-									<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+									<img src="images/index_ph09.png" alt="" width="60" height="60" class="contentsList01-item-img">
 									<span class="contentsList01-item-label">label</span>
 									<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 								</a>
 							</li>
 							<li class="contentsList01-item">
 								<a href="DUMMY" class="contentsList01-item-wrap">
-									<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+									<img src="images/index_ph10.png" alt="" width="60" height="60" class="contentsList01-item-img">
 									<span class="contentsList01-item-label">label</span>
 									<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 								</a>
@@ -136,21 +136,11 @@
 									<h2 class="colorBox01-title">FASHION SNAP</h2>
 									<p class="colorBox01-indexPageLink"><a href="DUMMY">一覧</a></p>
 									<ul class="colorBox01-list">
-										<li class="colorBox01-list-item">
-											<a href="DUMMY"><img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage"></a>
-										</li>
-										<li class="colorBox01-list-item">
-											<a href="DUMMY"><img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage"></a>
-										</li>
-										<li class="colorBox01-list-item">
-											<a href="DUMMY"><img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage"></a>
-										</li>
-										<li class="colorBox01-list-item">
-											<a href="DUMMY"><img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage"></a>
-										</li>
-										<li class="colorBox01-list-item">
-											<a href="DUMMY"><img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage"></a>
-										</li>
+										<li class="colorBox01-list-item"><a href="DUMMY"><img src="images/index_ph21.png" alt="dummyimage" width="105" height="160"></a></li>
+										<li class="colorBox01-list-item"><a href="DUMMY"><img src="images/index_ph22.png" alt="dummyimage" width="105" height="160"></a></li>
+										<li class="colorBox01-list-item"><a href="DUMMY"><img src="images/index_ph23.png" alt="dummyimage" width="105" height="160"></a></li>
+										<li class="colorBox01-list-item"><a href="DUMMY"><img src="images/index_ph24.png" alt="dummyimage" width="105" height="160"></a></li>
+										<li class="colorBox01-list-item"><a href="DUMMY"><img src="images/index_ph25.png" alt="dummyimage" width="105" height="160"></a></li>
 									</ul>
 								</div>
 							</div>
@@ -161,61 +151,61 @@
 							<ul class="contentsList01">
 								<li class="contentsList01-item">
 									<a href="DUMMY" class="contentsList01-item-wrap">
-										<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+										<img src="images/index_ph11.png" alt="" width="60" height="60" class="contentsList01-item-img">
 										<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 									</a>
 								</li>
 								<li class="contentsList01-item">
 									<a href="DUMMY" class="contentsList01-item-wrap">
-										<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+										<img src="images/index_ph12.png" alt="" width="60" height="60" class="contentsList01-item-img">
 										<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 									</a>
 								</li>
 								<li class="contentsList01-item">
 									<a href="DUMMY" class="contentsList01-item-wrap">
-										<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+										<img src="images/index_ph13.png" alt="" width="60" height="60" class="contentsList01-item-img">
 										<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 									</a>
 								</li>
 								<li class="contentsList01-item">
 									<a href="DUMMY" class="contentsList01-item-wrap">
-										<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+										<img src="images/index_ph14.png" alt="" width="60" height="60" class="contentsList01-item-img">
 										<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 									</a>
 								</li>
 								<li class="contentsList01-item">
 									<a href="DUMMY" class="contentsList01-item-wrap">
-										<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+										<img src="images/index_ph15.png" alt="" width="60" height="60" class="contentsList01-item-img">
 										<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 									</a>
 								</li>
 								<li class="contentsList01-item">
 									<a href="DUMMY" class="contentsList01-item-wrap">
-										<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+										<img src="images/index_ph16.png" alt="" width="60" height="60" class="contentsList01-item-img">
 										<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 									</a>
 								</li>
 								<li class="contentsList01-item">
 									<a href="DUMMY" class="contentsList01-item-wrap">
-										<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+										<img src="images/index_ph17.png" alt="" width="60" height="60" class="contentsList01-item-img">
 										<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 									</a>
 								</li>
 								<li class="contentsList01-item">
 									<a href="DUMMY" class="contentsList01-item-wrap">
-										<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+										<img src="images/index_ph18.png" alt="" width="60" height="60" class="contentsList01-item-img">
 										<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 									</a>
 								</li>
 								<li class="contentsList01-item">
 									<a href="DUMMY" class="contentsList01-item-wrap">
-										<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+										<img src="images/index_ph19.png" alt="" width="60" height="60" class="contentsList01-item-img">
 										<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 									</a>
 								</li>
 								<li class="contentsList01-item">
 									<a href="DUMMY" class="contentsList01-item-wrap">
-										<img class="contentsList01-item-img" src="http://dummyimage.com/60x60/000/fff" alt="">
+										<img src="images/index_ph20.png" alt="" width="60" height="60" class="contentsList01-item-img">
 										<span class="contentsList01-item-text">記事タイトル記事タイトル</span>
 									</a>
 								</li>
@@ -243,13 +233,13 @@
 					<div class="subColumn">
 						<!-- バナーリスト -->
 						<ul class="bannerList01">
-							<li class="bannerList01-item"><a href="DUMMY"><img src="http://dummyimage.com/300x250/000/fff" alt=""></a></li>
-							<li class="bannerList01-item"><a href="DUMMY"><img src="http://dummyimage.com/300x152/000/fff" alt=""></a></li>
+							<li class="bannerList01-item"><a href="DUMMY"><img src="common/images/com_bn01.png" alt="" width="300" height="250"></a></li>
+							<li class="bannerList01-item"><a href="DUMMY"><img src="common/images/com_bn02.png" alt="" width="300" height="152"></a></li>
 						</ul>
 						<!-- 告知 -->
 						<div class="noticeBox01">
 							<h2 class="noticeBox01-title">プレゼントを当ててハッピーになろう！</h2>
-							<p class="noticeBox01-image"><img src="http://dummyimage.com/120x80/000/fff" alt=""></p>
+							<p class="noticeBox01-image"><img src="common/images/com_ph01.png" alt="" width="120" height="80"></p>
 							<p class="noticeBox01-text"><a href="DUMMY" class="noticeBox01-text-wrap">プレゼント告知プレゼント告知プレゼント告知プレゼント告知プレゼント告知プレゼント告知</a></p>
 							<p class="noticeBox01-indexPageLink"><a href="DUMMY" class="noticeBox01-indexPageLink-wrap">プレゼント一覧</a></p>
 						</div>
@@ -289,7 +279,7 @@
 								<li class="noticeBox02-list01-item"><a href="DUMMY" class="noticeBox02-list01-item-wrap">Androidアプリ</a></li>
 							</ul>
 							<div class="noticeBox02-other">
-								<p class="noticeBox02-other-qr"><img src="http://dummyimage.com/82x82/000/fff" alt=""></p>
+								<p class="noticeBox02-other-qr"><img src="common/images/com_qr01.png" alt="" width="82" height="82"></p>
 								<p class="noticeBox02-other-text">携帯はこちらから</p>
 								<p class="noticeBox02-other-link"><a href="http://n.m.livedoor.com/girls/" class="noticeBox02-other-link-wrap">http://n.m.livedoor.com/girls/</a></p>
 							</div>
