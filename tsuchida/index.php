@@ -9,6 +9,7 @@
 		<!--　共通　-->
 		<link rel="stylesheet" href="common/css/common.css" media="all">
 		<!--　ページ個別　-->
+		<link rel="stylesheet" href="css/jq-ImageGallery.css" media="all">
 		<!--link rel="stylesheet" href="css/index.css" media="all"-->
 		<!--link rel="stylesheet" href="/improve-condition/master/css/index.css" media="all"-->
 		<!-- link rel="alternate" media="only screen and (max-width: 640px)" href="" / -->
@@ -55,7 +56,6 @@
 								<li class="">■</li>
 							</ul>
 						</div>
-						<link rel="stylesheet" href="css/jq-ImageGallery.css" media="all">
 						<!-- メインコンテンツ (ラベルとサムネイルが有るリスト) -->
 						<ul class="contentsList01">
 							<li class="contentsList01-item">
