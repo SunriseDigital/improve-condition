@@ -1,0 +1,29 @@
+// *************************************
+//
+//   mainContainer
+//   -> This is an mainContainer
+//
+// *************************************
+
+.mainContainer {
+	@include contentWidth;
+}
+.mainContainer-wrap {
+	padding: 12px;
+	background-color: #ffffff;
+	@include clearfix;
+}
+.mainColumn {
+	float: left;
+	width: 670px;
+}
+.subColumn {
+	float: right;
+	width: 300px;
+}
+.pagetopAnchor {
+	clear: both;
+	float: right;
+	border: 1px solid #d9d5cf;
+	background-color: #f6f4ee;
+}

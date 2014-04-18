@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*************************************
+//
+//   #jq-ImageGalleryêÍópÅiâºÅj
+//
+*************************************/
+#jq-ImageGallery {
+	margin-bottom: 20px;
+	padding: 9px;
+	border: 1px solid #eaeaea;
+}
+#jq-ImageGallery .mainImgList {
+	position: relative;
+	height: 330px;
+}
+#jq-ImageGallery .mainImgList li {
+	position: absolute;
+}

@@ -2,10 +2,10 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "css"
-sass_dir = "scss"
-images_dir = "img"
-javascripts_dir = "js"
+css_dir = "common/css"
+sass_dir = "common/scss"
+images_dir = "common/images"
+javascripts_dir = "common/js"
 output_style = :expanded
 line_comments = false
 
