@@ -1,0 +1,43 @@
+// *************************************
+//
+//   Base
+//   -> Base-level tags (body, p, etc.)
+//
+// *************************************
+
+html {
+  background-color: $base-background;
+}
+
+body {
+  height: 100%;
+  color: $base-color;
+  font-family: $base-fontFamily;
+  font-size: $base-fontSize;
+  line-height: $base-lineHeight;
+}
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+p {
+}
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+a {
+  color: $base-link-color;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: darken($base-link-color, 15%);
+    text-decoration: underline;
+  }
+}
+
+img {
+  vertical-align: bottom;
+}

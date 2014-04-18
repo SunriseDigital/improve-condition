@@ -12,40 +12,83 @@
 @import "compass";
 
 // -------------------------------------
-//   Core
+//   base
 // -------------------------------------
 
-// ----- Reset ----- //
+// ----- normalize ----- //
 
-@import "core/reset";
+@import "base/normalize";
 
 // ----- Settings ----- //
 
-@import "core/settings";
+@import "base/settings";
+
+$base-background: #F3F2EC;
+
 
 // ----- Helpers ----- //
 
-@import "core/helpers";
+@import "base/helpers";
 
 // ----- Base ----- //
 
-@import "core/base";
+@import "base/base";
 
-// ----- Content ----- //
+// -------------------------------------
+//   layout
+// -------------------------------------
 
-@import "core/content";
+// ------ setting ------//
 
-// ----- Layout ----- //
+$l-mainColumnWidth: 660px;
 
-@import "core/layout";
+@import "layout/footer";
+
+@import "layout/header";
+
+@import "layout/nav";
+
+@import "layout/utilities";
 
 // -------------------------------------
 //   Modules
 // -------------------------------------
 
-@import "modules/example";
+// ------- setting -------//
+$parallelList2-thumb: 60px;
+$parallelList3-thumb: 60px;
 
-// -------------------------------------
-//   Inbox
-// -------------------------------------
+@import "modules/layout";
 
+@import "modules/content";
+
+@import "modules/list";
+
+@import "modules/label";
+
+
+// ---------------------------------
+//   Individual
+//----------------------------------
+
+.snapWrap {
+	padding: 10px;
+	border: $base-border;
+	@include border-radius(4px);
+	@extend %l-space;
+}
+
+.snapWrap-item {
+	padding: 5px;
+	border: $base-border;
+	background-color: #fff;
+	@extend .parallelList5;
+}
+
+.bannerBox {
+	height: 100px;
+	border: 1px solid #FF7979;
+	text-align: center;
+	background-color: #FCC9C9;
+	@extend %l-space;
+}

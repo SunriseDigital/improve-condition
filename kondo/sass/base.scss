@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+// -------------------------------------
+//   Base Rules [SMACSS]
+//   http://smacss.com/book/type-base
+// -------------------------------------
+
+body {
+  background-color: rgb(243, 241, 236);
+}
+
+body * {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+a {
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;  
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+}
+
+aside {
+}
+
+ul, li, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none outside none;
+}

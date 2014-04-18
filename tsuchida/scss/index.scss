@@ -35,32 +35,18 @@
 //   layout
 // -------------------------------------
 
-@import "layout/header";
-
 @import "layout/footer";
 
-@import "layout/component";
+@import "layout/header";
 
 @import "layout/nav";
 
-@import "layout/utilities";
-
-// -------------------------------------
-//   state
-// -------------------------------------
-
-@import "state/base";
-
-// -------------------------------------
-//   components
-// -------------------------------------
-
-@import "components/labels";
+@import "layout/utillities";
 
 // -------------------------------------
 //   Modules
 // -------------------------------------
 
-@import "modules/slider";
+@import "modules/example";
 
 

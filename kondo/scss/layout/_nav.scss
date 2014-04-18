@@ -1,0 +1,44 @@
+// *************************************
+//
+//   nav
+//   -> This is an nav
+//
+// *************************************
+
+
+.primaryNav {
+  background-color: #feaeae;
+
+  ul {
+    border-left: 1px solid rgb(254, 141, 141);    
+  }
+
+  li {
+
+    display: block;
+    float: left;
+
+    &:last-child {
+      border-right: 1px solid rgb(254, 207, 207);
+    }
+
+    a {
+      display: block;
+      padding: 0 15px;
+      border-right: 1px solid rgb(251, 141, 141);
+      border-left: 1px solid rgb(254, 207, 207);
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      line-height: 32px;
+
+      &:hover {
+        background-color: rgb(254, 151, 151);
+      }
+    }
+  }
+}
+
+.primaryNav-wrap {
+  margin: 0 auto;
+  width: $l-contentWidth;
+}

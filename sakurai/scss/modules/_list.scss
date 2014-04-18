@@ -1,0 +1,110 @@
+// *************************************
+//
+//   Module
+//   -> This is an list module
+//
+// *************************************
+
+// -------------------------------------
+//   Modules
+// -------------------------------------
+
+// -------- 標準リスト --------- //
+
+.list {
+	padding: 5px 0;
+	border-bottom: $base-border;
+}
+
+// -------- 並列リスト --------- //
+
+@mixin parallelList($width, $margin) {
+	width: $width;
+	margin-right: $margin;
+	padding: 10px 0;
+	border-bottom: $base-border;
+	@include inline-block(top);
+}
+
+$parallelList2-width: ($l-mainColumnWidth - 15px) / 2;
+$parallelList3-width: ($l-mainColumnWidth - 30px) / 3;
+
+.parallelList2 {
+	@include parallelList($parallelList2-width, 15px);
+}
+
+.parallelList3 {
+	@include parallelList($parallelList3-width, 15px);
+}
+
+// ---------- 並列画像リスト ---------- //
+
+@mixin parallelPhotoList($margin) {
+	margin-left: $margin;
+	@include inline-block(top);
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.parallelList5 {
+	@include parallelPhotoList(10px);
+}
+
+// ---------- 並列リスト ---------- //
+
+.inlineList {
+	display: inline;
+	margin-left: 10px;
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.parallelList2--flap {
+	@include parallelList($parallelList2-width, 0);
+}
+
+.parallelList3--flap {
+	@include parallelList($parallelList3-width, 0);
+}
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+// ----- Submodule ----- //
+
+.parallelList2-text {
+	width: $parallelList2-width - $parallelList2-thumb - 10px;
+	padding-right: 10px;
+	@include inline-block(top);
+}
+
+.parallelList2-thumb {
+	@include inline-block(top);	
+}
+
+.parallelList3-text {
+	width: $parallelList3-width - $parallelList3-thumb - 10px;
+	padding-right: 10px;
+	@include inline-block(top);
+}
+
+.parallelList3-thumb {
+	@include inline-block(top);	
+}
