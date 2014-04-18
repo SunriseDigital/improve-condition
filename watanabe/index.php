@@ -138,49 +138,49 @@
 					<p class="fashionSnap-toList">一覧へ</p>
 					<ul class="fashionSnap-wrap">
 						<li class="fashionSnap-item">
-							<img src="http://dummyimage.com/105x160/999999/fff" alt="dummyimage">
+							<a href=""><img src="/improve-condition/watanabe/img/kiichi.jpg" alt="dummyimage" width="105" height="160"></a>
 						</li>
 						<li class="fashionSnap-item">
-							<img src="http://dummyimage.com/105x160/999999/fff" alt="dummyimage">
+							<a href=""><img src="/improve-condition/watanabe/img/kiichi.jpg" alt="dummyimage" width="105" height="160"></a>
 						</li>
 						<li class="fashionSnap-item">
-							<img src="http://dummyimage.com/105x160/999999/fff" alt="dummyimage">
+							<a href=""><img src="/improve-condition/watanabe/img/kiichi.jpg" alt="dummyimage" width="105" height="160"></a>
 						</li>
 						<li class="fashionSnap-item">
-							<img src="http://dummyimage.com/105x160/999999/fff" alt="dummyimage">
+							<a href=""><img src="/improve-condition/watanabe/img/kiichi.jpg" alt="dummyimage" width="105" height="160"></a>
 						</li>
-						<li class="fashionSnap-item">
-							<img src="http://dummyimage.com/105x160/999999/fff" alt="dummyimage">
+						<li class="fashionSnap-item--last">
+							<a href=""><img src="/improve-condition/watanabe/img/kiichi.jpg" alt="dummyimage" width="105" height="160"></a>
 						</li>
 					</ul>
 				</div>
 
 				<!-- メインコンテンツ　(段落と画像だけのリスト) -->
 				<div class="roundUpNaver">
-					<h2 class="roundUpNaver-heading">NAVER女子まとめ</h2>
+					<h2 class="roundUpNaver-heading">ボケてまとめ</h2>
 					<ul class="roundUpNaver-wrap">
 						<li class="roundUpNaver-item--odd">
-							<p class="roundUpNaver-item-caption">【必見】男性をドキッとさせる女性とは？「仕草・言動の気を...</p>
+							<p class="roundUpNaver-item-caption">ガムテープの威力をナメてた</p>
 							<a class="roundUpNaver-item-hasImageLink" href="">
-								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+								<img src="/improve-condition/watanabe/img/bokete.png" alt="" width="60" height="60">
 							</a>
 						</li>
 						<li class="roundUpNaver-item--even">
-							<p class="roundUpNaver-item-caption">【辛い朝も】♪朝イチ番に聴きたいアゲ曲♪１０曲選【景色が...</p>
+							<p class="roundUpNaver-item-caption">ガムテープの威力をナメてた</p>
 							<a class="roundUpNaver-item-hasImageLink" href="">
-								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+								<img src="/improve-condition/watanabe/img/bokete.png" alt="" width="60" height="60">
 							</a>
 						</li>
 						<li class="roundUpNaver-item--odd">
-							<p class="roundUpNaver-item-caption">【必見】男性をドキッとさせる女性とは？「仕草・言動の気を...</p>
+							<p class="roundUpNaver-item-caption">ガムテープの威力をナメてた</p>
 							<a class="roundUpNaver-item-hasImageLink" href="">
-								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+								<img src="/improve-condition/watanabe/img/bokete.png" alt="" width="60" height="60">
 							</a>
 						</li>
 						<li class="roundUpNaver-item--even">
-							<p class="roundUpNaver-item-caption">【辛い朝も】♪朝イチ番に聴きたいアゲ曲♪１０曲選【景色が...</p>
+							<p class="roundUpNaver-item-caption">ガムテープの威力をナメてた</p>
 							<a class="roundUpNaver-item-hasImageLink" href="">
-								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+								<img src="/improve-condition/watanabe/img/bokete.png" alt="" width="60" height="60">
 							</a>
 						</li>
 					</ul>
@@ -190,17 +190,17 @@
 				<!-- メインコンテンツ (テキストだけのリスト) -->
 				<div class="accessRanking">
 					<h2 class="accessRanking-heading">アクセスランキング</h2>
-					<ul class="accessRanking-wrap">
-						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
-						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
-						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
-						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
-						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
-						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
-						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
-						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
-						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
-						<li class="accessRanking-item">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</li>
+					<ol class="accessRanking-wrap">
+						<li class="accessRanking-item incrNum--1"><a class="" href="">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</a></li>
+						<li class="accessRanking-item incrNum--2"><a class="" href="">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</a></li>
+						<li class="accessRanking-item incrNum--3"><a class="" href="">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</a></li>
+						<li class="accessRanking-item incrNum--4"><a class="" href="">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</a></li>
+						<li class="accessRanking-item incrNum--5"><a class="" href="">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</a></li>
+						<li class="accessRanking-item incrNum--6"><a class="" href="">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</a></li>
+						<li class="accessRanking-item incrNum--7"><a class="" href="">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</a></li>
+						<li class="accessRanking-item incrNum--8"><a class="" href="">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</a></li>
+						<li class="accessRanking-item incrNum--9"><a class="" href="">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</a></li>
+						<li class="accessRanking-item incrNum--10"><a class="" href="">「私ニオってる？」デートの前はNGな体臭を強くする食べ物5つ</a></li>
 					</ul>
 				</div>
 			</div>
@@ -215,10 +215,10 @@
 				<div class=""><img src="http://dummyimage.com/300x150/ebebeb/fff.png" alt=""></div>
 
 				<!-- サブコンテンツ -->
-				<div class=""></div>
+				<div class=""><img src="http://dummyimage.com/300x150/ebebeb/fff.png" alt=""></div>
 
 				<!-- サブコンテンツ -->
-				<div class=""></div>
+				<div class=""><img src="http://dummyimage.com/300x150/ebebeb/fff.png" alt=""></div>
 
 				<!-- サブコンテンツ -->
 				<div class=""></div>

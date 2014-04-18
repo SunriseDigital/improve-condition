@@ -14,7 +14,7 @@ variable
 ********************/
 
 //set background color category label 
-$classNamesConfig:((beauty,#93CF5D) ,(love,#FF4343) ,(lifeStyle,#53C8E1) ,(culture,#FFC62B));
+$categoryObj:((beauty,#93CF5D) ,(love,#FF4343) ,(lifeStyle,#53C8E1) ,(culture,#FFC62B));
 
 /********************
 structure
@@ -30,10 +30,10 @@ structure
 }
 
 /*category*/
-@each $classNames in $classNamesConfig {
-	$hashNames: nth($classNames, 1);
-	$colorNames: nth($classNames, 2);
-	.label--#{$hashNames} {
+@each $category in $categoryObj {
+	$categoryNames: nth($category, 1);
+	$colorNames: nth($category, 2);
+	.label--#{$categoryNames} {
 		@extend %labels;
 		background-color: $colorNames;
 	}

@@ -25,11 +25,7 @@ topics
 *******************/
 
 .topics {
-
-}
-
-.topics-wrap {
-
+	font-weight: bold;
 }
 
 %topics-item {
@@ -77,29 +73,44 @@ fashionSnap
 .fashionSnap {
 	position: relative;
 	margin-top: 10px;
+	background-color: #F5F5EF;
 	border: 1px solid #E2E2E2;
 	@include border-radius(5px, 5px);
 }
 
 .fashionSnap-heading {
-	padding: 5px;
+	padding: 10px 5px 0 17px;
 }
 
 .fashionSnap-toList {
 	position: absolute;
 	top: 0;
-	right: 5px;
+	right: 18px;
 }
 
 .fashionSnap-wrap {
-	padding: 10px;
+	padding: 10px 10px 17px 17px;
 }
 
 .fashionSnap-item {
 	@include inline-block;
-	padding: 5px;
-	border: 1px solid #E2E2E2;
 	margin-right: 8px;
+	width: 115px;
+	height: 170px;
+	border: 1px solid #E2E2E2;
+}
+
+.fashionSnap-item--last {
+	@extend .fashionSnap-item;
+}
+
+.fashionSnap-item > a,
+.fashionSnap-item > a >img {
+	display: block;
+}
+
+.fashionSnap-item > a >img {
+	margin: 5px auto;
 }
 
 /*******************
@@ -115,13 +126,14 @@ roundUpNaver
 }
 
 .roundUpNaver-wrap {
-
+	font-weight: bold;
 }
 
 %roundUpNaver-item {
 	position: relative;
 	@include inline-block;
 	width: 323px;
+	height: 65px;
 	padding: 10px 0;
 	border-bottom: #E5E5E5 dotted 1px;
 }
@@ -157,10 +169,6 @@ roundUpNaver
 accessRanking
 *******************/
 
-.accessRanking {
-
-}
-
 .accessRanking-heading {
 	border-bottom: #BAAF9A solid 3px;
 }
@@ -173,3 +181,27 @@ accessRanking
 	padding: 5px;
 	border-bottom: #CCC dotted 1px;
 }
+
+%incrNum {
+	@include inline-block;
+	height: 15px;
+	width: 15px;
+	text-align: center;
+	font-size: 85%;
+	color: #fff;
+	@include border-radius(10px, 10px);
+}
+
+@for $i from 1 through 10 {
+	.incrNum--#{$i}:before {
+		@extend %incrNum;
+		content: "#{$i}";
+		@if $i < 4 {
+			background-color: #FF6666;
+		} @else {
+			background-color: #666666;
+		}
+	}
+}
+
+

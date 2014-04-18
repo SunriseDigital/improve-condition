@@ -399,12 +399,12 @@ th {
 
 /* Ul List
    ========================================================================== */
-ul, li {
+ul, ol, li {
   margin: 0;
   padding: 0;
 }
 
-ul {
+ul, ol {
   list-style: none;
 }
 
@@ -577,6 +577,10 @@ gallery
 /*******************
 topics
 *******************/
+.topics {
+  font-weight: bold;
+}
+
 .topics-item--odd,
 .topics-item--even {
   position: relative;
@@ -616,6 +620,7 @@ fashionSnap
 .fashionSnap {
   position: relative;
   margin-top: 10px;
+  background-color: #F5F5EF;
   border: 1px solid #E2E2E2;
   -webkit-border-radius: 5px 5px;
   -moz-border-radius: 5px / 5px;
@@ -623,29 +628,40 @@ fashionSnap
 }
 
 .fashionSnap-heading {
-  padding: 5px;
+  padding: 10px 5px 0 17px;
 }
 
 .fashionSnap-toList {
   position: absolute;
   top: 0;
-  right: 5px;
+  right: 18px;
 }
 
 .fashionSnap-wrap {
-  padding: 10px;
+  padding: 10px 10px 17px 17px;
 }
 
-.fashionSnap-item {
+.fashionSnap-item, .fashionSnap-item--last {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  padding: 5px;
-  border: 1px solid #E2E2E2;
   margin-right: 8px;
+  width: 115px;
+  height: 170px;
+  border: 1px solid #E2E2E2;
+}
+
+.fashionSnap-item > a, .fashionSnap-item--last > a,
+.fashionSnap-item > a > img,
+.fashionSnap-item--last > a > img {
+  display: block;
+}
+
+.fashionSnap-item > a > img, .fashionSnap-item--last > a > img {
+  margin: 5px auto;
 }
 
 /*******************
@@ -659,6 +675,10 @@ roundUpNaver
   border-bottom: #BAAF9A solid 3px;
 }
 
+.roundUpNaver-wrap {
+  font-weight: bold;
+}
+
 .roundUpNaver-item--odd,
 .roundUpNaver-item--even {
   position: relative;
@@ -669,6 +689,7 @@ roundUpNaver
   zoom: 1;
   *display: inline;
   width: 323px;
+  height: 65px;
   padding: 10px 0;
   border-bottom: #E5E5E5 dotted 1px;
 }
@@ -709,6 +730,73 @@ accessRanking
 .accessRanking-item {
   padding: 5px;
   border-bottom: #CCC dotted 1px;
+}
+
+.incrNum--1:before, .incrNum--2:before, .incrNum--3:before, .incrNum--4:before, .incrNum--5:before, .incrNum--6:before, .incrNum--7:before, .incrNum--8:before, .incrNum--9:before, .incrNum--10:before {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  font-size: 85%;
+  color: #fff;
+  -webkit-border-radius: 10px 10px;
+  -moz-border-radius: 10px / 10px;
+  border-radius: 10px / 10px;
+}
+
+.incrNum--1:before {
+  content: "1";
+  background-color: #FF6666;
+}
+
+.incrNum--2:before {
+  content: "2";
+  background-color: #FF6666;
+}
+
+.incrNum--3:before {
+  content: "3";
+  background-color: #FF6666;
+}
+
+.incrNum--4:before {
+  content: "4";
+  background-color: #666666;
+}
+
+.incrNum--5:before {
+  content: "5";
+  background-color: #666666;
+}
+
+.incrNum--6:before {
+  content: "6";
+  background-color: #666666;
+}
+
+.incrNum--7:before {
+  content: "7";
+  background-color: #666666;
+}
+
+.incrNum--8:before {
+  content: "8";
+  background-color: #666666;
+}
+
+.incrNum--9:before {
+  content: "9";
+  background-color: #666666;
+}
+
+.incrNum--10:before {
+  content: "10";
+  background-color: #666666;
 }
 
 /********************
