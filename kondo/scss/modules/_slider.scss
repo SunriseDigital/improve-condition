@@ -1,0 +1,56 @@
+// *************************************
+//
+//   Slider
+//
+// *************************************
+
+
+.slider {
+  padding: 9px;
+  height: 100%;
+  border-width: 1px 1px 3px;
+  border-style: solid;
+  border-color: rgb(241, 241, 241) rgb(241, 241, 241) rgb(234, 234, 234);
+  border-image: none;
+  text-align: left;
+  /*
+  -moz-border-top-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  */
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.slider--modifier {
+
+}
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+.is-slider-state {
+
+}
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.has-slider {
+
+}
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+// ----- Submodule ----- //
+
+.slider-submodule {
+
+}
