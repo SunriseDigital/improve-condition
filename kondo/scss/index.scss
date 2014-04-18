@@ -12,40 +12,55 @@
 @import "compass";
 
 // -------------------------------------
-//   Core
+//   base
 // -------------------------------------
 
-// ----- Reset ----- //
+// ----- normalize ----- //
 
-@import "core/reset";
+@import "base/normalize";
 
 // ----- Settings ----- //
 
-@import "core/settings";
+@import "base/settings";
 
 // ----- Helpers ----- //
 
-@import "core/helpers";
+@import "base/helpers";
 
 // ----- Base ----- //
 
-@import "core/base";
+@import "base/base";
 
-// ----- Content ----- //
+// -------------------------------------
+//   layout
+// -------------------------------------
 
-@import "core/content";
+@import "layout/header";
 
-// ----- Layout ----- //
+@import "layout/footer";
 
-@import "core/layout";
+@import "layout/component";
+
+@import "layout/nav";
+
+@import "layout/utilities";
+
+// -------------------------------------
+//   state
+// -------------------------------------
+
+@import "state/base";
+
+// -------------------------------------
+//   components
+// -------------------------------------
+
+@import "components/labels";
 
 // -------------------------------------
 //   Modules
 // -------------------------------------
 
-@import "modules/example";
+@import "modules/slider";
 
-// -------------------------------------
-//   Inbox
-// -------------------------------------
 
