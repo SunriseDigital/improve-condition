@@ -1,0 +1,23 @@
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  width: 70px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.label--love {
+  background: none repeat scroll 0% 0% rgb(255, 67, 67);
+}
+
+.label--beauty {
+  background: none repeat scroll 0% 0% rgb(147, 207, 93);
+}
+
+.label--lifeStyle {
+  background: none repeat scroll 0% 0% rgb(83, 200, 225);
+}

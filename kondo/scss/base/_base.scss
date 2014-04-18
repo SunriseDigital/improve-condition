@@ -5,16 +5,22 @@
 //
 // *************************************
 
+
 html {
-  background-color: $base-background;
+  font-size: $base-fontSize;
 }
 
 body {
-  height: 100%;
+  background: $base-background;
   color: $base-color;
   font-family: $base-fontFamily;
-  font-size: $base-fontSize;
+  font-size: 1.4rem;
   line-height: $base-lineHeight;
+}
+
+body * {
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 // -------------------------------------
@@ -22,6 +28,7 @@ body {
 // -------------------------------------
 
 p {
+  font-size: rem($base-fontSize);
 }
 
 // -------------------------------------
@@ -30,12 +37,26 @@ p {
 
 a {
   color: $base-link-color;
-  text-decoration: none;
+
+  &:link,
+  &:visited {
+    text-decoration: none;  
+  }
+
   &:hover,
   &:focus {
-    color: darken($base-link-color, 15%);
     text-decoration: underline;
   }
+}
+
+ul, ol, li,
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none outside none;
 }
 
 img {

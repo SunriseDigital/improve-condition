@@ -1,0 +1,24 @@
+// *************************************
+//
+//   utillities
+//   -> This is an utillities
+//
+// *************************************
+
+.mainContainer {
+	width: $l-maxWidth - 30px;
+	margin: 0 auto;
+	padding: 15px;
+	background-color: #fff;
+	@extend %group;
+}
+
+.mainColumn {
+	float: left;
+	width: $l-mainColumnWidth;
+}
+
+.subColumn {
+	float: right;
+	width: $l-subColumnWidth;
+}

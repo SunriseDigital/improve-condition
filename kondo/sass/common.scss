@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+// -------------------------------------
+//   Common Rules
+// -------------------------------------
+
+.header {
+  border-top: 2px solid rgb(255, 121, 121);
+  border-bottom: 1px solid rgb(225, 225, 225);
+  background-color: rgb(255, 255, 255);
+}
+
+.nav {
+  background-color: #feaeae;
+
+  ul {
+    border-left: 1px solid rgb(254, 141, 141);    
+  }
+
+  li {
+    &:last-child {
+      border-right: 1px solid rgb(254, 207, 207);
+    }
+
+    a {
+      border-right: 1px solid rgb(251, 141, 141);
+      border-left: 1px solid rgb(254, 207, 207);
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      line-height: 32px;
+
+      &:hover {
+        background-color: rgb(254, 151, 151);
+      }
+    }
+
+  }
+
+}
+
+.content {
+  background-color: rgb(255, 255, 255);
+}
+
+.footer {
+  background-color: rgb(215, 212, 205);
+  color: rgb(156, 136, 109);
+  font-size: rem(10px);
+  text-align: center;
+
+  li {
+    display: inline;
+
+    a {
+      color: rgb(156, 136, 109);
+    }
+  }
+}
+
+.footer-first {
+  ul {
+    text-align: left
+  }
+
+  li {
+
+    a {
+      color: rgb(119, 106, 97);
+      font-weight: bold;
+    }
+  }
+}

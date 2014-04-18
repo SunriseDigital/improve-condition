@@ -1,0 +1,137 @@
+@charset "utf-8";
+@import "compass";
+
+// -------------------------------------
+//   Layout Rules [SMACSS]
+//   http://smacss.com/book/type-layout
+// -------------------------------------
+
+$l-contentWidth: 1010px;
+
+
+.container {
+  height: 100%;
+}
+
+.header {
+  height: 62px;
+}
+
+.header-inner {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: $l-contentWidth;
+}
+
+.nav {
+
+  .wrapper {
+    margin: 0 auto;
+    width: $l-contentWidth;
+  }
+
+  ul {
+  }
+
+  li {
+    display: block;
+    float: left;
+
+    a {
+      display: block;
+      padding: 0 15px;
+    }
+  }
+}
+
+.content {
+  margin: 0 auto;
+  width: $l-contentWidth;
+}
+
+.content-inner {
+  @include display-box;
+  @include box-orient(horizontal);
+  @include box-align(start);
+  @include box-direction(inherit);
+  @include box-sizing(border-box);
+  padding: 12px;
+  width: $l-contentWidth;
+}
+
+.main-column {
+  @include box-flex(2);
+  width: 670px;
+
+  .slider {
+  }
+
+  .topics {
+  }
+
+  .snap {
+  }
+
+  .feed {
+  }
+
+  .ranking {
+  }
+
+}
+
+.sub-column {
+  @include box-flex(1);
+  width: 300px;
+
+  .premium {
+    margin-bottom: 20px;
+  }
+
+  .rotation {
+    margin-bottom: 20px;
+  }
+
+  .present {
+    margin-bottom: 20px;
+  }
+
+  .fortune {
+    margin-bottom: 20px;
+  }
+
+  .twitter {
+    margin-bottom: 20px;
+  }
+
+  .facebook {
+    margin-bottom: 20px;
+  }
+
+  .device {
+    margin-bottom: 20px;
+  }
+
+}
+
+.footer {
+  padding: 10px 0 30px;
+
+  li {
+    padding: 0 5px;
+  }
+}
+
+.footer-first {
+  margin: 0 auto 20px;
+  width: $l-contentWidth;
+}
+
+
+.wrapper {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
