@@ -41,6 +41,23 @@
   font-size: percentage($size / $base-fontSize);
 }
 
+// ----- ベンダープレフィックス ----- //
+
+$set-prefix: -webkit-, -moz-, '';
+
+// border-radius //
+
+@mixin border-radius($br:$base-borderRadius){
+	@each $prefix in $set-prefix {
+		#{$prefix}border-radius: $br;
+	}
+}
+
+@mixin border-radius-custom($br-t, $br-r, $br-b, $br-l){
+	@each $prefix in $set-prefix {
+		#{$prefix}border-radius: $br-t $br-r $br-b $br-l;
+	}
+}
 
 // -------------------------------------
 //   Animations
