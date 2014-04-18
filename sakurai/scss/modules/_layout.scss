@@ -30,9 +30,9 @@
 } 
 
 %l-harfSpace, .l-harfSpace {
-	margin-bottom: 10px;
+	margin-bottom: $base-whitespace/2;
 } 
 
 %l-space, .l-space {
-	margin-bottom: 20px;
+	margin-bottom: $base-whitespace;
 } 
