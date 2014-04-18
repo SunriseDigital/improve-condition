@@ -51,15 +51,12 @@ topics
 	margin-bottom: 10px;
 }
 
-.topics-item-Caption {
-
-}
-
-.topics-item-hasImageLink {
-	display: block;
+.topics-item-Caption + a,
+.topics-item-Image {
 	position: absolute;
 	top: 18px;
 	right: 12px;
+	display: block;
 	width: 60px;
 	height: 60px;
 	border: 3px solid #E5E5E5;

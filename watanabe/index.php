@@ -39,7 +39,7 @@
 			<div class="mainColumn">
 				<!-- 画像スライダー -->
 				<div class="gallery">
-					<img class="gallery-mainImage" src="http://dummyimage.com/650x330/ffd5c7/fff" alt="">
+					<img class="gallery-mainImage" src="http://dummyimage.com/650x330/ffd5c7/fff" alt="" width="650" height="330">
 	<!-- 				<ul class="">
 						<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
 						<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
@@ -62,71 +62,71 @@
 						<li class="topics-item--odd">
 							<p class="topics-item-label label--beauty">Beauty</p>
 							<p class="topics-item-Caption">「夏色アイシャドー」涼しげEyes</p>
-							<a class="topics-item-hasImageLink" href="">
-								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							<a class="topics-item-Image" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="" width="60" height="60">
 							</a>
 						</li>
 						<li class="topics-item--even">
 							<p class="topics-item-label label--love">Love</p>
 							<p class="topics-item-Caption">アプローチしにくい女子の特徴</p>
-							<a class="topics-item-hasImageLink" href="">
-								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							<a class="topics-item-Image" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="" width="60" height="60">
 							</a>
 						</li>
 						<li class="topics-item--odd">
 							<p class="topics-item-label label--lifeStyle">LifeStyle</p>
 							<p class="topics-item-Caption">20代から危ない「脂質異常症」</p>
-							<a class="topics-item-hasImageLink" href="">
-								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							<a class="topics-item-Image" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="" width="60" height="60">
 							</a>
 						</li>
 						<li class="topics-item--even">
 							<p class="topics-item-label label--love">Love</p>
 							<p class="topics-item-Caption">理想が高い? 現実的な相手選び</p>
-							<a class="topics-item-hasImageLink" href="">
-								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							<a class="topics-item-Image" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="" width="60" height="60">
 							</a>
 						</li>
 						<li class="topics-item--odd">
 							<p class="topics-item-label label--beauty">Beauty</p>
 							<p class="topics-item-Caption">正しい「日焼け止め」の使い方</p>
-							<a class="topics-item-hasImageLink" href="">
-								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							<a class="topics-item-Image" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="" width="60" height="60">
 							</a>
 						</li>
 						<li class="topics-item--even">
 							<p class="topics-item-label label--lifeStyle">LifeStyle</p>
 							<p class="topics-item-Caption">「ピル」は飲んだ方がいいのか</p>
-							<a class="topics-item-hasImageLink" href="">
-								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							<a class="topics-item-Image" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="" width="60" height="60">
 							</a>
 						</li>
 						<li class="topics-item--odd">
 							<p class="topics-item-label label--lifeStyle">LifeStyle</p>
 							<p class="topics-item-Caption">不倫してよかったと話す女性たち</p>
-							<a class="topics-item-hasImageLink" href="">
-								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							<a class="topics-item-Image" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="" width="60" height="60">
 							</a>
 						</li>
 						<li class="topics-item--even">
 							<p class="topics-item-label label--culture">Culture</p>
 							<p class="topics-item-Caption">話していてつまらない女性の特徴</p>
-							<a class="topics-item-hasImageLink" href="">
-								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							<a class="topics-item-Image" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="" width="60" height="60">
 							</a>
 						</li>
 						<li class="topics-item--odd">
 							<p class="topics-item-label label--love">Love</p>
 							<p class="topics-item-Caption">飲み会に誘われない女性の特徴</p>
-							<a class="topics-item-hasImageLink" href="">
-								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							<a class="topics-item-Image" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="" width="60" height="60">
 							</a>
 						</li>
 						<li class="topics-item--even">
 							<p class="topics-item-label label--love">Love</p>
 							<p class="topics-item--caption">いきすぎた外見磨きで招く悲劇</p>
-							<a class="topics-item-hasImageLink" href="">
-								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="">
+							<a class="topics-item-Image" href="">
+								<img src="http://dummyimage.com/60x60/999999/555&text=sumnail" alt="" width="60" height="60">
 							</a>
 						</li>
 					</ul>
@@ -209,25 +209,18 @@
 			<!-- ライトカラム -->
 			<div class="subColumn">
 				<!-- サブコンテンツ -->
-				<div class=""><img src="http://dummyimage.com/300x250/ebebeb/fff.png" alt=""></div>
+				<div class=""><img src="http://dummyimage.com/300x250/ebebeb/fff.png" alt="" width="300" height="250"></div>
 
 				<!-- サブコンテンツ -->
-				<div class=""><img src="http://dummyimage.com/300x150/ebebeb/fff.png" alt=""></div>
+				<div class=""><img src="http://dummyimage.com/300x150/ebebeb/fff.png" alt="" width="300" height="150"></div>
 
 				<!-- サブコンテンツ -->
-				<div class=""><img src="http://dummyimage.com/300x150/ebebeb/fff.png" alt=""></div>
+				<div class=""><img src="http://dummyimage.com/300x150/ebebeb/fff.png" alt="" width="300" height="150"></div>
 
 				<!-- サブコンテンツ -->
-				<div class=""><img src="http://dummyimage.com/300x150/ebebeb/fff.png" alt=""></div>
-
-				<!-- サブコンテンツ -->
-				<div class=""></div>
-
-				<!-- サブコンテンツ -->
-				<div class=""></div>
+				<div class=""><img src="http://dummyimage.com/300x150/ebebeb/fff.png" alt="" width="300" height="150"></div>
 			</div>
 		</div>
-
 
 		<!-- フッター -->
 		<div class="footer">
