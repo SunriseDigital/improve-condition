@@ -105,6 +105,38 @@ __[例2_2]__
 }
 ```
 
+さて、<li>などブロック要素辺りはクラス名を付けて作業することは  
+慣れていると思いますが、aタグやimgタグはどうでしょうか？  
+このまま上記のやり方を踏襲すると、  
+「.coverGirl-list-item-link」とか「.coverGirl-list-item-link-image」  
+みたいにウザくなって、やり過ぎなのでは……？みたいな感じですよね。  
+なので、少し臨機応変に対応しましょう。  
+[例2_3]をご覧ください。  
+基本はクラス名を指定せず、  
+`.coverGirl-list-item > a`  
+何か別の指定をしなければならくなったら使用する。  
+`.coverGirl-list-item > a.somethingLink`  
+
+__[例2_3]__  
+```css
+.coverGirl-list-item {
+  ...
+}
+
+.coverGirl-list-item > a {
+  ...
+}
+
+.coverGirl-list-item > a.somethingLink {
+  ...
+}
+
+.coverGirl-list-item > a > img {
+  ...
+}
+```
+
+
 __【モジュールとサブモジュール】__
 
 再利用可能な部品をモジュールと呼ぶことにします。  
