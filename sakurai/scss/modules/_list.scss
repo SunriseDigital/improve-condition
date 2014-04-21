@@ -39,7 +39,7 @@ $parallelList3-width: ($l-mainColumnWidth - 30px) / 3;
 
 // ---------- 並列画像リスト ---------- //
 
-@mixin parallelPhotoList($margin) {
+@mixin parallelPhotoList($margin:10px) {
 	margin-left: $margin;
 	@include inline-block(top);
 	&:first-child {
@@ -48,7 +48,7 @@ $parallelList3-width: ($l-mainColumnWidth - 30px) / 3;
 }
 
 .parallelList5 {
-	@include parallelPhotoList(10px);
+	@include parallelPhotoList();
 }
 
 // ---------- 並列リスト ---------- //
@@ -75,11 +75,6 @@ $parallelList3-width: ($l-mainColumnWidth - 30px) / 3;
 
 // -------------------------------------
 //   States
-// -------------------------------------
-
-
-// -------------------------------------
-//   Context
 // -------------------------------------
 
 
