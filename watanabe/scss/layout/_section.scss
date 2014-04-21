@@ -1,0 +1,33 @@
+// *************************************
+//
+//   section
+//   -> This is an section
+//
+// *************************************
+
+/*
+mainContainer
+*/
+.mainContainer {
+	@include bindContainer(980px, 15px);
+	overflow: hidden;
+	background-color: $base-background;
+}
+
+
+/*
+mainColumn
+*/
+.mainColumn {
+	float: left;
+	width: 670px;
+}
+
+
+/*
+subColumn
+*/
+.subColumn {
+	float: right;
+	width: 300px;
+}
