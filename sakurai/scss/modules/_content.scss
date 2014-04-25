@@ -43,27 +43,3 @@
 		text-decoration: none;
 	}
 }
-
-// -------------------------------------
-//   Headings
-// -------------------------------------
-
-.subTitle {
-	margin-bottom: 10px;
-	padding: 0 10px 5px;
-	border-bottom: #BAAF9A solid 3px;
-	color: #333;
-	@extend %c-xLarge;
-	@extend %c-bolder;
-}
-
-// -------------------------------------
-//   Modules
-// -------------------------------------
-
-.listLinkTitle {
-	@extend %c-xLarge;
-	@extend %c-bolder;
-	@extend %c-linkClear;
-}
-

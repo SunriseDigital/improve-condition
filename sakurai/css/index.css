@@ -262,11 +262,11 @@ img {
   font-size: 107.69231%;
 }
 
-.subTitle, .listLinkTitle, .c-xLarge {
+.c-xLarge {
   font-size: 115.38462%;
 }
 
-.header-title, .subTitle, .listLinkTitle, .label, .label--health, .label--love, .label--fresh, .c-bolder {
+.header-title, .label, .label--health, .label--love, .label--fresh, .c-bolder {
   font-weight: bold;
 }
 
@@ -283,6 +283,13 @@ img {
   padding: 0 10px 5px;
   border-bottom: #BAAF9A solid 3px;
   color: #333;
+  font-weight: bold;
+  font-size: 115.38462%;
+}
+
+.listLinkTitle {
+  font-weight: bold;
+  font-size: 115.38462%;
 }
 
 .list {
