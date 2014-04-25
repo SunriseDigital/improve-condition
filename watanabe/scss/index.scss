@@ -35,18 +35,24 @@
 //   layout
 // -------------------------------------
 
+@import "layout/utillities";
+
 @import "layout/footer";
 
 @import "layout/header";
 
 @import "layout/nav";
 
-@import "layout/utillities";
+@import "layout/section";
+
+@import "layout/top";
 
 // -------------------------------------
 //   Modules
 // -------------------------------------
 
-@import "modules/example";
+@import "modules/label";
+
+@import "modules/icon";
 
 

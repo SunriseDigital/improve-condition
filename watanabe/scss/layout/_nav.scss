@@ -5,4 +5,63 @@
 //
 // *************************************
 
+/********************
+variable
+********************/
+
+/* parent container class name */
+$globalNav: primaryNav;
+
+/* sequence modifiers class name */
+$firstListItem: navItem--first;
+$LastListItem: navItem--last;
+
+/********************
+structure
+********************/
+.#{$globalNav} {
+	@include gradient(#ffb3b3, #fda6a6);
+
+	>ul {
+		@include bindContainer();
+		height: 32px;
+		letter-spacing: -6px;
+
+		li {
+			@include inline-block;
+			height: 100%;
+			line-height: 32px;
+
+			&.#{$firstListItem} {
+				border-left: #FB8D8D solid 1px;
+			}
+
+			&.#{$LastListItem} {
+				border-right: #FECFCF solid 1px;
+			}
+
+			>a {
+				color: #fff;
+				display: block;
+				padding: 0 15px 0 15px;
+				border-left: #FB8D8D solid 1px;
+				border-right: #FECFCF solid 1px;
+				letter-spacing: normal;
+			}
+
+			&.#{$firstListItem} > a {
+				border-left: #FECFCF solid 1px;
+				border-right: #FECFCF solid 1px;
+			}
+
+			&.#{$LastListItem} > a {
+				border-left: #FB8D8D solid 1px;
+				border-right: #FB8D8D solid 1px;
+			}
+
+		}
+
+	}
+
+}
 

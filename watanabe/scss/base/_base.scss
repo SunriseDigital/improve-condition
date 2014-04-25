@@ -10,11 +10,11 @@ html {
 }
 
 body {
-  background: $base-background;
+  background: url(/improve-condition/watanabe/img/bg.gif) repeat 0 0;
   color: $base-color;
   font-family: $base-fontFamily;
   font-size: 100%;
-  line-height: $base-lineHeight;
+  line-height: $base-lineHeight;  
 }
 
 // -------------------------------------
@@ -34,6 +34,7 @@ a {
   text-decoration: none;
   &:hover,
   &:focus {
-    text-decoration: underline;
+    text-decoration: none;
+    cursor: pointer;
   }
 }

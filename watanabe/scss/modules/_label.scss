@@ -1,0 +1,42 @@
+// *************************************
+//
+//   Lebel Module
+//   -> This is an Lebel module
+//
+// *************************************
+
+// -------------------------------------
+//   label
+// -------------------------------------
+
+/********************
+variable
+********************/
+
+//set background color category label 
+$categoryObj:((beauty,#93CF5D) ,(love,#FF4343) ,(lifeStyle,#53C8E1) ,(culture,#FFC62B));
+
+/********************
+structure
+********************/
+
+%labels {
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.6;
+	color: #FFF;
+	font-weight: bold;
+}
+
+/*category*/
+@each $category in $categoryObj {
+	$categoryNames: nth($category, 1);
+	$colorNames: nth($category, 2);
+	.label--#{$categoryNames} {
+		@extend %labels;
+		background-color: $colorNames;
+	}
+}
+
+
