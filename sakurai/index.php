@@ -10,6 +10,16 @@
 		<!-- link rel="alternate" media="only screen and (max-width: 640px)" href="" / -->
 		<!-- link rel="alternate" media="handheld" href="" / -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+		<script type="text/javascript" src="js/slidGallery.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			$('#j-slider-gallery').slidGallery({
+				speed : 200,
+				thum: $("#j-sliderThumb")
+			});
+		});
+		</script>
 	</head>
 	<body>
 		<!-- ヘッダー -->
@@ -34,24 +44,17 @@
 		<div class="mainContainer">
 			<div class="mainColumn">
 				<!-- 画像スライダー -->
-				<!-- <div class="">
-					<ul class="">
-						<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
-						<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
-						<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
-						<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
-						<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
-					</ul>
-					<ul class="">
-						<li class="">marker</li>
-						<li class="">marker</li>
-						<li class="">marker</li>
-						<li class="">marker</li>
-						<li class="">marker</li>
-					</ul>
-				</div> -->
-				<div class="j-slider l-space">
-					<div><img src="img/bigimage.gif"></div>
+				<div class="l-space">
+					<div id="j-slider">
+						<ul id="j-slider-gallery">
+							<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
+							<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
+							<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
+							<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
+							<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
+						</ul>
+					</div>
+					<div id="j-sliderThumb"></div>
 				</div>
 
 				<!-- メインコンテンツ (ラベルとサムネイルが有るリスト) -->
@@ -67,7 +70,7 @@
 						--><li class="parallelList2--flap">
 							<div class="parallelList2-text">
 								<p class="label--love">label</p>
-								<p><a class="listLinkTitle" href="">paragraph</a></p>
+								<p><a class="listLinkTitle" href="">2カラム画像有り並列リスト</a></p>
 							</div><!--
 							--><a href="" class="parallelList2-thumb"><img src="img/sample.jpg" alt=""></a>
 						</li><!--
@@ -134,7 +137,7 @@
 				<div class="l-space">
 					<ul>
 						<li class="parallelList3">
-							<p class="parallelList3-text"><a href="">paragraph</a></p><!--
+							<p class="parallelList3-text"><a href="">3カラム画像有り並列リスト</a></p><!--
 							--><a href="" class="parallelList3-thumb"><img src="img/sample.jpg" alt=""></a>
 						</li><!--
 						--><li class="parallelList3">

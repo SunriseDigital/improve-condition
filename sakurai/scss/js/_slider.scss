@@ -1,0 +1,24 @@
+// *************************************
+//
+//   Javascript
+//   -> slider
+//
+// *************************************
+
+#j-slider {
+	position: relative;
+	height: 330px;
+	overflow: hidden;
+}
+
+	#j-slider-gallery {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+		#j-slider-gallery > li {
+			float: left;
+			width: 400px;
+			text-align: center;
+		}
