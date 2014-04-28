@@ -55,8 +55,8 @@ $l-mainColumnWidth: 660px;
 // -------------------------------------
 
 // ------- setting -------//
-$parallelList2-thumb: 60px;
-$parallelList3-thumb: 60px;
+$parallelList2-thumb: 66px;
+$parallelList3-thumb: 66px;
 
 @import "modules/layout";
 
@@ -70,6 +70,12 @@ $parallelList3-thumb: 60px;
 
 @import "modules/decoration";
 
+
+// ---------------------------------
+//   js
+//----------------------------------
+
+@import "js/slider";
 
 // ---------------------------------
 //   Individual

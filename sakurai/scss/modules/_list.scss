@@ -91,6 +91,7 @@ $parallelList3-width: ($l-mainColumnWidth - 30px) / 3;
 }
 
 .parallelList2-thumb {
+	border: 3px solid $base-border-color;
 	@include inline-block(top);	
 }
 
@@ -101,5 +102,5 @@ $parallelList3-width: ($l-mainColumnWidth - 30px) / 3;
 }
 
 .parallelList3-thumb {
-	@include inline-block(top);	
+	@extend .parallelList2-thumb;
 }
