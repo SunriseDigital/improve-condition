@@ -165,25 +165,25 @@
 
 				<!-- メインコンテンツ　(画像だけのリスト) -->
 				<div class="snapWrap">
-					<h2 class="subTitle">FASHION SNAP</h2>
-					<ul class="l-harfSpace">
-						<li class="snapWrap-item">
+					<h2 class="snapWrap-title"><img src="img/top_title.gif" alt="FASHION SNAP"></h2>
+					<p class="snapWrap-linkMore"><a href="" class="iconMore">to list</a></p>
+					<ul class="snapWrap-list">
+						<li class="snapWrap-list-item">
 							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
 						</li><!--
-						--><li class="snapWrap-item">
+						--><li class="snapWrap-list-item">
 							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
 						</li><!--
-						--><li class="snapWrap-item">
+						--><li class="snapWrap-list-item">
 							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
 						</li><!--
-						--><li class="snapWrap-item">
+						--><li class="snapWrap-list-item">
 							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
 						</li><!--
-						--><li class="snapWrap-item">
+						--><li class="snapWrap-list-item">
 							<img src="http://dummyimage.com/105x160/000/fff" alt="dummyimage">
 						</li>
 					</ul>
-					<p class="l-right">to list</p>
 				</div>
 
 				<!-- メインコンテンツ　(段落と画像だけのリスト) -->
@@ -231,6 +231,9 @@
 							--><a href="" class="parallelList2-thumb"><img src="img/sample.jpg" alt=""></a>
 						</li>
 					</ul>
+					<p class="l-right">
+						<a href="" class="iconMore">もっと見る</a>
+					</p>
 				</div>
 
 				<!-- メインコンテンツ (テキストだけのリスト) -->

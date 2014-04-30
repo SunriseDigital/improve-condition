@@ -13,12 +13,3 @@
 	@extend %group;
 }
 
-.mainColumn {
-	float: left;
-	width: $l-mainColumnWidth;
-}
-
-.subColumn {
-	float: right;
-	width: $l-subColumnWidth;
-}

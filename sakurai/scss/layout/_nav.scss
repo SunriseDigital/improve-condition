@@ -28,6 +28,7 @@ $nav-border-dark: 1px solid #FB8D8D;
 		border-left: $nav-border-bright;
 		line-height: 32px;
 		color: #fff;
+		font-weight: bold;
 		@extend %l-center;
 		&:hover {
 			background-color: #FC9090;

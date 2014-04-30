@@ -48,15 +48,15 @@ $l-mainColumnWidth: 660px;
 
 @import "layout/nav";
 
+@import "layout/mainColumn";
+
+@import "layout/subColumn";
+
 @import "layout/utilities";
 
 // -------------------------------------
 //   Modules
 // -------------------------------------
-
-// ------- setting -------//
-$parallelList2-thumb: 66px;
-$parallelList3-thumb: 66px;
 
 @import "modules/layout";
 
@@ -64,12 +64,20 @@ $parallelList3-thumb: 66px;
 
 @import "modules/title";
 
+// ------- setting -------//
+
+$parallelList2-thumb: 66px;
+$parallelList3-thumb: 66px;
+
 @import "modules/list";
+
+// --------------------- //
 
 @import "modules/label";
 
 @import "modules/decoration";
 
+@import "modules/icon";
 
 // ---------------------------------
 //   js
@@ -82,17 +90,33 @@ $parallelList3-thumb: 66px;
 //----------------------------------
 
 .snapWrap {
-	padding: 10px;
+	position: relative;
+	padding: 1px;
 	border: $base-border;
+	background-color: #F5F5EF;
+	background-clip: content-box;
 	@include border-radius(4px);
 	@extend %l-space;
 }
 
-.snapWrap-item {
-	padding: 5px;
-	border: $base-border;
-	background-color: #fff;
-	@extend .parallelList5;
+.snapWrap-title {
+	padding-top: 10px;
+}
+
+.snapWrap-linkMore {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.snapWrap-list {
+	padding: 10px 0 15px 15px;
+	.snapWrap-list-item {
+		padding: 5px;
+		border: $base-border;
+		background-color: #fff;
+		@extend .parallelList5;
+	}
 }
 
 .bannerBox {

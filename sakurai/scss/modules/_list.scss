@@ -92,7 +92,10 @@ $parallelList3-width: ($l-mainColumnWidth - 30px) / 3;
 
 .parallelList2-thumb {
 	border: 3px solid $base-border-color;
-	@include inline-block(top);	
+	@include inline-block(top);
+	&:hover {
+		border-color: #FE7E7E;
+	}
 }
 
 .parallelList3-text {

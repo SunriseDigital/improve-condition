@@ -1,0 +1,16 @@
+// *************************************
+//
+//   modules
+//   -> icon
+//
+// *************************************
+
+.iconMore {
+	font-weight: bold;
+	@include fontsize(12px);
+	@extend %c-linkClear;
+	&:before {
+		content: "▶";
+		padding-right: 10px;
+	}
+}
