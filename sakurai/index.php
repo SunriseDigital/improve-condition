@@ -16,7 +16,8 @@
 		$(function(){
 			$('#j-slider-gallery').slidGallery({
 				speed : 200,
-				thum: $("#j-sliderThumb")
+				thum: $("#j-sliderThumb"),
+				g_width : 650
 			});
 		});
 		</script>
@@ -44,8 +45,8 @@
 		<div class="mainContainer">
 			<div class="mainColumn">
 				<!-- 画像スライダー -->
-				<div class="l-space">
-					<div id="j-slider">
+				<div class="l-space galleryWrap">
+					<div id="j-slider" class="galleryWrap-box">
 						<ul id="j-slider-gallery">
 							<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>
 							<li class=""><img src="http://dummyimage.com/650x330/000/fff" alt=""></li>

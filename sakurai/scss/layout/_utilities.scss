@@ -6,9 +6,9 @@
 // *************************************
 
 .mainContainer {
-	width: $l-maxWidth - 30px;
+	width: $l-maxWidth - 24px;
 	margin: 0 auto;
-	padding: 15px;
+	padding: 12px;
 	background-color: #fff;
 	@extend %group;
 }

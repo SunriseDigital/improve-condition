@@ -205,7 +205,7 @@ img {
 
 .mainColumn {
   float: left;
-  width: 660px;
+  width: 670px;
 }
 
 .subColumn {
@@ -214,9 +214,9 @@ img {
 }
 
 .mainContainer {
-  width: 980px;
+  width: 986px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 12px;
   background-color: #fff;
 }
 
@@ -300,7 +300,7 @@ img {
 }
 
 .parallelList2 {
-  width: 322.5px;
+  width: 327.5px;
   margin-right: 15px;
   padding: 10px 0;
   border-bottom: 1px solid #e5e5e5;
@@ -313,7 +313,7 @@ img {
 }
 
 .parallelList3 {
-  width: 210px;
+  width: 213.33333px;
   margin-right: 15px;
   padding: 10px 0;
   border-bottom: 1px solid #e5e5e5;
@@ -347,7 +347,7 @@ img {
 }
 
 .parallelList2--flap {
-  width: 322.5px;
+  width: 327.5px;
   margin-right: 0;
   padding: 10px 0;
   border-bottom: 1px solid #e5e5e5;
@@ -360,7 +360,7 @@ img {
 }
 
 .parallelList3--flap {
-  width: 210px;
+  width: 213.33333px;
   margin-right: 0;
   padding: 10px 0;
   border-bottom: 1px solid #e5e5e5;
@@ -373,7 +373,7 @@ img {
 }
 
 .parallelList2-text {
-  width: 246.5px;
+  width: 251.5px;
   padding-right: 10px;
   display: -moz-inline-stack;
   display: inline-block;
@@ -397,7 +397,7 @@ img {
 }
 
 .parallelList3-text {
-  width: 134px;
+  width: 137.33333px;
   padding-right: 10px;
   display: -moz-inline-stack;
   display: inline-block;
@@ -559,6 +559,7 @@ img {
 
 #j-slider {
   position: relative;
+  width: 650px;
   height: 330px;
   overflow: hidden;
 }
@@ -571,8 +572,35 @@ img {
 
 #j-slider-gallery > li {
   float: left;
-  width: 400px;
+  width: 650px;
   text-align: center;
+}
+
+#j-sliderThumb {
+  margin: 10px;
+  text-align: right;
+}
+#j-sliderThumb span {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  background-color: #E6DED1;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+#j-sliderThumb span.is-select {
+  background-color: #9F8B73;
+}
+
+.galleryWrap {
+  border: 1px solid #e5e5e5;
+}
+.galleryWrap .galleryWrap-box {
+  margin: 10px auto;
 }
 
 .snapWrap {

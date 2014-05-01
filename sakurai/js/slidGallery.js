@@ -28,21 +28,23 @@
 			
 
 			//サムネイル設定
-			var thum_list = self.options.thum.children();
+			var thum_box = self.options.thum
+			var thum_list = thum_box.children();
 			if (thum_list.length == 0){
-				for (var i = 1; i <= total; i++) {
-					thum_list.append("<span></span>");
+				for (var i = 1; i <= (total-2); i++) {
+					thum_box.append('<span data-thum="'+ i +'"></span>');
 				};
+			} else {
+				var thum_n = 1;
+				thum_list.each(function(){
+					$(this).data('thum',thum_n++);
+				});
 			}
-			var thum_n = 1;
-			thum_list.each(function(){
-				$(this).data('thum',thum_n++);
-			});
 
 			var loop = false;
 
 			//nextをクリックすると移動
-			if(self.options.next && elf.options.prev){
+			if(self.options.next && self.options.prev){
 				self.options.next.click(function(){
 					//最後まで行ったら最初へ
 					if (index >= (total-2)){
@@ -71,7 +73,8 @@
 			}
 				
 			//サムネイルをクリックすると移動
-			self.options.thum.click(function(){
+			thum_box.children().click(function(){
+				self.c("a");
 				index = $(this).data('thum');
 				self.setSlider(index);
 			});
@@ -87,8 +90,8 @@
 					duration : self.options.speed
 				}
 			);
-			self.options.thum.removeClass('select');
-			self.options.thum.eq(index-1).addClass('select');
+			self.options.thum.removeClass('is-select');
+			self.options.thum.eq(index-1).addClass('is-select');
 		},
 		setLastSlider: function(index,start){
 			var self = this;
@@ -101,13 +104,17 @@
 					duration : self.options.speed
 				}
 			);
-			self.options.thum.removeClass('select');
-			self.options.thum.eq(index-1).addClass('select');
+			self.options.thum.removeClass('is-select');
+			self.options.thum.eq(index-1).addClass('is-select');
 		},
 		destroy: function() {
 		//destroy
-			self.options.thum.removeClass('select');
+			self.options.thum.removeClass('is-select');
 			$.Widget.prototype.destroy.call( this );
+		},
+
+		c: function(i) {
+			console.log(i);
 		}
 	});
 })(jQuery);

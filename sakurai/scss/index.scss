@@ -40,8 +40,6 @@ $base-background: #F3F2EC;
 
 // ------ setting ------//
 
-$l-mainColumnWidth: 660px;
-
 @import "layout/footer";
 
 @import "layout/header";
@@ -88,6 +86,13 @@ $parallelList3-thumb: 66px;
 // ---------------------------------
 //   Individual
 //----------------------------------
+
+.galleryWrap {
+	border: $base-border;
+	.galleryWrap-box {
+		margin: 10px auto;
+	}
+}
 
 .snapWrap {
 	position: relative;
