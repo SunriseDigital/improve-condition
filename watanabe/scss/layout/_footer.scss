@@ -6,3 +6,28 @@
 // *************************************
 
 
+.footer {
+	color: #9C886D;
+	font-size: 10px;
+	text-align: center;
+	padding: 10px 0 30px;
+	background: #D7D4CD;
+
+	.footer-sitemap {
+
+		.footer-sitemap-item {
+			@include inline-block;
+		}
+	}
+
+	.footer-nav {
+
+		.footer-nav-item {
+			@include inline-block;
+		}
+	}
+
+}
+
+
+

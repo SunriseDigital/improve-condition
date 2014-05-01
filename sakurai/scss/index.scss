@@ -12,40 +12,122 @@
 @import "compass";
 
 // -------------------------------------
-//   Core
+//   base
 // -------------------------------------
 
-// ----- Reset ----- //
+// ----- normalize ----- //
 
-@import "core/reset";
+@import "base/normalize";
 
 // ----- Settings ----- //
 
-@import "core/settings";
+@import "base/settings";
+
+$base-background: #F3F2EC;
+
 
 // ----- Helpers ----- //
 
-@import "core/helpers";
+@import "base/helpers";
 
 // ----- Base ----- //
 
-@import "core/base";
+@import "base/base";
 
-// ----- Content ----- //
+// -------------------------------------
+//   layout
+// -------------------------------------
 
-@import "core/content";
+// ------ setting ------//
 
-// ----- Layout ----- //
+@import "layout/footer";
 
-@import "core/layout";
+@import "layout/header";
+
+@import "layout/nav";
+
+@import "layout/mainColumn";
+
+@import "layout/subColumn";
+
+@import "layout/utilities";
 
 // -------------------------------------
 //   Modules
 // -------------------------------------
 
-@import "modules/example";
+@import "modules/layout";
 
-// -------------------------------------
-//   Inbox
-// -------------------------------------
+@import "modules/content";
 
+@import "modules/title";
+
+// ------- setting -------//
+
+$parallelList2-thumb: 66px;
+$parallelList3-thumb: 66px;
+
+@import "modules/list";
+
+// --------------------- //
+
+@import "modules/label";
+
+@import "modules/decoration";
+
+@import "modules/icon";
+
+// ---------------------------------
+//   js
+//----------------------------------
+
+@import "js/slider";
+
+// ---------------------------------
+//   Individual
+//----------------------------------
+
+.galleryWrap {
+	border: $base-border;
+	.galleryWrap-box {
+		margin: 10px auto;
+	}
+}
+
+.snapWrap {
+	position: relative;
+	padding: 1px;
+	border: $base-border;
+	background-color: #F5F5EF;
+	background-clip: content-box;
+	@include border-radius(4px);
+	@extend %l-space;
+}
+
+.snapWrap-title {
+	padding-top: 10px;
+}
+
+.snapWrap-linkMore {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.snapWrap-list {
+	padding: 10px 0 15px 15px;
+	.snapWrap-list-item {
+		padding: 5px;
+		border: $base-border;
+		background-color: #fff;
+		@extend .parallelList5;
+	}
+}
+
+.bannerBox {
+	height: 100px;
+	border: 1px solid #FF7979;
+	text-align: center;
+	background-color: #FCC9C9;
+	@extend %l-space;
+}

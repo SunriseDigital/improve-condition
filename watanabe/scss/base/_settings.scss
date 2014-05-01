@@ -19,7 +19,7 @@
 
 $base-background: #fff;
 $base-color: #222;
-$base-link-color: #0053c9;
+$base-link-color: #09C;
 
 // ----- Base Borders & Box Shadows ----- //
 
@@ -29,8 +29,8 @@ $base-boxShadow: 0 1px 2px rgba($base-color, 0.25);
 
 // ----- Base Content ----- //
 
-$base-fontFamily: sans-serif;
-$base-fontSize: 16px;
+$base-fontFamily: 'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo,sans-serif;
+$base-fontSize: 13px;
 $base-lineHeight: 1.5;
 
 // ----- Base Layout ----- //
@@ -39,8 +39,9 @@ $base-whitespace: 20px;
 
 // ----- Content ----- //
 
-$c-header-fontFamily: sans-serif;
+$c-header-fontFamily: 'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo,sans-serif;
 
 // ----- Layout ----- //
 
+$l-mainContainerWidth: 1010px;
 $l-maxWidth: 980px;

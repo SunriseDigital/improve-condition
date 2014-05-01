@@ -1,0 +1,55 @@
+// *************************************
+//
+//   Module
+//   -> This is an label module
+//
+// *************************************
+// -------------------------------------
+//   Modules
+// -------------------------------------
+
+.label {
+	display: block;
+	width: 70px;
+	margin-bottom: 10px;
+	line-height: 1.6;
+	text-align: center;
+	color: #FFF;
+	@extend %c-small;
+	@extend %c-bolder;
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.label--health {
+	@extend .label;
+	background-color: #93CF5D;
+}
+
+.label--love {
+	@extend .label;
+	background-color: #FF4343;
+}
+
+.label--fresh {
+	@extend .label;
+	background-color: #53C8E1;
+}
+
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+

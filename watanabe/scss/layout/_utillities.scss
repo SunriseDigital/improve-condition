@@ -5,5 +5,14 @@
 //
 // *************************************
 
+/*
+bind a mainContainer
+*/
+@mixin bindContainer($wd: $l-mainContainerWidth,$pd: 0) {
+	width: $wd;
+	padding: $pd;
+	margin: 0 auto;
+}
+
 
 

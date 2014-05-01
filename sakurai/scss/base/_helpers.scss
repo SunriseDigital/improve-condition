@@ -1,0 +1,65 @@
+// *************************************
+//
+//   Helpers
+//   -> Extends, Functions, Mixins, Animations
+//
+// *************************************
+
+// -------------------------------------
+//   Extends
+// -------------------------------------
+
+// ----- Clearfix ----- //
+
+%group:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+// -------------------------------------
+//   Functions
+// -------------------------------------
+
+// ----- em ----- //
+
+@function em($target, $context: $base-fontSize) {
+  @if ($target == 0) {
+    @return 0
+  } @else {
+    @return #{$target / $context}em
+  }
+}
+
+// -------------------------------------
+//   Mixins
+// -------------------------------------
+
+// ----- fontsize:  ----- //
+
+@mixin fontsize($size){
+  font-size: percentage($size / $base-fontSize);
+}
+
+// ----- ベンダープレフィックス ----- //
+
+$set-prefix: -webkit-, -moz-, '';
+
+// border-radius //
+
+@mixin border-radius($br:$base-borderRadius){
+	@each $prefix in $set-prefix {
+		#{$prefix}border-radius: $br;
+	}
+}
+
+@mixin border-radius-custom($br-t, $br-r, $br-b, $br-l){
+	@each $prefix in $set-prefix {
+		#{$prefix}border-radius: $br-t $br-r $br-b $br-l;
+	}
+}
+
+// -------------------------------------
+//   Animations
+// -------------------------------------
+

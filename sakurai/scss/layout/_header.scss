@@ -1,0 +1,22 @@
+// *************************************
+//
+//   header
+//   -> This is an header
+//
+// *************************************
+
+.header {
+	border-top: 2px solid #FF7979;
+	background-color: #fff;
+}
+
+.header-wrap {
+	width: $l-maxWidth;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+.header-title {
+	@extend %c-bolder;
+	@include fontsize(22px);
+}

@@ -1,0 +1,15 @@
+// *************************************
+//
+//   utillities
+//   -> This is an utillities
+//
+// *************************************
+
+.mainContainer {
+	width: $l-maxWidth - 24px;
+	margin: 0 auto;
+	padding: 12px;
+	background-color: #fff;
+	@extend %group;
+}
+

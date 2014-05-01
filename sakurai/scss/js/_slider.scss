@@ -1,0 +1,40 @@
+// *************************************
+//
+//   Javascript
+//   -> slider
+//
+// *************************************
+
+#j-slider {
+	position: relative;
+	width: 650px;
+	height: 330px;
+	overflow: hidden;
+}
+
+	#j-slider-gallery {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+		#j-slider-gallery > li {
+			float: left;
+			width: 650px;
+			text-align: center;
+		}
+
+#j-sliderThumb {
+	margin: 10px;
+	text-align: right;
+	span {
+		width: 10px;
+		height: 10px;
+		margin-left: 5px;
+		background-color: #E6DED1;
+		@include inline-block(top);
+	}
+	span.is-select {
+		background-color: #9F8B73;
+	}
+}

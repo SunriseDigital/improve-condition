@@ -84,6 +84,7 @@ template {
 
 a {
   background: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -93,6 +94,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
+  text-decoration: none;
 }
 
 /* Text-level semantics
@@ -130,7 +132,10 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+}
+
+h1,h2,h3,h4 {
+  margin: 0;
 }
 
 /**
@@ -420,4 +425,20 @@ table {
 td,
 th {
   padding: 0;
+}
+
+/* Ul List
+   ========================================================================== */
+
+ul,ol,li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+li {
+
 }

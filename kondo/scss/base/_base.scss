@@ -1,0 +1,64 @@
+// *************************************
+//
+//   Base
+//   -> Base-level tags (body, p, etc.)
+//
+// *************************************
+
+
+html {
+  font-size: $base-fontSize;
+}
+
+body {
+  background: $base-background;
+  color: $base-color;
+  font-family: $base-fontFamily;
+  font-size: 1.4rem;
+  line-height: $base-lineHeight;
+}
+
+body * {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+p {
+  font-size: rem($base-fontSize);
+}
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+a {
+  color: $base-link-color;
+
+  &:link,
+  &:visited {
+    text-decoration: none;  
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+ul, ol, li,
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none outside none;
+}
+
+img {
+  vertical-align: bottom;
+}
