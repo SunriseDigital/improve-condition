@@ -12,44 +12,19 @@
 
     ### tasks ###
 
-    coffee:
-      compile:
-        files:
-          '<%= js_files %>/common.js': ['<%= coffee_files %>/common.coffee']
+    #coffee:
 
-    copy:
-      dist:
-        files:
-          src: [
-            '<%= coffee_files %>/common.js'
-          ]
-          dest: '<%= js_files %>'
+    #copy:
 
-    uglify:
-      options:
-        mangle: false
+    #uglify:
 
-      js:
-        files:
-          '<%= js_files %>/common.min.js': ['<%= js_files %>/common.js']
-
-    concat:
-      set_css:
-        src: [
-            '<%= css_files %>/index.css'
-            '<%= css_files %>/base.css'
-            '<%= css_files %>/layout.css'
-            '<%= css_files %>/state.css'
-            '<%= css_files %>/module.css'
-            '<%= css_files %>/theme.css'
-          ]
-
-        dest: '<%= css_files %>/set.css'
+    #concat:
 
     cssmin:
       css:
         files:
-          '<%= css_files %>/set.min.css': ['<%= css_files %>/set.css']
+          '<%= css_files %>/core.bundle.min.css': ['<%= css_files %>/core.bundle.css']
+          '<%= css_files %>/app.bundle.min.css': ['<%= css_files %>/app.bundle.css']
 
     compass:
       dev:
@@ -66,6 +41,7 @@
         files: [
           '<%= js_files %>/*.js'
           '<%= js_files %>/**/*.js'
+          '<%= js_files %>/**/**/*.js'
         ]
 
         tasks: [
@@ -78,6 +54,7 @@
         files: [
           '<%= scss_files %>/*.scss'
           '<%= scss_files %>/**/*.scss'
+          '<%= scss_files %>/**/**/*.scss'
         ]
 
         tasks: [
@@ -116,5 +93,5 @@
   grunt.registerTask 'css', [
     'compass:dev'
     #'concat'
-    #'cssmin'
+    'cssmin'
   ]
