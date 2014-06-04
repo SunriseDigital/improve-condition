@@ -5,7 +5,7 @@ CSS及びSCSSファイルの記述規則について（仮）
 
 ##プロパティの順番について
 
-CSS及びSCSSファイルのプロパティは、
+CSS及びSCSSファイルのプロパティは、  
 以下の順番で記述します。
 ```appearance
 display
@@ -168,38 +168,38 @@ animation-play-state
 
 ##SCSSの編集環境
 
-SCSSの編集に関しては以下のツールを推奨します。
-
-ツール
+SCSSの編集に関しては以下のツールを推奨します。  
+  
+ツール  
 sublime text
 
-プラグイン
+プラグイン  
 ○○○○○
 
 
 ##CSSへのコンパイルツール
 
-SCSSをCSSの編集に関しては以下のツールを推奨します。
+SCSSをCSSの編集に関しては以下のツールを推奨します。  
 
-ツール
-Compass
-
-コマンドプロンプトを立ち上げる
-↓
-作業ディレクトリへ移動
-例）
-C:\Users\tsuchida\workspace\improve-condition\tsuchida
-に移動
-
-C:\Users\tsuchida>cd workspace
-
-C:\Users\tsuchida\workspace>cd improve-condition
-
-C:\Users\tsuchida\workspace\improve-condition>cd tsuchida
-
-↓
-compass w
-
-を入力し、ファイル変更を監視。
-↓
+ツール  
+Compass  
+  
+コマンドプロンプトを立ち上げる  
+↓  
+作業ディレクトリへ移動  
+例）  
+C:\Users\tsuchida\workspace\improve-condition\tsuchida  
+に移動  
+  
+C:\Users\tsuchida>cd workspace  
+  
+C:\Users\tsuchida\workspace>cd improve-condition  
+  
+C:\Users\tsuchida\workspace\improve-condition>cd tsuchida  
+  
+↓  
+compass w  
+  
+を入力し、ファイル変更を監視。  
+↓  
 scssファイルを編集すると自動的にcssファイルへコンパイルされます。
