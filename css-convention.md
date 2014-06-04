@@ -163,7 +163,7 @@ animation-iteration-count
 animation-direction
 animation-play-state
 ```
-※上記順番は[OOCSS](http://www.mozilla.org/css/base/content.css)を基に定めました。
+※上記順番は[mozilla.org Base Styles](http://www.mozilla.org/css/base/content.css)を基に定めました。
 
 
 ##SCSSの編集環境
