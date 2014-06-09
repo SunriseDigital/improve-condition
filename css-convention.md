@@ -180,8 +180,7 @@ __[インストール後の設定]__
   
 2. [Node.js](http://nodejs.org/)をインストール※Sublime Textとは別モノです。  
   
-3. Sublime TextのPackage Control:Install Packageで[scss][csscomb js]をインストール  
-[Preferences]→[Package Control]→[Package Control:Install Package]から[scss][csscomb js]をそれぞれインストール  
+3. Sublime TextのPackage Control:Install Packageで[scss][csscomb js]をインストール```[Preferences]→[Package Control]→[Package Control:Install Package]から[scss][csscomb js]をそれぞれインストール```
   
 4. csscomb.jsonをカスタマイズ  
 [こちらのデータ](https://github.com/SunriseDigital/improve-condition/blob/master/sublime_text/csscomb.json)を右クリック保存し、以下のファイルに上書きして下さい。  
