@@ -194,7 +194,7 @@ __[インストール後の設定]__
 [sublime text 3](http://www.sublimetext.com/3)でcss・scssファイルを編集した後、  
 Ctrl + A（全選択）→Shift + Ctrl + C をすると自動的にルール通りのプロパティ順にソートされます。  
   
-他、  
+[Package Control:Install Package]で他にも、  
   
 * HTML5
 * CSS Snippets
