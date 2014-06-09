@@ -192,4 +192,14 @@ __[インストール後の設定]__
   
 以上で設定は完了です。  
 [sublime text 3](http://www.sublimetext.com/3)でcss・scssファイルを編集した後、  
-Ctrl + A（全選択）→Shift + Ctrl + C をすると自動的にルール通りのプロパティ順にソートされます。
+Ctrl + A（全選択）→Shift + Ctrl + C をすると自動的にルール通りのプロパティ順にソートされます。  
+  
+他、  
+  
+* HTML5
+* CSS Snippets
+* jQuery
+* Tag
+  
+等のソース自動補完プラグインも入れておくとさらに便利です。  
+[Sublime Text 3をDreamweaver並みに使いやすくする方法](http://catcher-in-the-tech.net/481/)
