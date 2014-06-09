@@ -166,40 +166,23 @@ animation-play-state
 ※上記順番は[mozilla.org Base Styles](http://www.mozilla.org/css/base/content.css)を基に定めました。
 
 
-##SCSSの編集環境
+###推奨ツールと設定方法
 
 SCSSの編集に関しては以下のツールを推奨します。  
   
-ツール  
-sublime text
-
-プラグイン  
-○○○○○
-
-
-##CSSへのコンパイルツール
-
-SCSSをCSSの編集に関しては以下のツールを推奨します。  
-
-ツール  
-Compass  
+__[ツール]__  
+[sublime text 3](http://www.sublimetext.com/3)  
   
-コマンドプロンプトを立ち上げる  
-↓  
-作業ディレクトリへ移動  
-例）  
-C:\Users\tsuchida\workspace\improve-condition\tsuchida  
-に移動  
-  
-C:\Users\tsuchida>cd workspace  
-  
-C:\Users\tsuchida\workspace>cd improve-condition  
-  
-C:\Users\tsuchida\workspace\improve-condition>cd tsuchida  
-  
-↓  
-compass w  
-  
-を入力し、ファイル変更を監視。  
-↓  
-scssファイルを編集すると自動的にcssファイルへコンパイルされます。
+__[インストール後の設定]__  
+1. Sublime TextのPackageControllをインストール  
+[Sublime Text 3 PackageControll](https://sublime.wbond.net/installation)の「SUBLIME TEXT 3」のタブの内容をコピーし、  
+[View]→[Show Console]でエディタの下に出てくる入力枠にペーストしEnter。
+2. [Node.js](http://nodejs.org/)をインストール※Sublime Textとは別モノです。
+3. Sublime TextのPackage Control:Install Packageで[scss][csscomb js]をインストール  
+[Preferences]→[Package Control]→[Package Control:Install Package]から[scss][csscomb js]をそれぞれインストール
+4. csscomb.jsonをカスタマイズ  
+[こちらのデータ](https://github.com/SunriseDigital/improve-condition/blob/master/sublime_text/csscomb.json)を右クリック保存し、
+以下のファイルに上書きして下さい。
+C:\Users\○ユーザー名○\AppData\Roaming\Sublime Text 3\Packages\CSScomb JS\node_modules\csscomb\config\csscomb.json
+5. [sublime text 3](http://www.sublimetext.com/3)でscssファイルを編集した後、  
+Ctrl + A（全選択）→Shift + Ctrl + C で自動的にルール通りのプロパティ順にソートされます！！
