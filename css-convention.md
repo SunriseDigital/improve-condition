@@ -176,13 +176,17 @@ __[ツール]__
 __[インストール後の設定]__  
 1. Sublime TextのPackageControllをインストール  
 [Sublime Text 3 PackageControll](https://sublime.wbond.net/installation)の「SUBLIME TEXT 3」のタブの内容をコピーし、  
-[View]→[Show Console]でエディタの下に出てくる入力枠にペーストしEnter。
-2. [Node.js](http://nodejs.org/)をインストール※Sublime Textとは別モノです。
+[View]→[Show Console]でエディタの下に出てくる入力枠にペーストしEnter。  
+  
+2. [Node.js](http://nodejs.org/)をインストール※Sublime Textとは別モノです。  
+  
 3. Sublime TextのPackage Control:Install Packageで[scss][csscomb js]をインストール  
-[Preferences]→[Package Control]→[Package Control:Install Package]から[scss][csscomb js]をそれぞれインストール
+[Preferences]→[Package Control]→[Package Control:Install Package]から[scss][csscomb js]をそれぞれインストール  
+  
 4. csscomb.jsonをカスタマイズ  
-[こちらのデータ](https://github.com/SunriseDigital/improve-condition/blob/master/sublime_text/csscomb.json)を右クリック保存し、
-以下のファイルに上書きして下さい。
-C:\Users\○ユーザー名○\AppData\Roaming\Sublime Text 3\Packages\CSScomb JS\node_modules\csscomb\config\csscomb.json
+[こちらのデータ](https://github.com/SunriseDigital/improve-condition/blob/master/sublime_text/csscomb.json)を右クリック保存し、  
+以下のファイルに上書きして下さい。  
+C:\Users\○ユーザー名○\AppData\Roaming\Sublime Text 3\Packages\CSScomb JS\node_modules\csscomb\config\csscomb.json  
+  
 5. [sublime text 3](http://www.sublimetext.com/3)でscssファイルを編集した後、  
 Ctrl + A（全選択）→Shift + Ctrl + C で自動的にルール通りのプロパティ順にソートされます！！
