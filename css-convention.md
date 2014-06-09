@@ -186,8 +186,9 @@ __[インストール後の設定]__
 ```メニューの[Preferences]→[Package Control]→[Package Control:Install Package]から[scss][csscomb js]をそれぞれインストール```
   
 4. csscomb.jsonをカスタマイズ  
-[こちらのデータ](https://github.com/SunriseDigital/improve-condition/blob/master/sublime_text/csscomb.json)を右クリック保存し、以下のファイルに上書きして下さい。  
+[こちらのソース](https://github.com/SunriseDigital/improve-condition/blob/master/sublime_text/csscomb.json)をコピーし以下のファイルにまるごと上書きして下さい。  
 ```C:\Users\○ユーザー名○\AppData\Roaming\Sublime Text 3\Packages\CSScomb JS\node_modules\csscomb\config\csscomb.json```
+※文字コードが変わらないように注意してください。（utf-8ならOK）  
   
   
 以上で設定は完了です。  
