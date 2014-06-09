@@ -171,10 +171,12 @@ animation-play-state
 SCSSの編集に関しては以下のツールを推奨します。  
   
 __[ツール]__  
+
 [sublime text 3](http://www.sublimetext.com/3)  
   
 __[インストール後の設定]__  
-1. Sublime TextのPackageControllをインストール  
+
+1. PackageControllをインストール  
 [Sublime Text 3 PackageControll](https://sublime.wbond.net/installation)の「SUBLIME TEXT 3」のタブの内容をコピーし、  
 [View]→[Show Console]でエディタの下に出てくる入力枠にペーストしEnter。  
   
@@ -186,6 +188,7 @@ __[インストール後の設定]__
 4. csscomb.jsonをカスタマイズ  
 [こちらのデータ](https://github.com/SunriseDigital/improve-condition/blob/master/sublime_text/csscomb.json)を右クリック保存し、以下のファイルに上書きして下さい。  
 ```C:\Users\○ユーザー名○\AppData\Roaming\Sublime Text 3\Packages\CSScomb JS\node_modules\csscomb\config\csscomb.json```
+  
   
 以上で設定は完了です。  
 [sublime text 3](http://www.sublimetext.com/3)でcss・scssファイルを編集した後、  
