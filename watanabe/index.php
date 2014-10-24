@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>中間レイヤー作業用　フォークテスト2</title>
+		<title>中間レイヤー作業用</title>
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<link rel="stylesheet" href="/improve-condition/watanabe/css/index.css" media="all">
@@ -19,6 +19,10 @@
 				<img src="http://dummyimage.com/100x50/fff/2e2e2e.png&text=Peachy" alt="Peachy">
 			</h1>
 		</div>
+
+		<div>fork side</div>
+		<div>master side</div>
+		<div></div>
 
 		<!-- ナビゲーション -->
 		<div class="primaryNav">
