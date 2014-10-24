@@ -22,7 +22,7 @@
 
 		<div>fork side add1</div>
 		<div>master side add1</div>
-		<div>forktest4 add1 master</div>
+		<div>forktest4 add1</div>
 
 		<!-- ナビゲーション -->
 		<div class="primaryNav">
