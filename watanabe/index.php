@@ -21,7 +21,7 @@
 		</div>
 
 		<div>fork side</div>
-		<div>master side</div>
+		<div>master side add1</div>
 		<div></div>
 
 		<!-- ナビゲーション -->
