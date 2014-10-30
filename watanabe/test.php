@@ -15,7 +15,7 @@
 
 	<p>master side</p>
 	<p>fork side</p>
-	<p>forktest4 add1</p>
+	<p>forktest7 c</p>
 
 	</body>
 </html>
